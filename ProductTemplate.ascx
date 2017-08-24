@@ -90,7 +90,7 @@
             </div>
             <div class="productPrices">
                 <asp:Panel runat="server" ID="pnlPurchase">
-                    <h6>Purchase at Shop ASI</h6>
+                    <h6><img src="../../imgs/products/shop-asi.png" width="120">Purchase the Material</h6>
                     <div class="detailsPricing">
                         <div class="pricePerSf">
                             <h6>Price/SF:</h6>
