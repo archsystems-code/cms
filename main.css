@@ -1910,7 +1910,9 @@ header > a { margin-top: 15px; float: left; }
 
 header .requestNote + a { margin-top: 30px; }
 
-header .search { float: right; clear: right; }
+header .search { display: inline; }
+header .search div { display: inherit; }
+header .search input { width: 54%; margin-right: 5px; }
 
 header .search .btn, header .search .modalWrap .close.btn, .modalWrap header .search .close.btn { color: #fff; }
 
@@ -2141,7 +2143,7 @@ nav .sub li li a.highlighted { color: #666; background: #ddd; }
 
 .social .third p a { color: #fff; font-weight: bold; }
 
-.socialMedia { margin-top: 5px; float: right; clear: right; }
+.socialMedia { display: inline-block; float: right; }
 
 .socialMedia ul { width: 300px; float: right; margin: 0; padding: 0; }
 
