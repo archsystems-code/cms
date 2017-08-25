@@ -49,25 +49,24 @@
                 <span class="sku"><%# Entry.ID %></span>
             </p>
             <div class="request">
-                <asp:Panel runat="server" ID="pnlSamples" CssClass="sampleReq" Visible="false">
-                    <h5 style="text-align: center">
-                        Request Sample
-                    </h5>
-                </asp:Panel>
-
+                <h5> Request Sample</h5>
                 <div class="viewSamples">
                     <div class="samples sampleCheckout">
                     </div>
-                    <div style="display: flex; justify-content: center;">
-                        <asp:LinkButton ID="lbIndividual" runat="server" CssClass="openModal">Individual</asp:LinkButton>
-                        <asp:LinkButton ID="lbChain" runat="server" CssClass="openModal">Chain</asp:LinkButton>
-                        <asp:LinkButton ID="lbBox" runat="server" CssClass="openModal">Box</asp:LinkButton>
-                        <asp:LinkButton ID="lbProductBinder" runat="server" CssClass="openModal">Product Binder</asp:LinkButton>
+                    <asp:Panel runat="server" ID="pnlSamples" CssClass="sampleReq" Visible="false">
+                        <div style="display: flex; justify-content: center;">
+                            <asp:LinkButton ID="lbIndividual" runat="server" CssClass="openModal">Individual</asp:LinkButton>
+                            <asp:LinkButton ID="lbChain" runat="server" CssClass="openModal">Chain</asp:LinkButton>
+                            <asp:LinkButton ID="lbBox" runat="server" CssClass="openModal">Box</asp:LinkButton>
+                            <asp:LinkButton ID="lbProductBinder" runat="server" CssClass="openModal">Product Binder</asp:LinkButton>
                         <%--  <asp:Label ID="LabelSeparator4" runat="server"> | </asp:Label>
-                        <asp:LinkButton ID="lbProductBrochure" runat="server" CssClass="openModal">Product Brochure</asp:LinkButton>--%>
-                        <asp:Label ID="LabelContactSales" runat="server">Contact <a href="mailto:sales@archsystems.com">sales</a> for more information</asp:Label>
-                    </div>
-                    <a id="MainContent_MainContent_ctl00_lbViewRequested" Style="background-image: none; color: black; border: none; margin: 0 auto;"class="openModal" href="javascript:__doPostBack('ctl00$ctl00$MainContent$MainContent$ctl00$lbViewRequested','')">View My Requested Cart</a>
+                            <asp:LinkButton ID="lbProductBrochure" runat="server" CssClass="openModal">Product Brochure</asp:LinkButton>--%>
+
+                            <asp:Label ID="LabelContactSales" runat="server">Contact <a href="mailto:sales@archsystems.com">sales</a> for more information</asp:Label>
+
+                        </div>
+                    </asp:Panel>
+                    <asp:LinkButton ID="lbViewRequested" runat="server" CssClass="openModal">View My Cart</asp:LinkButton>
                 </div>
             </div>
             <asp:Panel runat="server" ID="pnlFeatured" CssClass="auxProduct">
@@ -90,7 +89,7 @@
             </div>
             <div class="productPrices">
                 <asp:Panel runat="server" ID="pnlPurchase">
-                    <h6><img src="../../imgs/products/shop-asi.png" width="120">Purchase the Material</h6>
+                    <h6>Purchase at Shop ASI</h6>
                     <div class="detailsPricing">
                         <div class="pricePerSf">
                             <h6>Price/SF:</h6>
