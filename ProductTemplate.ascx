@@ -49,24 +49,29 @@
                 <span class="sku"><%# Entry.ID %></span>
             </p>
             <div class="request">
-                <h5> Request Sample</h5>
+                <asp:Panel runat="server" ID="pnlSamples" CssClass="sampleReq" Visible="false">
+                    <img src="../../imgs/products/plussign.jpg" />
+                    <p>
+                        Request Sample: 
+                        <asp:LinkButton ID="lbIndividual" runat="server" CssClass="openModal">Individual</asp:LinkButton>
+                        <asp:Label ID="LabelSeparator1" runat="server"> | </asp:Label>
+                        <asp:LinkButton ID="lbChain" runat="server" CssClass="openModal">Chain</asp:LinkButton>
+                        <asp:Label ID="LabelSeparator2" runat="server"> | </asp:Label>
+                        <asp:LinkButton ID="lbBox" runat="server" CssClass="openModal">Box</asp:LinkButton>
+                        <asp:Label ID="LabelSeparator3" runat="server"> | </asp:Label>
+                        <asp:LinkButton ID="lbProductBinder" runat="server" CssClass="openModal">Product Binder</asp:LinkButton>
+                      <%--  <asp:Label ID="LabelSeparator4" runat="server"> | </asp:Label>
+                        <asp:LinkButton ID="lbProductBrochure" runat="server" CssClass="openModal">Product Brochure</asp:LinkButton>--%>
+
+                        <asp:Label ID="LabelContactSales" runat="server">Contact <a href="mailto:sales@archsystems.com">sales</a> for more information</asp:Label>
+
+                    </p>
+                </asp:Panel>
+
                 <div class="viewSamples">
                     <div class="samples sampleCheckout">
                     </div>
-                    <asp:Panel runat="server" ID="pnlSamples" CssClass="sampleReq" Visible="false">
-                        <div style="display: flex; justify-content: center;">
-                            <asp:LinkButton ID="lbIndividual" runat="server" CssClass="openModal">Individual</asp:LinkButton>
-                            <asp:LinkButton ID="lbChain" runat="server" CssClass="openModal">Chain</asp:LinkButton>
-                            <asp:LinkButton ID="lbBox" runat="server" CssClass="openModal">Box</asp:LinkButton>
-                            <asp:LinkButton ID="lbProductBinder" runat="server" CssClass="openModal">Product Binder</asp:LinkButton>
-                        <%--  <asp:Label ID="LabelSeparator4" runat="server"> | </asp:Label>
-                            <asp:LinkButton ID="lbProductBrochure" runat="server" CssClass="openModal">Product Brochure</asp:LinkButton>--%>
-
-                            <asp:Label ID="LabelContactSales" runat="server">Contact <a href="mailto:sales@archsystems.com">sales</a> for more information</asp:Label>
-
-                        </div>
-                    </asp:Panel>
-                    <asp:LinkButton ID="lbViewRequested" runat="server" CssClass="openModal">View My Cart</asp:LinkButton>
+                    <asp:LinkButton ID="lbViewRequested" runat="server" CssClass="openModal">View My Requested Samples</asp:LinkButton>
                 </div>
             </div>
             <asp:Panel runat="server" ID="pnlFeatured" CssClass="auxProduct">
@@ -89,7 +94,7 @@
             </div>
             <div class="productPrices">
                 <asp:Panel runat="server" ID="pnlPurchase">
-                    <h6><img src="../../imgs/products/shop-asi.png" width="120">Purchase at Shop ASI</h6>
+                    <h5 style="display: flex; align-items: center;"><img style="margin-right: 10px" src="../../imgs/products/shop-asi.png" width="200">Purchase at Shop ASI</h5>
                     <div class="detailsPricing">
                         <div class="pricePerSf">
                             <h6>Price/SF:</h6>
@@ -152,4 +157,23 @@
         <EPiCommerce:AssetImage runat="server" ID="aiHighRes" Entry='<%# Entry %>' AssetGroup="highResGroup" Visible="false" />
         <EPiCommerce:AssetImage runat="server" ID="aiHiRes" Entry='<%# Entry %>' AssetGroup="hiResGroup" Visible="false" />
     </div>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $($(".sampleReq").children()[0]).remove();
+            $('.request').find("p").find("span").remove();
+            $('.request').find("p").css("height", "24px");
+            $('.request').find("p").css("font-size", "18px");
+            $('.request').find("p").css("display", "block");
+            $('.request').find("p").css("text-align", "center");
+            var $buttons = $(".sampleReq").children().find("a");
+            var $viewCart = $('.request .viewSamples').children().closest("a");
+            $viewCart.css("background-image", "none");
+            $viewCart.css("color", "black");
+            $viewCart.css("border", "none");
+            $viewCart.css("margin", "0 auto");
+            $('.request .viewSamples').html("<div class='buttons-container' style='display: flex; justify-content: center'></div>");
+            $('.request .viewSamples').append($viewCart);
+            $('.buttons-container').html($buttons);
+        });
+    </script>
 </div>
