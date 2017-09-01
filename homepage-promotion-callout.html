@@ -1,12 +1,82 @@
-<script type="text/javascript">// <![CDATA[
-$(document).ready(function() {
-$('.promotion-flyout').css("background-color", "transparent");
-$('.promotion-flyout').css("padding", "0");
-$('.promotion-flyout').css("z-index", "10000");
-$('.promotion-flyout').css("bottom", "-10px");
-$('#callout-image').css("width", "100%");
-$('#callout-image').css("height", "auto");
-$('.promotion-flyout p').css("margin", "0");
-$('.promotion-flyout div').css("padding-right", "0");
-});
-// ]]></script>
+<p class="hideOnSignup"><img src="/Global/sign-up-popup.jpg" alt="" width="90%" height="auto" /></p>
+<p class="hideOnSignup" style="font-size: x-large; text-align: left; display: flex; justify-content: center;">Sign up to request samples,<br /> shop ASI, receive new product <br />announcements and more!</p>
+<p class="hideOnSignup"><a class="btn signUpModal" style="font-size: large; margin-top: 20px;" href="http://www2.archsystems.com/l/67312/2015-01-05/zt">SIGN UP</a></p>
+<iframe src="https://www.archsystems.com/en-US/Request-Samples/" id="InnerIframe" width="100%" height="100%" scrolling="no"
+  style="display: none;"></iframe>
+<script type="text/javascript">
+  // <![CDATA[
+  $(document).ready(function () {
+    if ($(".loggedIn").length) {
+      // $('.promotion-flyout').remove();
+      var $close = $('.promotion-close');
+      $('.promotion-close').remove();
+      $close.css("right", "20px");
+      $close.css("color", "#e58b52");
+      $('.promotion-flyout div').append($close);
+      $('.promotion-flyout').css("background-color", "rgba(0, 0, 0, 0.5)");
+      $('.promotion-flyout').css("padding", "0");
+      $('.promotion-flyout').css("z-index", "10000");
+      $('.promotion-flyout').css("height", "100%");
+      $('.promotion-flyout').css("display", "flex");
+      $('.promotion-flyout').css("flex-direction", "column");
+      $('.promotion-flyout').css("justify-content", "center");
+      $('.promotion-flyout p').css("line-height", "1em");
+      $('.promotion-flyout div').css("padding", "40px");
+      $('.promotion-flyout div').css("max-width", "375px");
+      $('.promotion-flyout div').css("margin", "0 auto");
+      $('.promotion-flyout div').css("background-color", "white");
+      $('.promotion-flyout div').css("border", "3px solid #e58b52");
+      $('.promotion-flyout div').css("color", "black");
+      $('.promotion-flyout div').css("position", "relative");
+      $(".signUpModal").css("background", "#e58b52");
+      $(".signUpModal").css("border", "none");
+      $(".signUpModal").css("width", "120px");
+      $("#InnerIframe").load(function () {
+        // $(this).contents().find(".customerBtn").trigger("click");
+        $(this).contents().find("body").on("click", function (e) {
+          parent.location.reload();
+        })
+      })
+      $(".signUpModal").click(function (e) {
+        e.preventDefault();
+        $("#InnerIframe").show();
+        $(".hideOnSignup").hide();
+        $('.promotion-flyout div').css("width", "100%");
+        $('.promotion-flyout div').css("max-width", "1024px");
+      })
+    } else {
+      var $close = $('.promotion-close');
+      $('.promotion-close').remove();
+      $close.css("right", "20px");
+      $close.css("color", "#e58b52");
+      $('.promotion-flyout div').append($close);
+      $('.promotion-flyout').css("background-color", "rgba(0, 0, 0, 0.5)");
+      $('.promotion-flyout').css("padding", "0");
+      $('.promotion-flyout').css("z-index", "10000");
+      $('.promotion-flyout').css("height", "100%");
+      $('.promotion-flyout').css("display", "flex");
+      $('.promotion-flyout').css("flex-direction", "column");
+      $('.promotion-flyout').css("justify-content", "center");
+      $('.promotion-flyout p').css("line-height", "1em");
+      $('.promotion-flyout div').css("padding", "40px");
+      $('.promotion-flyout div').css("max-width", "375px");
+      $('.promotion-flyout div').css("margin", "0 auto");
+      $('.promotion-flyout div').css("background-color", "white");
+      $('.promotion-flyout div').css("border", "3px solid #e58b52");
+      $('.promotion-flyout div').css("color", "black");
+      $('.promotion-flyout div').css("position", "relative");
+      $(".signUpModal").css("background", "#e58b52");
+      $(".signUpModal").css("border", "none");
+      $(".signUpModal").css("width", "120px");
+      $(".signUpModal").click(function (e) {
+        e.preventDefault();
+        $("#InnerIframe").show();
+        $(".hideOnSignup").hide();
+        $('.promotion-flyout div').css("width", "100%");
+        $('.promotion-flyout div').css("max-width", "1024px");
+      })
+    }
+  });
+// ]]>
+
+</script>
