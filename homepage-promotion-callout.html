@@ -1,6 +1,6 @@
 <p class="hideOnSignup"><img src="/Global/sign-up-popup.jpg" alt="" width="90%" height="auto" /></p>
 <p class="hideOnSignup" style="font-size: x-large; text-align: left; display: flex; justify-content: center;">Sign up to request samples,<br /> shop ASI, receive new product <br />announcements and more!</p>
-<p class="hideOnSignup"><a class="btn signUpModal" style="font-size: large; margin-top: 20px;" href="http://www2.archsystems.com/l/67312/2015-01-05/zt">SIGN UP</a></p>
+<p class="hideOnSignup"><a class="btn signUpModal" style="font-size: large; margin-top: 20px;" href="#">SIGN UP</a></p>
 <iframe sandbox="allow-same-origin allow-scripts allow-popups allow-forms" src="https://www.archsystems.com/en-US/Request-Samples/" id="InnerIframe" width="100%" height="1400px" scrolling="no"
   style="display: none; position: relative; top: -835px;"></iframe>
 <script type="text/javascript">
@@ -36,6 +36,9 @@
         document.getElementById('InnerIframe').contentWindow.$(".customerBtn").trigger("click");
         document.getElementById('InnerIframe').contentWindow.$("#MainContent_ButtonRegister").on("click", function(){
           $('.promotion-flyout').hide();
+          setTimeout(function() {
+            location.reload();          
+          }, 500);
         })
       })
       $(".signUpModal").click(function (e) {
