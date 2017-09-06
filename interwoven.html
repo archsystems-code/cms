@@ -1,23 +1,18 @@
-<div id="swatchModal" style="display: none">Foo</div>
-<div class="slideshow"><img src="/Global/Projects/harvest.jpg" alt="" /> <img src="/Global/Projects/clinic.jpg" alt="" /> <img src="/Global/Projects/national-office.jpg"
-    alt="" /> <img src="/Global/Projects/cdi.jpg" alt="" /> <img src="/Global/Projects/innerself-v2.jpg" alt="" /></div>
+<div id="swatchModal" style="display: none;">Foo</div>
+<div class="slideshow"><img src="/Global/Projects/harvest.jpg" alt="" /> <img src="/Global/Projects/clinic.jpg" alt="" /> <img src="/Global/Projects/national-office.jpg" alt="" /> <img src="/Global/Projects/cdi.jpg" alt="" /> <img src="/Global/Projects/innerself-v2.jpg" alt="" /></div>
 <div style="margin-top: 10px;">
-  <p style="font-size: 16px;">Linear yet dimensional, <strong>Interwoven Eco-Panels</strong> provide a canvas of layers and textures for feature and
-    focal walls. The panels are offered in a range of species in rich, natural colorations with a seamless interlocking installation.
-    This modern, fresh material is also sustainable.</p>
-  <div class='tabsContainer'>
-    <ul style="margin-top: 15px; display: flex; list-style-type: none; width: 100%; flex-wrap: wrap;">
-      <li class="productImages Pictures"></li>
-      <li class="projectPhotos Featured"></li>
-      <li class="requestSample" style="display: flex;"><a style="color: #d78f54; font-family: HelveticaNeueLTStd-Th, Helvetica Neue LT Std; font-size: 20px; font-weight: lighter; display: flex; align-items: center;"
-          id="MainContent_MainContent_rptRequestChainsList_btnRequestChain_0" class="openModal" href="javascript:__doPostBack('ctl00$ctl00$MainContent$MainContent$rptRequestChainsList$ctl00$btnRequestChain','')">Request Sample Chain</a>
-        <input type="hidden" name="ctl00$ctl00$MainContent$MainContent$rptRequestChainsList$ctl00$hidRequestChainResourceSKU" id="MainContent_MainContent_rptRequestChainsList_hidRequestChainResourceSKU_0"
-          value="WPVEP007"></li>
-    </ul>
-  </div>
-  <p id="instructions"><strong style='font-size: 16px; font-weight: lighter; line-height: 1em;'>Click images below for <span style="font-weight: bold">Specifications, Installation details, request individual samples,</span> or <span style="font-weight: bold">purchase the material.</span></strong></p>
+<p style="font-size: 16px;">Linear yet dimensional, <strong>Interwoven Eco-Panels</strong> provide a canvas of layers and textures for feature and focal walls. The panels are offered in a range of species in rich, natural colorations with a seamless interlocking installation. This modern, fresh material is also sustainable.</p>
+<div class="tabsContainer">
+<ul style="margin-top: 15px; display: flex; list-style-type: none; width: 100%; flex-wrap: wrap;">
+<li class="productImages Pictures"></li>
+<li class="projectPhotos Featured"></li>
+<li class="requestSample" style="display: flex;"><a id="MainContent_MainContent_rptRequestChainsList_btnRequestChain_0" class="openModal" style="color: #d78f54; font-family: HelveticaNeueLTStd-Th, Helvetica Neue LT Std; font-size: 20px; font-weight: lighter; display: flex; align-items: center;" href="javascript:__doPostBack('ctl00$ctl00$MainContent$MainContent$rptRequestChainsList$ctl00$btnRequestChain','')">Request Sample Chain</a> <input id="MainContent_MainContent_rptRequestChainsList_hidRequestChainResourceSKU_0" type="hidden" name="ctl00$ctl00$MainContent$MainContent$rptRequestChainsList$ctl00$hidRequestChainResourceSKU" value="WPVEP007" /></li>
+</ul>
 </div>
-<script type="text/javascript">
+<p id="instructions"><strong style="font-size: 16px; font-weight: lighter; line-height: 1em;">Click images below for <span style="font-weight: bold;">Specifications, Installation details, request individual samples,</span> or <span style="font-weight: bold;">purchase the material.</span></strong></p>
+</div>
+<script type="text/javascript">// <![CDATA[
+'use strict';
   // <![CDATA[
   /*!
                * jQuery Cycle Plugin (with Transition Definitions)
@@ -1734,10 +1729,16 @@
         let ajaxUrl = $(el).children()[0].href;
         let firstChild = $($(el).children()[1]).children()[1];
         let secondChild = $($(el).children()[1]).children()[0];
+        let thirdChild = $("<svg id='specs' class='specIcon' width='30' height='100%' data-name='specs' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 125 132.88' style='margin-right: 5px; cursor: pointer;'><defs><style>.specs-cls-1{fill:none;}.specs-cls-2{fill:#825474;}.specs-cls-3{fill:#763e2a;}.specs-cls-4{fill:#7ea0c3;}.specs-cls-5{fill:#ebab21;}.specs-cls-6{fill:#5b7f71;}}</style></defs><path class='specs-cls-1' d='M26.13-21.13A66.44,66.44,0,1,0,92.57,45.31,66.44,66.44,0,0,0,26.13-21.13' transform='translate(40.31 21.13)'/><polygon class='specs-cls-2' points='66.52 43.83 53.41 21.13 40.31 43.83 66.52 43.83 66.52 43.83'/><polygon class='specs-cls-3' points='79.56 66.44 66.45 43.74 53.35 66.44 79.56 66.44 79.56 66.44'/><polygon class='specs-cls-4' points='92.67 89.13 79.56 66.43 66.45 89.13 92.67 89.13 92.67 89.13'/><polygon class='specs-cls-5' points='79.56 111.87 66.45 89.17 53.35 111.87 79.56 111.87 79.56 111.87'/><polygon class='specs-cls-6' points='92.74 43.84 79.63 21.13 66.52 43.84 92.74 43.84 92.74 43.84'/><polygon class='specs-cls-5' points='66.52 43.78 53.41 66.48 40.31 43.78 66.52 43.78 66.52 43.78'/><polygon class='specs-cls-4' points='79.63 21.13 66.52 43.83 53.41 21.13 79.63 21.13 79.63 21.13'/><polygon class='specs-cls-6' points='79.56 66.4 66.45 89.1 53.35 66.4 79.56 66.4 79.56 66.4'/><polygon class='specs-cls-2' points='92.67 89.14 79.56 111.85 66.45 89.14 92.67 89.14 92.67 89.14'/><polygon class='specs-cls-3' points='66.52 89.17 53.41 111.87 40.31 89.17 66.52 89.17 66.52 89.17'/></svg>")
+        thirdChild.data("url", ajaxUrl);
+        thirdChild.on("click", showSpecifications);
+        let fourthChild = $("<svg width='30' height='30' class='shopIcon' version='1.1' id='shop' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 45.6 45.6' style='cursor: pointer;' xml:space='preserve'><path d='M22.8,0C10.2,0,0,10.2,0,22.8s10.2,22.8,22.8,22.8c12.6,0,22.7-10.1,22.8-22.7C45.7,10.3,35.5,0.1,22.9,0	C22.9,0,22.8,0,22.8,0z M39.6,16.5L34.8,31H17.7c0.3,1.1,0.5,1.8,0.5,1.9s0.3,1.1,1.2,1.1h12.8c2,0,3.7,1.7,3.7,3.7c0,0,0,0.1,0,0.1	c0,2.1-1.7,3.8-3.8,3.8c-2.1,0-3.8-1.7-3.8-3.8c0-0.6,0.1-1.2,0.4-1.7h-6.2c0.3,0.5,0.4,1.1,0.4,1.7c0,2.1-1.7,3.8-3.8,3.8	s-3.8-1.7-3.8-3.8c0-1.2,0.5-2.4,1.5-3.1c-0.3-0.4-0.5-0.8-0.6-1.3c-0.1-0.3-3.5-13.3-5.6-22c-0.2-0.7-0.4-0.7-0.6-0.7H7.1V8.6H10	c1.3,0,2.4,1,2.6,2.3c0.3,1.1,0.5,2.3,0.8,3.5h26.2V16.5z'/><path d='M19,39.5c0.9,0,1.7-0.8,1.7-1.7s-0.8-1.7-1.7-1.7c-0.9,0-1.7,0.8-1.7,1.7C17.3,38.7,18.1,39.5,19,39.5z'/><path d='M32,39.5c0.9,0,1.7-0.8,1.7-1.7s-0.8-1.7-1.7-1.7l0,0c-0.9,0-1.7,0.8-1.7,1.7S31.1,39.5,32,39.5z'/><path d='M17.1,28.9h16.1l4.1-12.4H13.9C15.1,21,16.3,25.7,17.1,28.9z'/></svg>")
+        fourthChild.data("url", ajaxUrl);
+        fourthChild.on("click", showCart);
         let iconsContainerId = "iconsContainer-" + i;
         $(secondChild).html("<svg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 24 24' style='margin-right: 10px;' xml:space='preserve' width='30' ><style type='text/css'>.sample-chain{fill:#D78F54;}</style><path class='sample-chain' d='M22,8v12H6V8H22z M24,6H4v16h20V6z M22,4H2v16h1V5h19V4z M20,2H0v16h1V3h19V2z'/></svg>")
         $($(el).children()[1]).html("").append(firstChild).append("<div id=" + iconsContainerId + " style='display: flex; justify-content: center;'></div>")
-        $("#" + iconsContainerId).append("<svg onclick='showSpecs(event)' id='specs' data-url='" + ajaxUrl + "' class='specIcon' width='30' height='100%' data-name='specs' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 125 132.88' style='margin-right: 5px; cursor: pointer;'><defs><style>.specs-cls-1{fill:none;}.specs-cls-2{fill:#825474;}.specs-cls-3{fill:#763e2a;}.specs-cls-4{fill:#7ea0c3;}.specs-cls-5{fill:#ebab21;}.specs-cls-6{fill:#5b7f71;}}</style></defs><path class='specs-cls-1' d='M26.13-21.13A66.44,66.44,0,1,0,92.57,45.31,66.44,66.44,0,0,0,26.13-21.13' transform='translate(40.31 21.13)'/><polygon class='specs-cls-2' points='66.52 43.83 53.41 21.13 40.31 43.83 66.52 43.83 66.52 43.83'/><polygon class='specs-cls-3' points='79.56 66.44 66.45 43.74 53.35 66.44 79.56 66.44 79.56 66.44'/><polygon class='specs-cls-4' points='92.67 89.13 79.56 66.43 66.45 89.13 92.67 89.13 92.67 89.13'/><polygon class='specs-cls-5' points='79.56 111.87 66.45 89.17 53.35 111.87 79.56 111.87 79.56 111.87'/><polygon class='specs-cls-6' points='92.74 43.84 79.63 21.13 66.52 43.84 92.74 43.84 92.74 43.84'/><polygon class='specs-cls-5' points='66.52 43.78 53.41 66.48 40.31 43.78 66.52 43.78 66.52 43.78'/><polygon class='specs-cls-4' points='79.63 21.13 66.52 43.83 53.41 21.13 79.63 21.13 79.63 21.13'/><polygon class='specs-cls-6' points='79.56 66.4 66.45 89.1 53.35 66.4 79.56 66.4 79.56 66.4'/><polygon class='specs-cls-2' points='92.67 89.14 79.56 111.85 66.45 89.14 92.67 89.14 92.67 89.14'/><polygon class='specs-cls-3' points='66.52 89.17 53.41 111.87 40.31 89.17 66.52 89.17 66.52 89.17'/></svg>").append(secondChild).append("<svg onclick='showCart(event)' data-url='" + ajaxUrl + "'  width='30' height='30' class='shopIcon' version='1.1' id='shop' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 45.6 45.6' style='cursor: pointer;' xml:space='preserve'><path d='M22.8,0C10.2,0,0,10.2,0,22.8s10.2,22.8,22.8,22.8c12.6,0,22.7-10.1,22.8-22.7C45.7,10.3,35.5,0.1,22.9,0	C22.9,0,22.8,0,22.8,0z M39.6,16.5L34.8,31H17.7c0.3,1.1,0.5,1.8,0.5,1.9s0.3,1.1,1.2,1.1h12.8c2,0,3.7,1.7,3.7,3.7c0,0,0,0.1,0,0.1	c0,2.1-1.7,3.8-3.8,3.8c-2.1,0-3.8-1.7-3.8-3.8c0-0.6,0.1-1.2,0.4-1.7h-6.2c0.3,0.5,0.4,1.1,0.4,1.7c0,2.1-1.7,3.8-3.8,3.8	s-3.8-1.7-3.8-3.8c0-1.2,0.5-2.4,1.5-3.1c-0.3-0.4-0.5-0.8-0.6-1.3c-0.1-0.3-3.5-13.3-5.6-22c-0.2-0.7-0.4-0.7-0.6-0.7H7.1V8.6H10	c1.3,0,2.4,1,2.6,2.3c0.3,1.1,0.5,2.3,0.8,3.5h26.2V16.5z'/><path d='M19,39.5c0.9,0,1.7-0.8,1.7-1.7s-0.8-1.7-1.7-1.7c-0.9,0-1.7,0.8-1.7,1.7C17.3,38.7,18.1,39.5,19,39.5z'/><path d='M32,39.5c0.9,0,1.7-0.8,1.7-1.7s-0.8-1.7-1.7-1.7l0,0c-0.9,0-1.7,0.8-1.7,1.7S31.1,39.5,32,39.5z'/><path d='M17.1,28.9h16.1l4.1-12.4H13.9C15.1,21,16.3,25.7,17.1,28.9z'/></svg>")
+        $("#" + iconsContainerId).append(thirdChild).append(secondChild).append(fourthChild)
       });
     }
 
@@ -1827,9 +1828,9 @@
     addSwatchFeatures();
   });
   // ]]>
-  function showSpecs(e) {
+  function showSpecifications(e) {
     e.preventDefault();
-    let url = e.currentTarget.dataset.url;
+    let url = $(e.currentTarget).data().url;
     let productPage = "<div id='loading' style='display: flex; justify-content: center'><p>Loading Specs...</p></div><iframe sandbox='allow-same-origin allow-scripts allow-popups allow-forms' src=" + url + " id='productPage' style='display: none; position: relative; top: -733px; left: -665px;' width='1024' height='1400' scrolling='no'></iframe>"
     $("#swatchModal").html(productPage);
     $("#swatchModal").dialog("open");
@@ -1843,7 +1844,7 @@
 
   function showCart(e) {
     e.preventDefault();
-    let url = e.currentTarget.dataset.url;
+    let url = $(e.currentTarget).data().url;
     let productPage = "<div id='loading' style='display: flex; justify-content: center'><p>Loading Your Cart...</p></div><iframe sandbox='allow-same-origin allow-scripts allow-popups allow-forms' src=" + url + " id='productPage' style='display: none; position: relative; top: -525px; left: -574px;' width='1024' height='1400' scrolling='no' ></iframe>"
     $("#swatchModal").html(productPage);
     $("#swatchModal").dialog("open");
@@ -1860,5 +1861,4 @@
     $("#swatchModal").parent().css("max-height", "180px")
     $("#swatchModal").parent().css("width", "450px")
   }
-
-</script>
+// ]]></script>
