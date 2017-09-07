@@ -1714,6 +1714,7 @@
     let $press = $($("#MainContent_MainContent_RightSideDiv").children()[2]);
     let $images = $("#MainContent_MainContent_pnlCollectionThumbs");
     $images.addClass("tabContentContainer");
+    
     $materialExpert.removeClass("askExpert");
 
     let productPhotos = "<svg version='1.1' id='pictures' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 212 51.8' style='enable-background:new 0 0 212 51.8;' xml:space='preserve' width='200' height='100%'><style type='text/css'>.st0{fill:#5B7F71;}.st1{font-size:20.25px;font-family:HelveticaNeueLTStd-Th, Helvetica Neue LT Std; font-weight: lighter;}.st3{fill:none;}.st4{fill:#81968F;}.st5{fill:#6C8A7D;}.st6{fill:#386750;}</style><text transform='matrix(1 0 0 1 59.3057 33.5787)' class='st0 st1 st2'>Product Images</text><path class='st3' d='M25.9,0C11.6,0,0,11.6,0,25.9s11.6,25.9,25.9,25.9s25.9-11.6,25.9-25.9C51.7,11.6,40.2,0,25.9,0L25.9,0L25.9,0'/><polygon class='st0' points='35.4,12.8 24,24.3 35.5,35.8 '/><polygon class='st4' points='35.4,12.8 24,24.3 12.4,12.7 '/><polygon class='st5' points='12.7,35.7 24.1,24.3 12.5,12.8 '/><polygon class='st6' points='35.5,35.7 24.1,24.3 12.5,35.9 '/><polygon class='st0' points='36.9,15.4 36.9,36.9 15.6,36.9 15.6,39.1 39.3,39.1 39.3,15.4 '/></svg>";
@@ -1731,14 +1732,12 @@
         let secondChild = $($(el).children()[1]).children()[0];
         let thirdChild = $("<svg id='specs' class='specIcon' width='30' height='100%' data-name='specs' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 125 132.88' style='margin-right: 5px; cursor: pointer;'><defs><style>.specs-cls-1{fill:none;}.specs-cls-2{fill:#825474;}.specs-cls-3{fill:#763e2a;}.specs-cls-4{fill:#7ea0c3;}.specs-cls-5{fill:#ebab21;}.specs-cls-6{fill:#5b7f71;}}</style></defs><path class='specs-cls-1' d='M26.13-21.13A66.44,66.44,0,1,0,92.57,45.31,66.44,66.44,0,0,0,26.13-21.13' transform='translate(40.31 21.13)'/><polygon class='specs-cls-2' points='66.52 43.83 53.41 21.13 40.31 43.83 66.52 43.83 66.52 43.83'/><polygon class='specs-cls-3' points='79.56 66.44 66.45 43.74 53.35 66.44 79.56 66.44 79.56 66.44'/><polygon class='specs-cls-4' points='92.67 89.13 79.56 66.43 66.45 89.13 92.67 89.13 92.67 89.13'/><polygon class='specs-cls-5' points='79.56 111.87 66.45 89.17 53.35 111.87 79.56 111.87 79.56 111.87'/><polygon class='specs-cls-6' points='92.74 43.84 79.63 21.13 66.52 43.84 92.74 43.84 92.74 43.84'/><polygon class='specs-cls-5' points='66.52 43.78 53.41 66.48 40.31 43.78 66.52 43.78 66.52 43.78'/><polygon class='specs-cls-4' points='79.63 21.13 66.52 43.83 53.41 21.13 79.63 21.13 79.63 21.13'/><polygon class='specs-cls-6' points='79.56 66.4 66.45 89.1 53.35 66.4 79.56 66.4 79.56 66.4'/><polygon class='specs-cls-2' points='92.67 89.14 79.56 111.85 66.45 89.14 92.67 89.14 92.67 89.14'/><polygon class='specs-cls-3' points='66.52 89.17 53.41 111.87 40.31 89.17 66.52 89.17 66.52 89.17'/></svg>")
         thirdChild.data("url", ajaxUrl);
-        thirdChild.on("click", showSpecifications);
         let fourthChild = $("<svg width='30' height='30' class='shopIcon' version='1.1' id='shop' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 45.6 45.6' style='cursor: pointer;' xml:space='preserve'><path d='M22.8,0C10.2,0,0,10.2,0,22.8s10.2,22.8,22.8,22.8c12.6,0,22.7-10.1,22.8-22.7C45.7,10.3,35.5,0.1,22.9,0	C22.9,0,22.8,0,22.8,0z M39.6,16.5L34.8,31H17.7c0.3,1.1,0.5,1.8,0.5,1.9s0.3,1.1,1.2,1.1h12.8c2,0,3.7,1.7,3.7,3.7c0,0,0,0.1,0,0.1	c0,2.1-1.7,3.8-3.8,3.8c-2.1,0-3.8-1.7-3.8-3.8c0-0.6,0.1-1.2,0.4-1.7h-6.2c0.3,0.5,0.4,1.1,0.4,1.7c0,2.1-1.7,3.8-3.8,3.8	s-3.8-1.7-3.8-3.8c0-1.2,0.5-2.4,1.5-3.1c-0.3-0.4-0.5-0.8-0.6-1.3c-0.1-0.3-3.5-13.3-5.6-22c-0.2-0.7-0.4-0.7-0.6-0.7H7.1V8.6H10	c1.3,0,2.4,1,2.6,2.3c0.3,1.1,0.5,2.3,0.8,3.5h26.2V16.5z'/><path d='M19,39.5c0.9,0,1.7-0.8,1.7-1.7s-0.8-1.7-1.7-1.7c-0.9,0-1.7,0.8-1.7,1.7C17.3,38.7,18.1,39.5,19,39.5z'/><path d='M32,39.5c0.9,0,1.7-0.8,1.7-1.7s-0.8-1.7-1.7-1.7l0,0c-0.9,0-1.7,0.8-1.7,1.7S31.1,39.5,32,39.5z'/><path d='M17.1,28.9h16.1l4.1-12.4H13.9C15.1,21,16.3,25.7,17.1,28.9z'/></svg>")
         fourthChild.data("url", ajaxUrl);
-        fourthChild.on("click", showCart);
         let iconsContainerId = "iconsContainer-" + i;
-        $(secondChild).html("<svg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 24 24' style='margin-right: 10px;' xml:space='preserve' width='30' ><style type='text/css'>.sample-chain{fill:#D78F54;}</style><path class='sample-chain' d='M22,8v12H6V8H22z M24,6H4v16h20V6z M22,4H2v16h1V5h19V4z M20,2H0v16h1V3h19V2z'/></svg>")
+        $(secondChild).html("<svg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 24 24' style='margin-right: 10px;' xml:space='preserve' width='30' height='100%'><style type='text/css'>.sample-chain{fill:#D78F54;}</style><path class='sample-chain' d='M22,8v12H6V8H22z M24,6H4v16h20V6z M22,4H2v16h1V5h19V4z M20,2H0v16h1V3h19V2z'/></svg>")
         $($(el).children()[1]).html("").append(firstChild).append("<div id=" + iconsContainerId + " style='display: flex; justify-content: center;'></div>")
-        $("#" + iconsContainerId).append(thirdChild).append(secondChild).append(fourthChild)
+        $("#" + iconsContainerId).html("").append(thirdChild).append(secondChild).append(fourthChild)
       });
     }
 
@@ -1768,6 +1767,7 @@
     function showPictures() {
       $("#instructions").show();
       $(".tabContentContainer").replaceWith($images);
+      addSwatchFeatures();
     }
 
     function showSpecs() {
@@ -1825,40 +1825,43 @@
     $('.prodSku').css("font-weight", "bold");
     $('.prodSku').css("font-size", "20px");
     $(".otherProjectsCopy a").attr("target", "_blank");
-    addSwatchFeatures();
+    addSwatchFeatures();      
+    $("body").on("click", "#specs", showSpecifications);
+    $("body").on("click", "#shop", showCart);
   });
   // ]]>
-  function showSpecifications(e) {
-    e.preventDefault();
-    let url = $(e.currentTarget).data().url;
-    let productPage = "<div id='loading' style='display: flex; justify-content: center'><p>Loading Specs...</p></div><iframe sandbox='allow-same-origin allow-scripts allow-popups allow-forms' src=" + url + " id='productPage' style='display: none; position: relative; top: -733px; left: -665px;' width='1024' height='1400' scrolling='no'></iframe>"
-    $("#swatchModal").html(productPage);
-    $("#swatchModal").dialog("open");
-    $("#productPage").load(function () {
-      $("#loading").hide();
-      $(this).show();
-    })
-    $("#swatchModal").parent().css("max-height", "760px")
-    $("#swatchModal").parent().css("width", "400px")
-  }
 
-  function showCart(e) {
-    e.preventDefault();
-    let url = $(e.currentTarget).data().url;
-    let productPage = "<div id='loading' style='display: flex; justify-content: center'><p>Loading Your Cart...</p></div><iframe sandbox='allow-same-origin allow-scripts allow-popups allow-forms' src=" + url + " id='productPage' style='display: none; position: relative; top: -525px; left: -574px;' width='1024' height='1400' scrolling='no' ></iframe>"
-    $("#swatchModal").html(productPage);
-    $("#swatchModal").dialog("open");
-    $("#productPage").load(function () {
-      $("#loading").hide();
-      $(this).show();
-      document.getElementById('productPage').contentWindow.$("#MainContent_MainContent_ctl00_buttonAddToCart").on("click", function () {
-        $("#swatchModal").dialog("close");
-        setTimeout(function () {
-          location.reload();
-        }, 5000);
-      })
+function showSpecifications(e) {
+  e.preventDefault();
+  let url = $(e.currentTarget).data().url;
+  let productPage = "<div id='loading' style='display: flex; justify-content: center'><p>Loading Specs...</p></div><iframe src=" + url + " id='productPage' style='display: none; position: relative; top: -733px; left: -665px;' width='1024' height='1400' scrolling='no'></iframe>"
+  $("#swatchModal").html(productPage);
+  $("#swatchModal").dialog("open");
+  $("#productPage").load(function () {
+    $("#loading").hide();
+    $(this).show();
+  })
+  $("#swatchModal").parent().css("max-height", "760px")
+  $("#swatchModal").parent().css("width", "400px")
+}
+
+function showCart(e) {
+  e.preventDefault();
+  let url = $(e.currentTarget).data().url;
+  let productPage = "<div id='loading' style='display: flex; justify-content: center'><p>Loading Your Cart...</p></div><iframe src=" + url + " id='productPage' style='display: none; position: relative; top: -525px; left: -574px;' width='1024' height='1400' scrolling='no' ></iframe>"
+  $("#swatchModal").html(productPage);
+  $("#swatchModal").dialog("open");
+  $("#productPage").load(function () {
+    $("#loading").hide();
+    $(this).show();
+    document.getElementById('productPage').contentWindow.$("#MainContent_MainContent_ctl00_buttonAddToCart").on("click", function () {
+      $("#swatchModal").dialog("close");
+      setTimeout(function () {
+        location.reload();
+      }, 5000);
     })
-    $("#swatchModal").parent().css("max-height", "180px")
-    $("#swatchModal").parent().css("width", "450px")
-  }
+  })
+  $("#swatchModal").parent().css("max-height", "180px")
+  $("#swatchModal").parent().css("width", "450px")
+}
 // ]]></script>
