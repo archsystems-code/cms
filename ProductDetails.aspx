@@ -7,19 +7,17 @@
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <asp:PlaceHolder runat="server" ID="ProductInfoHolder"></asp:PlaceHolder> 	
+    <asp:PlaceHolder runat="server" ID="ProductInfoHolder"></asp:PlaceHolder>
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="scripts" runat="server">
 
     <Script>
-        $(document).ready( function() {
-   
+        $(document).ready(function () {
 
             $(".largeThumbModal").dialog({
                 autoOpen: false,
                 modal: true,
-                width: 955,
                 minheight: 350,
                 draggable: false,
                 dialogClass: 'largeThumbModalWrapper'
