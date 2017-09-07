@@ -1,12 +1,12 @@
 <p class="hideOnSignup"><img src="/Global/sign-up-popup.jpg" alt="" width="90%" height="auto" /></p>
 <p class="hideOnSignup" style="font-size: x-large; text-align: left; display: flex; justify-content: center;">Sign up to request samples,<br /> shop ASI, receive new product <br />announcements and more!</p>
 <p class="hideOnSignup"><a class="btn signUpModal" style="font-size: large; margin-top: 20px;" href="#">SIGN UP</a></p>
-<iframe sandbox="allow-same-origin allow-scripts allow-popups allow-forms" src="https://www.archsystems.com/en-US/Request-Samples/" id="InnerIframe" width="100%" height="1400px" scrolling="no"
-  style="display: none; position: relative; top: -835px;"></iframe>
+<iframe sandbox="allow-same-origin allow-scripts allow-popups allow-forms" src="https://www.archsystems.com/en-US/Request-Samples/"
+  id="InnerIframe" width="100%" height="1400px" scrolling="no" style="display: none; position: relative; top: -835px;"></iframe>
 <script type="text/javascript">
   // <![CDATA[
   $(document).ready(function () {
-    if ($(".loggedIn").length) {
+    if ($(".loggedIn").length || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
       $('.promotion-flyout').remove();
     } else {
       var $close = $('.promotion-close');
@@ -34,10 +34,10 @@
       $(".signUpModal").css("width", "120px");
       $("#InnerIframe").load(function () {
         document.getElementById('InnerIframe').contentWindow.$(".customerBtn").trigger("click");
-        document.getElementById('InnerIframe').contentWindow.$("#MainContent_ButtonRegister").on("click", function(){
+        document.getElementById('InnerIframe').contentWindow.$("#MainContent_ButtonRegister").on("click", function () {
           $('.promotion-flyout').hide();
-          setTimeout(function() {
-            location.reload();          
+          setTimeout(function () {
+            location.reload();
           }, 5000);
         })
       })
