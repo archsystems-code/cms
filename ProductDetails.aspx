@@ -15,9 +15,12 @@
     <Script>
         $(document).ready(function () {
 
+            var wWidth = $(window).width();
+            var dWidth = wWidth * 0.9;
             $(".largeThumbModal").dialog({
                 autoOpen: false,
                 modal: true,
+                width: dWidth,
                 minheight: 350,
                 draggable: false,
                 dialogClass: 'largeThumbModalWrapper'
