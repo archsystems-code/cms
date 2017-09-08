@@ -1858,8 +1858,12 @@
     $("#swatchModal").html(productPage);
     $("#swatchModal").dialog("open");
     $("#productPage").load(function () {
-      $("#loading").hide();
-      $(this).show();
+      if (document.getElementById('productPage').contentWindow.$('.detailsPricing').length) {
+        $("#loading").hide();
+        $(this).show();
+      } else {
+        $("#loading").html("<p>This product is not in stock.</p>");
+      }
       document.getElementById('productPage').contentWindow.$("#MainContent_MainContent_ctl00_buttonAddToCart").on("click", function () {
         $("#swatchModal").dialog("close");
         setTimeout(function () {
