@@ -1840,7 +1840,7 @@
   function showSpecifications(e) {
     e.preventDefault();
     let url = $(e.currentTarget).data().url;
-    let productPage = "<div id='loading' style='display: flex; justify-content: center'><p>Loading Specs...</p></div><iframe src=" + url + " id='productPage' style='display: none; position: relative; top: -733px; left: -665px;' width='1024' height='1400' scrolling='no'></iframe>"
+    let productPage = "<div id='loading' style='display: flex; justify-content: center'><p>Loading Specs...</p></div><iframe src=" + url + " id='productPage' style='display: none; position: relative; top: -675px; left: -665px;' width='1024' height='1400' scrolling='no'></iframe>"
     $("#swatchModal").html(productPage);
     $("#swatchModal").dialog("open");
     $("#productPage").load(function () {
