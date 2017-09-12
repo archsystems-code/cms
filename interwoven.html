@@ -1,6 +1,9 @@
+<!-- move this to template -->
 <div id="swatchModal" style="display: none;">Foo</div>
+<!-- leave slideshow div out of template code -->
 <div class="slideshow"><img src="/Global/Projects/harvest.jpg" alt="" /> <img src="/Global/Projects/clinic.jpg" alt="" /> <img src="/Global/Projects/national-office.jpg"
     alt="" /> <img src="/Global/Projects/cdi.jpg" alt="" /> <img src="/Global/Projects/innerself-v2.jpg" alt="" /></div>
+
 <div style="margin-top: 10px;">
   <p style="font-size: 16px;">Linear yet dimensional, <strong>Interwoven Eco-Panels</strong> provide a canvas of layers and textures for feature and
     focal walls. The panels are offered in a range of species in rich, natural colorations with a seamless interlocking installation.
@@ -1673,33 +1676,35 @@
   $(document).ready(function () {
     movePlusSigns();
     $("#swatchModal").dialog({ autoOpen: false })
-    $(".slideshow")
-      .before('<div id="prev"><svg version="1.1" id="Livello" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve"><style type="text/css">.st10{fill:#619080;stroke:#619080;}</style><path class="st10" d="M204.5,31.3c0.1,6.2-2.3,12.5-7,17.3l-78,79.3L199,206c9.6,9.4,9.7,24.9,0.3,34.5c-9.4,9.6-24.9,9.7-34.5,0.3L50.6,128.6L162.8,14.5c9.4-9.6,24.9-9.734.5-0.3C202,18.9,204.5,25.1,204.5,31.3z"/></svg><div>')
-      .before('<div id="next"><svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256" enable-background="new 0 0 256 256" xml:space="preserve"><path fill="#619080" stroke="#619080" d="M50.6,223.9c0-6.2,2.4-12.5,7.1-17.2l78.7-78.6L57.7,49.3c-9.5-9.5-9.5-25,0-34.5c9.5-9.5,25-9.5,34.5,0L205.4,128L92.2,241.1c-9.5,9.5-25,9.5-34.5,0C53,236.4,50.6,230.1,50.6,223.9z"/></svg></div>')
-      .cycle({
-        fx: "fade",
-        prev: "#prev",
-        next: "#next",
-        pause: 1,
-        timeout: 5000,
-        speed: 1500,
-        height: 400,
-        fit: true
-      });
-    $("#prev").css("position", "relative");
-    $("#prev").css("top", "200px");
-    $("#prev").css("width", "30px");
-    $("#prev").css("height", "30px");
-    $("#prev").css("z-index", "10");
-    $("#prev").css("margin-top", "-30px");
-    $("#prev").css("cursor", "pointer");
-    $("#next").css("position", "relative");
-    $("#next").css("float", "right");
-    $("#next").css("width", "30px");
-    $("#next").css("height", "30px");
-    $("#next").css("top", "170px");
-    $("#next").css("z-index", "10");
-    $("#next").css("cursor", "pointer");
+    if ($(".slideshow").length) {
+      $(".slideshow")
+        .before('<div id="prev"><svg version="1.1" id="Livello" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve"><style type="text/css">.st10{fill:#619080;stroke:#619080;}</style><path class="st10" d="M204.5,31.3c0.1,6.2-2.3,12.5-7,17.3l-78,79.3L199,206c9.6,9.4,9.7,24.9,0.3,34.5c-9.4,9.6-24.9,9.7-34.5,0.3L50.6,128.6L162.8,14.5c9.4-9.6,24.9-9.734.5-0.3C202,18.9,204.5,25.1,204.5,31.3z"/></svg><div>')
+        .before('<div id="next"><svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256" enable-background="new 0 0 256 256" xml:space="preserve"><path fill="#619080" stroke="#619080" d="M50.6,223.9c0-6.2,2.4-12.5,7.1-17.2l78.7-78.6L57.7,49.3c-9.5-9.5-9.5-25,0-34.5c9.5-9.5,25-9.5,34.5,0L205.4,128L92.2,241.1c-9.5,9.5-25,9.5-34.5,0C53,236.4,50.6,230.1,50.6,223.9z"/></svg></div>')
+        .cycle({
+          fx: "fade",
+          prev: "#prev",
+          next: "#next",
+          pause: 1,
+          timeout: 5000,
+          speed: 1500,
+          height: 400,
+          fit: true
+        });
+      $("#prev").css("position", "relative");
+      $("#prev").css("top", "200px");
+      $("#prev").css("width", "30px");
+      $("#prev").css("height", "30px");
+      $("#prev").css("z-index", "10");
+      $("#prev").css("margin-top", "-30px");
+      $("#prev").css("cursor", "pointer");
+      $("#next").css("position", "relative");
+      $("#next").css("float", "right");
+      $("#next").css("width", "30px");
+      $("#next").css("height", "30px");
+      $("#next").css("top", "170px");
+      $("#next").css("z-index", "10");
+      $("#next").css("cursor", "pointer");
+    }
     $(".productInfoWrapper h1").css("margin", "0");
     $(".subCollection ul").css("display", "flex");
     $(".subCollection ul").css("flex-wrap", "wrap");
