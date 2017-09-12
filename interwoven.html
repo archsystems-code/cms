@@ -18,7 +18,7 @@
   </div>
   <p id="instructions"><strong style="font-size: 16px; font-weight: lighter; line-height: 1em;">Click images below for <span style="font-weight: bold;">Specifications, Installation details, request individual samples,</span> or <span style="font-weight: bold;">purchase the material.</span></strong></p>
 </div>
-<script type="text/javascript" src="http://malsup.github.io/min/jquery.cycle.all.min.js"></script>
+<script type="text/javascript" src="https://malsup.github.io/min/jquery.cycle.all.min.js"></script>
 <script type="text/javascript">
   // <![CDATA[
   'use strict';
@@ -30,6 +30,7 @@
     initSwatchModal();
     initSlideshow();
     redesignLayout();
+    addSwatchFeatures();
 
     let $materialExpert = $($(".askExpert")[0]);
     let $featuredProject = $(".featuredProject");
@@ -64,6 +65,18 @@
       $(".subCollection ul").css("width", "690px");
       $(".subCollection ul").css("justify-content", "space-around");
       $(".subCollection ul li").css("width", "200px");
+      $(".tabsContainer ul li").css("cursor", "pointer");
+      $(".interior nav ul li a img:first-child").css("width", "125px");
+      $(".interior nav ul li a img:first-child").css("height", "125px");
+      $(".interior nav ul li a img:first-child").css("margin-left", "0");
+      $(".interior nav ul li a img:last-child").css("width", "10px");
+      $(".interior nav ul li a img:last-child").css("height", "10px");
+      $(".interior nav ul li a img:last-child").css("margin-left", "5px");
+
+      $('.addsamplerequest').hide();
+      $('.prodSku').css("font-weight", "bold");
+      $('.prodSku').css("font-size", "20px");
+      $(".otherProjectsCopy a").attr("target", "_blank");
     }
 
     function addSwatchFeatures() {
@@ -87,9 +100,6 @@
         let $world = $(el);
         $(el).parent().parent().find("a").find("span").css("width", "inherit");
         $(el).parent().parent().find("a").find("span").append($world);
-        $world.css("margin-left", "5px")
-        $world.css("width", "10px")
-        $world.css("height", "10px")
       });
     }
 
@@ -199,15 +209,6 @@
           $(this).is(':visible') ? "Other Projects ▲" : "Other Projects ▼");
       });
     });
-    $(".tabsContainer ul li").css("cursor", "pointer");
-    $(".interior nav ul li a img:first-child").css("width", "125px");
-    $(".interior nav ul li a img:first-child").css("height", "125px");
-    $(".interior nav ul li a img:first-child").css("margin-left", "0");
-    $('.addsamplerequest').hide();
-    $('.prodSku').css("font-weight", "bold");
-    $('.prodSku').css("font-size", "20px");
-    $(".otherProjectsCopy a").attr("target", "_blank");
-    addSwatchFeatures();
     $("body").on("click", "#specs", showSpecifications);
     $("body").on("click", "#shop", showCart);
   });
@@ -251,4 +252,5 @@
     $("#swatchModal").parent().css("width", "450px")
   }
 // ]]>
+
 </script>
