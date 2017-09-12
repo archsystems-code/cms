@@ -69,8 +69,8 @@
       $(".interior nav ul li a img:first-child").css("width", "125px");
       $(".interior nav ul li a img:first-child").css("height", "125px");
       $(".interior nav ul li a img:first-child").css("margin-left", "0");
-      $(".interior nav ul li a img:last-child").css("width", "10px");
-      $(".interior nav ul li a img:last-child").css("height", "10px");
+      $(".interior nav ul li a img:last-child").css("width", "20px");
+      $(".interior nav ul li a img:last-child").css("height", "20px");
       $(".interior nav ul li a img:last-child").css("margin-left", "5px");
 
       $('.addsamplerequest').hide();
@@ -100,6 +100,14 @@
         let $world = $(el);
         $(el).parent().parent().find("a").find("span").css("width", "inherit");
         $(el).parent().parent().find("a").find("span").append($world);
+      });
+    }
+
+    function moveCarts() {
+      Array.from($(".forPurchase")).forEach(function (el) {
+        let $cart = $(el);
+        $(el).parent().parent().find("a").find("span").css("width", "inherit");
+        $(el).parent().parent().find("a").find("span").append($cart);
       });
     }
 
