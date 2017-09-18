@@ -1,0 +1,144 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="ASI.Web.Views.MasterPages.MasterPage" %>
+
+<%@ Register TagPrefix="menu" TagName="TopNav" Src="~/Views/Controls/TopNav.ascx" %>
+<%@ Register TagPrefix="uc" TagName="TrackingScripts" Src="~/Views/Controls/WebTrackingScripts.ascx" %>
+<%@ Register TagPrefix="uc" TagName="MiniCart" Src="~/Views/Controls/MiniCart.ascx" %>
+
+<!DOCTYPE html>
+
+<html class="no-js" xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <AdageEpiLibrary:SEOHeader ID="SEOHeader1" runat="server" DescriptionPropertyName="SEODescription" KeywordPropertyName="SEOKeywords" TitlePropertyName="SEOTitle" RobotPropertyName="SEORobots" />
+
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="icon" href="favicon.ico" />
+    <link href="//vjs.zencdn.net/4.11/video-js.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="/stylesheets/liteAccordion.css" />
+    <link href="/stylesheets/main.css?v=1" rel="stylesheet" />
+
+    <%-- jQuery / UI: Served from CDN with local fallback. Be sure to update jquery.local if you update CDN versions. --%>
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/themes/base/jquery-ui.css" type="text/css" media="all" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+    <script> window.jQuery || document.write('<script src="js/lib/jquery.js"><\/script>') </script>
+    <script src="/js/liteaccordion.jquery.js"></script>
+    <script src="/js/lib/modernizr.js"></script>
+    <script src="/js/jquery.cycle.all.js"></script>
+    <script src="/js/custom.js"></script>
+
+    <%-- Library for Full Selectivizir Support --%>
+    <script src="//s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>
+    <!--[if (gte IE 6)&(lte IE 8)]><script src="/js/lib/selectivizr-min.js"></script></script><![endif]-->
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <uc:TrackingScripts runat="server" ID="trackingScripts" />
+
+    <script type="text/javascript">
+        setTimeout(function(){var a=document.createElement("script");
+        var b=document.getElementsByTagName("script")[0];
+        a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0056/7826.js?"+Math.floor(new Date().getTime()/3600000);
+        a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+    </script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <!--[if lt IE 7]>
+			<p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+		<![endif]-->
+        <asp:ScriptManager runat="server" ID="scriptManager" />
+
+        <asp:Panel runat="server" ID="pnlMainWrapper" CssClass="mainWrapper">
+            <header>
+                <asp:Panel runat="server" ID="requestedSamplesMessage" CssClass="requestNote" Visible="false">
+                    <asp:Literal runat="server" ID="sampleCount"></asp:Literal>
+                    <asp:HyperLink runat="server" ID="checkoutSamples" Text="Checkout Samples" NavigateUrl="~/"></asp:HyperLink>
+                </asp:Panel>
+                <a href="/">
+                    <EPiServer:Property ID="masterLogo" runat="server" PropertyName="Logo" PageLink='<%# EPiServer.Core.PageReference.StartPage %>' />
+                </a>
+                <asp:LoginView ID="LoginView1" runat="server">
+                    <AnonymousTemplate>
+                        <script type="text/javascript">
+                            function IsLoggedIn() {
+                                return false;
+                            }
+                        </script>
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        <div class="loggedIn">
+                            <p>
+                                You are logged in as
+								<asp:LoginName ID="LoginName1" runat="server" />
+                                |
+								<asp:LinkButton runat="server" PostBackUrl="~/Views/Pages/SamplesLogOut.aspx" CausesValidation="false">Log Out</asp:LinkButton>
+                                |
+								<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/en-US/My-Account/">My Account</asp:HyperLink>
+                                <script type="text/javascript">
+                                    function IsLoggedIn() {
+                                        return true;
+                                    }
+                                </script>
+                                |
+                                <a href="/en-US/Cart/">My Cart</a>
+                            </p>
+                        </div>
+                    </LoggedInTemplate>
+                </asp:LoginView>
+                <div class="search">
+                    <asp:Panel ID="SearchPanel" runat="server" DefaultButton="SearchLink">
+                        <asp:TextBox ID="SearchText" runat="server"></asp:TextBox>
+                        <asp:LinkButton ID="SearchLink" runat="server" CssClass="btn" OnClick="SearchLink_Click">Search ASI</asp:LinkButton>
+                    </asp:Panel>
+                </div>
+                <EPiServer:Property ID="masterSocial" runat="server" CssClass="socialMedia" PropertyName="Social" PageLink='<%# EPiServer.Core.PageReference.StartPage %>' />
+                <nav>
+                    <EPiServer:Property runat="server" PropertyName="BrandNav" CustomTagName="ul" CssClass="main" PageLink='<%# EPiServer.Core.PageReference.StartPage %>'>
+                        <RenderSettings ChildrenCustomTag="li" />
+                    </EPiServer:Property>
+                    <menu:TopNav ID="TopNav1" runat="server" class="sub" style="width: 100%; background: #414042; border-top: #ddd 2px solid; list-style: none; margin: 0; float: left;" />
+                    <div class="mini-cart-wrapper">
+                        <div class="mini-cart-logo">
+                            <EPiServer:Property runat="server" PropertyName="ShopASILink" CustomTagName="mini-cart-logo" PageLink='<%# EPiServer.Core.PageReference.StartPage %>' />
+                            <div class="mini-cart-count">
+                                <p runat="server" id="pCartCount"></p>
+                            </div>
+                        </div>
+                        <div class="mini-cart">
+                            <uc:MiniCart runat="server" />
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <iframe id="ifrmPardotFormHandler" runat="server" visible="false" height="1" width="1" />
+        </asp:Panel>
+
+        <footer>
+            <div class="footerWrap">
+                <EPiServer:Property ID="masterFooter" runat="server" PropertyName="Footer" PageLink='<%# EPiServer.Core.PageReference.StartPage %>' />
+            </div>
+        </footer>
+
+
+        <script src="/js/plugins.js"></script>
+        <script src="/js/global.js"></script>
+        <script src="//vjs.zencdn.net/4.11/video.js"></script>
+        <asp:ContentPlaceHolder ID="scripts" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
