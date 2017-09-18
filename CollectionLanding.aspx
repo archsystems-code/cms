@@ -392,14 +392,10 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
           if ($(".slideshow").length) {
             $(".slideshow")
               .before(
-                '<div id="prev"><svg version="1.1" id="Livello" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve"><style type="text/css">.st10{fill:' +
-                collectionColor + ';stroke:' + collectionColor +
-                ';}</style><path class="st10" d="M204.5,31.3c0.1,6.2-2.3,12.5-7,17.3l-78,79.3L199,206c9.6,9.4,9.7,24.9,0.3,34.5c-9.4,9.6-24.9,9.7-34.5,0.3L50.6,128.6L162.8,14.5c9.4-9.6,24.9-9.734.5-0.3C202,18.9,204.5,25.1,204.5,31.3z"/></svg><div>'
+                '<div id="prev"><svg version="1.1" id="Livello" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve"><style type="text/css">.st10{fill:#D78F54;stroke:#D78F54;}</style><path class="st10" d="M204.5,31.3c0.1,6.2-2.3,12.5-7,17.3l-78,79.3L199,206c9.6,9.4,9.7,24.9,0.3,34.5c-9.4,9.6-24.9,9.7-34.5,0.3L50.6,128.6L162.8,14.5c9.4-9.6,24.9-9.734.5-0.3C202,18.9,204.5,25.1,204.5,31.3z"/></svg><div>'
               )
               .before(
-                '<div id="next"><svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256" enable-background="new 0 0 256 256" xml:space="preserve"><path fill="' +
-                collectionColor + '" stroke="' + collectionColor +
-                '" d="M50.6,223.9c0-6.2,2.4-12.5,7.1-17.2l78.7-78.6L57.7,49.3c-9.5-9.5-9.5-25,0-34.5c9.5-9.5,25-9.5,34.5,0L205.4,128L92.2,241.1c-9.5,9.5-25,9.5-34.5,0C53,236.4,50.6,230.1,50.6,223.9z"/></svg></div>'
+                '<div id="next"><svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256" enable-background="new 0 0 256 256" xml:space="preserve"><path fill="#D78F54" stroke="#D78F54" d="M50.6,223.9c0-6.2,2.4-12.5,7.1-17.2l78.7-78.6L57.7,49.3c-9.5-9.5-9.5-25,0-34.5c9.5-9.5,25-9.5,34.5,0L205.4,128L92.2,241.1c-9.5,9.5-25,9.5-34.5,0C53,236.4,50.6,230.1,50.6,223.9z"/></svg></div>'
               )
               .cycle({
                 fx: "fade",
