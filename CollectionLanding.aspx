@@ -463,12 +463,12 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
         if (hasDigitalCatalog) {
           $catalogLi = $("<li class='' style='display: flex;'></li>")
           let $catalog = $('a:contains("Download Digital Catalog")')
+          $('p:contains("Download Digital Catalog")').css("display", "none")
           $catalog.css("display", "flex")
           $catalog.css("align-items", "center")
           $catalog.attr("target", "_blank")
           $catalog.html("<svg version='1.1' id='plusIcon' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 24 24' style='enable-background:new 0 0 24 24;' xml:space='preserve' width='25'> <style type='text/css'>.plus{fill:#D78F54;}</style><path class='plus' d='M12,0C5.4,0,0,5.4,0,12s5.4,12,12,12s12-5.4,12-12S18.6,0,12,0z M19,14h-5v5h-4v-5H5v-4h5V5h4v5h5V14z'/></svg><p style='color: #d78f54; font-family: HelveticaNeueLTStd-Th, Helvetica Neue LT Std; font-size: 20px; font-weight: lighter; margin-bottom: 0; margin-left: 10px;'>Catalog</p>")
           $catalogLi.append($catalog)
-          $('p:contains("Download Digital Catalog")').css("display", "none");
         }
         let $videoLi = '';
         if (hasInstallationVideo) {
