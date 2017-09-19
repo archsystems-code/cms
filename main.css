@@ -5476,6 +5476,7 @@ nav .sub li li a.highlighted {
 .rotatorWrapper {
     margin-top: 15px;
     position: relative;
+    margin-bottom: 15px;
 }
 
 .rotatorWrapper #nav {
