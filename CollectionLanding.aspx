@@ -237,6 +237,10 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
         let $featuredProject = $(".featuredProject");
         if ($featuredProject.length) {
           $($featuredProject.children().children()[0]).text("Additional Inspirational Project Photos")
+          $($(".tabsContainer ul")[0]).append("<li class='projectPhotos Featured' style='cursor: pointer'></li>")
+          let projectPhotos =
+            "<svg id='featured' width='200' height='100%' data-name='featured' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 554.21 153.81'><defs><style>.featured-text{isolation:isolate;font-size:55.25px;font-family:HelveticaNeueLTStd-Th, Helvetica Neue LT Std; fill:#d78f54; font-weight: lighter;}.featured-cls-1{fill:#d97e43;}.featured-cls-2{fill:none;opacity:0.08;}.featured-cls-3{fill:#5b7f71;}.featured-cls-4{fill:#7ea0c4;}.featured-cls-5{fill:#815374;}.featured-cls-6{fill:#edaa00;}.featured-cls-7{fill:#753d29;}</style></defs><text class='featured-text' transform='translate(152.31 95.16)'>Project Photos</text><circle class='featured-cls-2' cx='76.91' cy='76.91' r='76.91'/><polygon class='featured-cls-3' points='77.09 79.14 107.4 91.49 106.84 122.5 77.09 79.14'/><polygon class='featured-cls-4' points='77.09 79.14 77.09 113.94 106.84 122.5 77.09 79.14'/><polygon class='featured-cls-5' points='77.09 79.14 77.09 113.94 47.48 122.5 77.09 79.14'/><polygon class='featured-cls-6' points='77.09 79.14 46.47 91.61 47.48 122.5 77.09 79.14'/><polygon class='featured-cls-7' points='77.09 79.14 28.99 66.09 46.47 91.61 77.09 79.14'/><polygon class='featured-cls-3' points='77.09 79.14 58.04 55.52 28.99 66.09 77.09 79.14'/><polygon class='featured-cls-4' points='77.09 79.14 58.04 55.52 77.09 31.31 77.09 79.14'/><polygon class='featured-cls-5' points='77.09 79.14 95.93 55.52 77.09 31.31 77.09 79.14'/><polygon class='featured-cls-6' points='124.82 66.09 95.93 55.52 77.09 79.14 124.82 66.09'/><polygon class='featured-cls-7' points='124.82 66.09 107.4 91.49 77.09 79.14 124.82 66.09'/></svg>"
+          $(".projectPhotos").append(projectPhotos);
         }
         let $productSpecs = $(".productSpecs");
         let $press = $(".collectionPress");
@@ -256,12 +260,6 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
         $($(".tabsContainer ul")[0]).append("<li class='productImages Pictures' ></li>")
         $(".productImages").append(productPhotos);
     
-        if ($featuredProject.length) {
-          $($(".tabsContainer ul")[0]).append("<li class='projectPhotos Featured' style='cursor: pointer'></li>")
-          let projectPhotos =
-            "<svg id='featured' width='200' height='100%' data-name='featured' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 554.21 153.81'><defs><style>.featured-text{isolation:isolate;font-size:55.25px;font-family:HelveticaNeueLTStd-Th, Helvetica Neue LT Std; fill:#d78f54; font-weight: lighter;}.featured-cls-1{fill:#d97e43;}.featured-cls-2{fill:none;opacity:0.08;}.featured-cls-3{fill:#5b7f71;}.featured-cls-4{fill:#7ea0c4;}.featured-cls-5{fill:#815374;}.featured-cls-6{fill:#edaa00;}.featured-cls-7{fill:#753d29;}</style></defs><text class='featured-text' transform='translate(152.31 95.16)'>Project Photos</text><circle class='featured-cls-2' cx='76.91' cy='76.91' r='76.91'/><polygon class='featured-cls-3' points='77.09 79.14 107.4 91.49 106.84 122.5 77.09 79.14'/><polygon class='featured-cls-4' points='77.09 79.14 77.09 113.94 106.84 122.5 77.09 79.14'/><polygon class='featured-cls-5' points='77.09 79.14 77.09 113.94 47.48 122.5 77.09 79.14'/><polygon class='featured-cls-6' points='77.09 79.14 46.47 91.61 47.48 122.5 77.09 79.14'/><polygon class='featured-cls-7' points='77.09 79.14 28.99 66.09 46.47 91.61 77.09 79.14'/><polygon class='featured-cls-3' points='77.09 79.14 58.04 55.52 28.99 66.09 77.09 79.14'/><polygon class='featured-cls-4' points='77.09 79.14 58.04 55.52 77.09 31.31 77.09 79.14'/><polygon class='featured-cls-5' points='77.09 79.14 95.93 55.52 77.09 31.31 77.09 79.14'/><polygon class='featured-cls-6' points='124.82 66.09 95.93 55.52 77.09 79.14 124.82 66.09'/><polygon class='featured-cls-7' points='124.82 66.09 107.4 91.49 77.09 79.14 124.82 66.09'/></svg>"
-          $(".projectPhotos").append(projectPhotos);
-        }
         if (hasSamples) {
           $($(".tabsContainer ul")[0]).append("<li class='requestSample'></li>");
           $(".requestSample").css("display", "flex");
