@@ -5014,7 +5014,9 @@ header .requestNote+a {
 }
 
 header .search {
-    display: inline;
+    display: flex;
+    width: 100%;
+    padding-top: 10px;
 }
 
 header .search div {
@@ -5022,7 +5024,7 @@ header .search div {
 }
 
 header .search input {
-    width: 54%;
+    width: 45%;
     margin-right: 5px;
 }
 
@@ -5045,6 +5047,8 @@ nav .main {
     list-style: none;
     margin: 0;
     float: left;
+    display: flex;
+    margin-left: -100px;
 }
 
 nav .main li,
@@ -5060,7 +5064,7 @@ nav .main li a {
 
 nav .mini-cart-wrapper {
     position: absolute;
-    top: 7px;
+    top: -96px;
     right: 10px;
     cursor: pointer;
 }
@@ -5180,6 +5184,9 @@ nav .sub {
     width: 100%;
     list-style: none;
     float: left;
+    position: absolute;
+    top: -78px;
+    right: -130px;
 }
 
 nav .sub ul {
@@ -5727,11 +5734,12 @@ nav .sub li li a.highlighted {
 
 .socialMedia {
     display: inline-block;
-    float: right;
+    position: relative;
+    left: 325px;
 }
 
 .socialMedia ul {
-    width: 300px;
+    width: 315px;
     float: right;
     margin: 0;
     padding: 0;
@@ -5757,7 +5765,6 @@ nav .sub li li a.highlighted {
 }
 
 .homeBottom {
-    background: url(/imgs/bottom-home-bg.gif) repeat-y;
     float: left;
 }
 
@@ -8283,7 +8290,6 @@ footer p {
 .collectionThumbs ul li {
     width: 75px;
     float: left;
-    margin-right: 20px;
 }
 
 .collectionThumbs ul li:last-child {
