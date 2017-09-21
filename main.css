@@ -5021,6 +5021,8 @@ header .search {
 
 header .search div {
     display: inherit;
+    width: 100%;
+    justify-content: flex-end;
 }
 
 header .search input {
@@ -5733,15 +5735,16 @@ nav .sub li li a.highlighted {
 }
 
 .socialMedia {
-    display: inline-block;
+    display: inline-flex;
     position: relative;
     left: 325px;
+    top: 60px;
+    flex-direction: column;
 }
 
 .socialMedia ul {
     width: 315px;
-    float: right;
-    margin: 0;
+    margin-bottom: 15px;
     padding: 0;
 }
 
@@ -5775,20 +5778,25 @@ nav .sub li li a.highlighted {
 }
 
 .homeBottom .third h2 {
-    color: #fff;
+    color: #000;
     font-size: 18px;
-    border-bottom: #000 2px solid;
+    border-top: #e17b3b 1px solid;
+    border-bottom: #e17b3b 1px solid;
     margin: 0 0 15px;
+    width: 106%;
+    margin-left: -3%;
+    padding: 5px 0;
+    text-align: center;
 }
 
 .homeBottom .third h2 span {
-    background: #000;
     padding: 2px 10px 0 7px;
     display: inline-block;
 }
 
 .homeBottom .third .box {
     margin-bottom: 15px;
+    height: 430px;
 }
 
 .homeBottom .third img {
@@ -5927,6 +5935,7 @@ nav .sub li li a.highlighted {
     border-top: solid 4px #3c3c3c;
     border-bottom: solid 4px #3c3c3c;
     padding: 10px 0;
+    margin-top: 70px;
 }
 
 .affiliations img {

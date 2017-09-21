@@ -155,23 +155,7 @@
                 '<svg id="furniture" width="240" data-name="Furniture" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 758.98 132.88"><defs><style>.furniture-1{font-size:55.25px;font-family:HelveticaNeueLTStd-Bd, Helvetica Neue LT Std;font-weight:700;}.furniture-1,.furniture-4{fill:#763e2a;}.furniture-2{fill:none;}.furniture-3{fill:#5e3327;}.furniture-5{fill:#693e34;}.furniture-6{fill:#835548;}</style></defs><title>ASI-Furniture</title><text class="furniture-1" transform="translate(152.33 86.16)">ASI Display &amp; Furniture</text><path class="furniture-2" d="M45.44-32.66a66.44,66.44,0,1,0,66.44,66.44A66.44,66.44,0,0,0,45.44-32.66" transform="translate(21 32.66)"/><polygon class="furniture-3" points="66.41 66.54 46.76 32.51 27.11 66.54 66.41 66.54 66.41 66.54"/><polygon class="furniture-4" points="85.96 100.43 66.31 66.4 46.66 100.43 85.96 100.43 85.96 100.43"/><polygon class="furniture-5" points="105.77 66.48 86.12 32.45 66.47 66.48 105.77 66.48 105.77 66.48"/><polygon class="furniture-5" points="66.41 66.33 46.76 100.37 27.11 66.33 66.41 66.33 66.41 66.33"/><polygon class="furniture-4" points="85.96 32.66 66.31 66.69 46.66 32.66 85.96 32.66 85.96 32.66"/><polygon class="furniture-6" points="105.77 66.33 86.12 100.37 66.47 66.33 105.77 66.33 105.77 66.33"/></svg>'
             )
             $('.main svg').css("margin-left", "20px")
-            Array.from($("#TopNav1_MenuControl li")).forEach(function(el, i) {
-                if (i === 0) {
-                    $(el).remove();
-                } else if (i === 11) {
-                    $(el).remove();
-                } else if (i === 12) {
-                    $(el).remove();
-                } else if (i === 14) {
-                    $(el).remove();
-                }
-            })
-            var sm = $(".socialMedia")
-            $(".socialMedia").remove()
-            $('.homeBottom').append(sm)
-            $(".socialMedia ul li:first-child").remove()
-            $(".socialMedia ul li img").css("width", "40px")
-            $(".socialMedia ul li img").css("height", "40px")
+            $(".socialMedia").hide()
         </script>
         <asp:ContentPlaceHolder ID="scripts" runat="server">
         </asp:ContentPlaceHolder>
