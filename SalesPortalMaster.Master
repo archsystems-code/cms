@@ -83,7 +83,11 @@
         <script src="/js/plugins.js"></script>
         <script src="/js/sales%20portal/salesportal.js"></script>
         <script src="//vjs.zencdn.net/4.11/video.js"></script>
-
+        <script type="text/javascript">
+            if (window.location.pathname.indexOf("sales-portal")) {
+                $("nav .sub").css("position", "initial")
+            }
+        </script>
     </form>
 </body>
 </html>
