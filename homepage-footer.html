@@ -20,6 +20,7 @@
     var sm = $(".socialMedia")
     $(".socialMedia").remove()
     $('.homeBottom').append(sm.show())
+    $(".socialMedia").css("display", "inline-flex")
     $(".socialMedia ul li:first-child").remove()
     $(".socialMedia ul li img").css("width", "40px")
     $(".socialMedia ul li img").css("height", "40px")
@@ -33,6 +34,6 @@
     $("h2:contains('ASI Catalog')").css("border-right", "#e17b3b 1px solid")
     $("h2:contains('Testimonials')").css("border-left", "#e17b3b 1px solid")
     $("h2:contains('Calendar of Events')").css("border-right", "#e17b3b 1px solid")
-    $(".affiliations").before("<p style='position: relative; bottom: -75px; font-size: 18px;'>ASI Is Proud to be Affiliated With</p>")
+    $(".affiliations").before("<p style='font-size: 18px;'>ASI Is Proud to be Affiliated With</p>")
   });
 </script>
