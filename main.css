@@ -5738,7 +5738,6 @@ nav .sub li li a.highlighted {
     display: inline-flex;
     position: relative;
     left: 325px;
-    top: 60px;
     flex-direction: column;
 }
 
@@ -5935,7 +5934,6 @@ nav .sub li li a.highlighted {
     border-top: solid 4px #3c3c3c;
     border-bottom: solid 4px #3c3c3c;
     padding: 10px 0;
-    margin-top: 70px;
 }
 
 .affiliations img {
