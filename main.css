@@ -5816,7 +5816,9 @@ nav .sub li li a.highlighted {
 .homeBottom .third a.btn {
     display: inline-block;
     margin-top: 10px;
-    color: #000;
+    color: #e17b3b;
+    background: none;
+    border: 1px solid #e17b3b;
 }
 
 .homeBottom .third small {
