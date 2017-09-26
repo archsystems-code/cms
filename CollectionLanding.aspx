@@ -370,14 +370,35 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
         }
     
         function movePlusSigns(color) {
-          Array.from($(".plus")).forEach(function (el) {
-            $(el).parent().css("position", "absolute")
-            $(el).parent().css("top", "50px")
-            $(el).css("background", color)
-            $(el).css("font-size", "inherit")
-            $(el).css("border-radius", "50%")
-            $(el).css("padding", "10px")
-          })
+          if (window.location.href.indexOf("ASI-Stone")) {
+            Array.from($(".plus")).forEach(function (el, i) { 
+              $(el).parent().css("position", "absolute")
+              $(el).css("background", color)
+              $(el).css("font-size", "inherit")
+              $(el).css("border-radius", "50%")
+              if (i < 3) {
+                $(el).parent().css("top", "50px")
+                $(el).css("padding", "10px")
+              } else if (i == 3) {
+                $(el).parent().css("top", "-15px")
+                $(el).parent().css("right", "0")                                      
+                $(el).css("padding", "5px")
+              } else {      
+                $(el).parent().css("top", "-15px")
+                $(el).parent().css("right", "30px")                                      
+                $(el).css("padding", "5px")
+              }
+            })
+          } else {
+            Array.from($(".plus")).forEach(function (el) {
+              $(el).parent().css("position", "absolute")
+              $(el).parent().css("top", "50px")
+              $(el).css("background", color)
+              $(el).css("font-size", "inherit")
+              $(el).css("border-radius", "50%")
+              $(el).css("padding", "10px")
+            })
+          }
         }
     
         function initSwatchModal() {
