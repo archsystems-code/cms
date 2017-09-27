@@ -5787,6 +5787,8 @@ nav .sub li li a.highlighted {
     margin-left: -3%;
     padding: 5px 0;
     text-align: center;
+    color: white;
+    background-color: #e17b3b;
 }
 
 .homeBottom .third h2 span {
