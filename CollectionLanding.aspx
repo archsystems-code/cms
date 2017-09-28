@@ -311,10 +311,10 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
           $(".interior nav ul li a span img").css("width", "15px");
           $(".interior nav ul li a span img").css("height", "15px");
           $(".interior nav ul li a span img:first-child").css("margin-left", "5px");
-          $('.prodSku').css("font-weight", "bold");
-          $('.prodSku').css("font-size", "20px");
-          $('.prodName').css("font-weight", "bold");
-          $('.prodName').css("font-size", "20px");
+          $('.prodSku').css("font-size", "16px");
+          $('.prodSku').css("color", "grey");
+          $('.prodName').css("font-size", "16px");
+          $('.prodName').css("color", "grey");
           $(".otherProjectsCopy a").attr("target", "_blank");
         }
     
