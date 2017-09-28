@@ -5029,6 +5029,12 @@ header .search div {
 header .search input {
     width: 45%;
     margin-right: 5px;
+    border: 1px solid #e17b3b ;
+}
+
+header .search .btn {
+    background: #e17b3b;
+    border: 1px solid #e17b3b;
 }
 
 header .search .btn,
@@ -5936,8 +5942,8 @@ nav .sub li li a.highlighted {
     width: 960px;
     background: #fff;
     text-align: center;
-    border-top: solid 4px #3c3c3c;
-    border-bottom: solid 4px #3c3c3c;
+    border-top: solid 4px #e17b3b;
+    border-bottom: solid 4px #e17b3b;
     padding: 10px 0;
 }
 
