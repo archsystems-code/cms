@@ -2035,6 +2035,11 @@ ul.icons-ul>li .icon-li {
 .flooring .promotion-flyout {
     background-color: #669ac9;
     z-index: 10;
+    height: 80px;
+}
+
+.flooring .promotion-flyout div {
+    padding-right: 0;
 }
 
 .decorativeSurfaces a {
