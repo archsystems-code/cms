@@ -288,7 +288,7 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
             "<div class='tabsContainer'><ul style='margin-top: 15px; display: flex; list-style-type: none; width: 100%; flex-wrap: wrap;'></div>"
           )
           let instructions = $(
-            "<p id='instructions'><strong style='font-size: 16px; font-weight: lighter; line-height: 2em;'>Click icons below for <span style='font-weight: bold;'><img src='http://www.archsystems.com/Global/Products/specs.png' style='width: 14px;vertical-align: sub;'>specifications, <img src='http://www.archsystems.com/Global/Products/samples.png' style='width: 25px;vertical-align: sub; margin-right: 5px;'> to request individual samples,</span> or <span style='font-weight: bold;'> <img src='http://www.archsystems.com/Global/Products/cart.png' style='width: 25px;vertical-align: sub; margin-right: 5px;'> to purchase the material.</span></strong></p>"
+            "<p id='instructions'><strong style='font-size: 16px; font-weight: lighter; line-height: 2em;'>Click icons below for <span style='font-weight: bold;'><img src='http://www.archsystems.com/Global/Products/specs.png' style='width: 14px;vertical-align: sub;'> specifications, <img src='http://www.archsystems.com/Global/Products/samples.png' style='width: 25px;vertical-align: sub;'> to request individual samples,</span> or <span style='font-weight: bold;'> <img src='http://www.archsystems.com/Global/Products/cart.png' style='width: 25px;vertical-align: sub;'> to purchase the material.</span></strong></p>"
           );
           $("#mainContainer").html("").append("<div id='main'></div>")
           $("#main").append(content).append(tabsContainer).append(instructions);
