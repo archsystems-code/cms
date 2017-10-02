@@ -34,6 +34,10 @@
 
             $('.displayName:contains(".")').remove();
 
+            if ($(".variations").html().includes("styles") && $(".variations p").text() == "Additional colors and styles") {
+                $(".variations p").text("Additional colors")
+            }
+
         });
     </Script>
 
