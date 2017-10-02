@@ -5226,12 +5226,12 @@ nav .sub li a.highlighted {
 
 nav .sub li a {
     color: #e17b3b;
-    font-size: 7.9pt;
+    font-size: 12px;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
     border-left: #e17b3b 1px solid;
-    padding: 0px 26px;
+    padding: 0px 20px;
     display: block;
 }
 
@@ -5563,6 +5563,7 @@ nav .sub li li a.highlighted {
 .homeSubNavigation {
     width: 100%;
     float: left;
+    font-weight: bold;
 }
 
 .homeSubNavigation .RotatorFooterLinks {
