@@ -361,6 +361,10 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
           $('.prodName').css("color", "grey");
           $(".otherProjectsCopy a").attr("target", "_blank");
         }
+
+        function smoothlyScollToContent() {
+          $('html, body').animate({ scrollTop: $('.tabContentContainer').offset().top}, 800)
+        }
     
         function addSwatchFeatures() {
           const purchase = $(".purchaseASI").length;
@@ -492,6 +496,7 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
           $(".tabContentContainer").replaceWith($images);
           $(".tabsContainer ul li").css("cursor", "pointer");
           addSwatchFeatures();
+          smoothlyScollToContent();
         }
     
         function showSpecs() {
@@ -499,6 +504,7 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
           $productSpecs.addClass("tabContentContainer");
           $("#instructions").hide();
           $(".tabsContainer ul li").css("cursor", "pointer");
+          smoothlyScollToContent();
         }
     
         function showPress() {
@@ -506,6 +512,7 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
           $press.addClass("tabContentContainer");
           $("#instructions").hide();
           $(".tabsContainer ul li").css("cursor", "pointer");
+          smoothlyScollToContent();
         }
     
         function showMaterials() {
@@ -513,6 +520,7 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
           $materialExpert.addClass("tabContentContainer");
           $("#instructions").hide();
           $(".tabsContainer ul li").css("cursor", "pointer");
+          smoothlyScollToContent();
         }
     
         function showFeaturedProjects() {
@@ -520,6 +528,7 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
           $(".tabContentContainer").replaceWith($featuredProject);
           $featuredProject.addClass("tabContentContainer");
           $(".tabsContainer ul li").css("cursor", "pointer");
+          smoothlyScollToContent();
         }
     
         $(document).on("click", ".tabsContainer ul li", function (e) {
