@@ -5195,12 +5195,12 @@ nav>a {
 }
 
 nav .sub {
-    width: 100%;
+    width: 40%;
     list-style: none;
     float: left;
     position: absolute;
     top: -78px;
-    right: -130px;
+    right: 155px;
 }
 
 nav .sub ul {
