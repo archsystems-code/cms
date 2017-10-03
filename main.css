@@ -10861,3 +10861,7 @@ img.popupsample.popupsample-active {
     display: flex;
     justify-content: space-between;
 }
+
+.tabsContainer ul li {
+    cursor: pointer;
+}
