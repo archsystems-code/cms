@@ -38,6 +38,13 @@
                 $(".variations p").text("Additional colors")
             }
 
+            $('.productImage a.showLargeImage').after($('.productInfo .nameSku'))
+            $('.nameSku').css("text-align", "center")
+            $('.nameSku').css("font-weight", "bold")
+            $('.nameSku').css("clear", "both")
+            $('.nameSku').css("display", "flex")
+            $('.nameSku').css("flex-direction", "column")
+            $('.nameSku').css("padding-top", "8px")
         });
     </Script>
 
