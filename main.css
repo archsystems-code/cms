@@ -1848,6 +1848,8 @@ ul.icons-ul>li .icon-li {
 
 .woodPanels .promotion-flyout {
     background-color: #619080;
+    z-index: 10;
+    height: 80px;
 }
 
 .flooring a {
