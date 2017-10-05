@@ -2,7 +2,7 @@
 <p class="hideOnSignup" style="font-size: x-large; text-align: left; display: flex; justify-content: center;">Sign up to request samples,<br /> shop ASI, receive new product <br />announcements and more!</p>
 <p class="hideOnSignup"><a class="btn signUpModal" style="font-size: large; margin-top: 20px;" href="#">SIGN UP</a></p>
 <iframe sandbox="allow-same-origin allow-scripts allow-popups allow-forms" src="https://www.archsystems.com/en-US/Request-Samples/"
-  id="InnerIframe" width="100%" height="1400px" scrolling="no" style="display: none; position: relative; top: -835px;"></iframe>
+  id="InnerIframe" width="100%" height="1400px" scrolling="no" style="display: none; position: relative; top: -575px;"></iframe>
 <script type="text/javascript">
   // <![CDATA[
   $(document).ready(function () {
@@ -33,8 +33,13 @@
       $(".signUpModal").css("border", "none");
       $(".signUpModal").css("width", "120px");
       $("#InnerIframe").load(function () {
-        document.getElementById('InnerIframe').contentWindow.$(".customerBtn").trigger("click");
         document.getElementById('InnerIframe').contentWindow.$("#MainContent_ButtonRegister").on("click", function () {
+          $('.promotion-flyout').hide();
+          setTimeout(function () {
+            location.reload();
+          }, 5000);
+        })
+        document.getElementById('InnerIframe').contentWindow.$("#MainContent_btnLogin").on("click", function () {
           $('.promotion-flyout').hide();
           setTimeout(function () {
             location.reload();
@@ -48,7 +53,7 @@
         $('.promotion-flyout div').css("width", "100%");
         $('.promotion-flyout div').css("max-width", "1024px");
         $('.promotion-flyout div').css("max-height", "400px");
-        $('.promotion-flyout div').css("overflow", "hidden");
+        $('.promotion-flyout div').css("overflow", "scroll");
       })
     }
   });
