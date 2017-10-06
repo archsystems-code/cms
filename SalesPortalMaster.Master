@@ -86,6 +86,7 @@
         <script type="text/javascript">
             if (window.location.pathname.indexOf("sales-portal")) {
                 $("nav .sub").css("position", "initial")
+                $("nav .sub").css("width", "100%")
             }
         </script>
     </form>
