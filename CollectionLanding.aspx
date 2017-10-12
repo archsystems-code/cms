@@ -329,7 +329,7 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
           $($('.collectionInfo').children()[0]).children().attr("id", "mainContainer");
           let content = $("#mainContainer").children();
           let tabsContainer = $(
-            "<div class='tabsContainer'><ul style='margin-top: 15px; display: flex; list-style-type: none; width: 100%; flex-wrap: wrap;'></div>"
+            "<div class='tabsContainer'><ul style='margin: 15px 0 0 0; display: flex; list-style-type: none; width: 100%; flex-wrap: wrap;'></div>"
           )
           let instructions = $(
             "<p id='instructions'><strong style='font-size: 18px; font-weight: lighter; line-height: 2em;'>Click icons below for <img src='http://www.archsystems.com/Global/Products/specs.png' style='width: 14px;vertical-align: sub;'> specifications, <img src='http://www.archsystems.com/Global/Products/samples.png' style='width: 25px;vertical-align: sub;'> to request individual samples, or  <img src='http://www.archsystems.com/Global/Products/cart.png' style='width: 25px;vertical-align: sub;'> to purchase the material.</strong></p>"
