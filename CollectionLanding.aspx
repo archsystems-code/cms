@@ -345,7 +345,7 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
           $(".subCollection ul").css("display", "flex");
           $(".subCollection ul").css("flex-wrap", "wrap");
           $(".subCollection ul").css("width", "690px");
-          $(".subCollection ul").css("justify-content", "space-around");
+          $(".subCollection ul").css("justify-content", "space-between");
           $(".subCollection ul li").css("width", "200px");
           $(".tabsContainer ul li").css("cursor", "pointer");
           $(".interior nav ul li a").css("width", "200px");
