@@ -10866,4 +10866,5 @@ img.popupsample.popupsample-active {
 
 .tabsContainer ul li {
     cursor: pointer;
+    max-height: 40px;
 }
