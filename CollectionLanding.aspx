@@ -213,10 +213,11 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
     </script>
     <script type="text/javascript" src="https://malsup.github.io/min/jquery.cycle.all.min.js"></script>
     <script type="text/javascript">
+      
       'use strict';
     
       $(document).ready(function () {
-        const hasDigitalCatalog = $("body").html().includes("Download Digital Catalog");
+        const hasDigitalCatalog = $("body").html().indexOf("Download Digital Catalog") > 0;
         const hasInstallationVideo = $(".videoLink").length;
         const hasMaterialExpert = $(".askExpert").length;
         const hasPress = $(".collectionPress").length;
