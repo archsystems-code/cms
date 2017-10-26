@@ -197,7 +197,6 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
 
         var pagingNumber = $('.pagingNumber span').text();
 
-        $('.prodName:contains(".")').remove();
         $('.subCollection:first-of-type h3').remove();
         //$('.subCollection:first-of-type h3 span:empty').parent().remove();
 
