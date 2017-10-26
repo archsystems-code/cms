@@ -459,8 +459,67 @@
             </div>
         </div>
     </div>
+    <style>
+        fieldset fieldset legend { font-size: 1.25em; }
+
+        fieldset fieldset fieldset legend {
+        font-size: 1em;
+        font-weight: bold;
+        border-bottom: none;
+        margin-bottom: 5px;
+        }
+
+        .row legend { margin-left: 15px; }
+
+        .submit { margin-top: 25px; }
+
+        .jumbotron ul { font-size: .75em; }
+
+        #progress-bar-wrap {
+        min-height: 20px;
+        display: none;
+        margin-bottom: 0;
+        }
+
+        #progress-bar-wrap .encouragement { display: none; }
+
+        #progress-bar-wrap .close:before {
+        content: "\f0d7";
+        display: inline-block;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        }
+
+        #progress-bar-wrap span { line-height: 1.75em; }
+
+        #progress-bar-wrap.collapsed h4 {
+        font-size: 14px;
+        color: #999999;
+        }
+
+        #progress-bar-wrap.collapsed .encouragement { display: none; }
+
+        #progress-bar-wrap.collapsed .progress { display: none; }
+
+        #progress-bar-wrap.collapsed .close:before {
+        content: "\f0d8";
+        display: inline-block;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        line-height: .75em;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
     <script type="text/javascript">
         $(function () {
+            $('#MainContent_FirstName, #MainContent_LastName, #MainContent_CompanyOrSchoolName, #MainContent_Phone, #MainContent_Profession, #MainContent_Address, #MainContent_City, #MainContent_Country, #MainContent_State, #MainContent_PostalCode, #MainContent_Email, #MainContent_DesiredPassword, #MainContent_ConfirmPassword').addClass("required");
+            $('#form1').showProgress();
             $('.customerBtn').click(function () {
                 $('.studentEducators').hide();
                 $('.register').show();
@@ -523,6 +582,8 @@
             return pageValid;
         }
     </script>
+    <script src="https://raw.githubusercontent.com/archsystems-code/form-progress-bar/master/assets/js/jq.progress-bar.js"></script>
+
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="scripts" runat="server">
 </asp:Content>
