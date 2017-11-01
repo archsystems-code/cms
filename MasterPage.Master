@@ -156,15 +156,15 @@
             )
             $('.main svg').css("margin-left", "20px")
             $(".socialMedia").hide()
-            Array.from($("#TopNav1_MenuControl li")).forEach(function(el, i) {
+            $("#TopNav1_MenuControl li").each(function(i) {
                 if (i === 0) {
-                    $(el).remove();
+                    $(this).remove();
                 } else if (i === 11) {
-                    $(el).remove();
+                    $(this).remove();
                 } else if (i === 12) {
-                    $(el).remove();
+                    $(this).remove();
                 } else if (i === 14) {
-                    $(el).remove();
+                    $(this).remove();
                 }
             })
         </script>
