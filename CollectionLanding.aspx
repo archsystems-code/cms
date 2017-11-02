@@ -233,6 +233,7 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
         initSlideshow();
         redesignLayout();
         addSwatchFeatures();
+        removeEmptyProdNames();
     
         let $materialExpert = $($(".askExpert")[0]);
         let $featuredProject = $(".featuredProject");
@@ -366,6 +367,14 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
           $('.prodName').css("font-size", "16px");
           $('.prodName').css("color", "grey");
           $(".otherProjectsCopy a").attr("target", "_blank");
+        }
+
+        function removeEmptyProdNames() {
+          $('.prodName').each(function(i) {
+            if ($(this).text().length === 1) {
+              $(this).remove()
+            }
+          })
         }
 
         function smoothlyScollToContent() {

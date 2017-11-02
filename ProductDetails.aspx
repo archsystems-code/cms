@@ -32,7 +32,9 @@
                 return false;
             });
 
-            $('.displayName:contains(".")').remove();
+            if ($('.displayName').text().length === 1) {
+                $('.displayName').remove()
+            }
 
             if ($(".variations").html().includes("styles") && $(".variations p").text() == "Additional colors and styles") {
                 $(".variations p").text("Additional colors")
