@@ -275,8 +275,8 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
           $(".addsamplerequest").css("display", "flex");
           $(".addsamplerequest").css("align-items", "center");
           $(".addsamplerequest").css("padding-left", "5px");
-          Array.from($('.addsamplerequest a')).forEach(function(el) {
-              $(el).html($(el).html().replace("Click to", ""))
+          $('.addsamplerequest a').each(function(i) {
+              $(this).html($(this).html().replace("Click to", ""))
             })
           let requestProductSample =
             "<svg style='margin-right: 10px;' width='35'  id='chain' data-name='Chain' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100.13 110.13'><defs><style>.chain-1{fill:#6d6c72;}.chain-2{fill:#fefefe;}.chain-3{fill:#6e6d73;}.chain-4{fill:#fcfbfc;}.chain-5{fill:#f5f4f5;}.chain-6{fill:#f1f0f2;}.chain-7{fill:#e5e5e7;}.chain-8{fill:#e4e4e7;}.chain-9{fill:#d5d4d7;}.chain-10{fill:#6f6f71;}</style></defs><path class='chain-1' d='M47,1h7c2.52,1,5.28.85,7.82.87C79.19,2,100.28,22.35,100,43.09c-.07,5.16.16,10.33-.11,15.49-1.34,25.76-28.29,42-46.35,42-21.24.1-36.76-8.7-47.4-26.79-2.91-5-3.71-10.41-3.93-15.94-.54-13.65-1-27.17,8.51-38.84,8.66-10.58,19-17.16,32.93-17.51C44.75,1.51,46,1.84,47,1Z' transform='translate(-0.94 -0.93)'/><path class='chain-2' d='M47,1c-1.3,1.7-3.35,1.19-5,1.55C17,7.78.07,30.61,3,55.15,6,80.36,27.31,99,52.24,98.28s45.54-20.47,47-45.09C100.72,27.77,83,6.07,57.59,2.1,56.37,1.91,54.86,2.46,54,1c14.67,0,29.33.07,44-.07,2.5,0,3.07.57,3.07,3.07q-.14,52,0,104c0,2.5-.56,3.07-3.06,3.06q-47-.15-94,0c-2.5,0-3.07-.56-3.06-3.06q.14-52,0-104C.93,1.5,1.5.91,4,.93,18.33,1.07,32.67,1,47,1Z' transform='translate(-0.94 -0.93)'/><path class='chain-3' d='M40,77c-1.76-2.53-4.28-4.62-4.69-8-1.57-2.8,1.09-4,2.44-5,4.27-3.23,7.72-7.22,11.35-11.07,3.53-3,5.14-8.1,10.2-9.51a6.34,6.34,0,0,1,2.32-.63,2.93,2.93,0,0,1,1.37.65,14.45,14.45,0,0,1,2.15,7c.66,6.73,1.7,13.43,3,20.07.64,3.29-.27,5.12-3.47,5.92C59.35,77.77,54.1,79.15,48.73,80c-5.52.83-6.49-.06-7.31-5.72A2.46,2.46,0,0,1,40,77Z' transform='translate(-0.94 -0.93)'/><path class='chain-4' d='M62.06,44a2.81,2.81,0,0,1-.93.13c-2.2.89-3.9.12-5.31-1.59-2.63-3.89-6.21-6.91-9.53-10.15-2.43-2.37-5.07-2.44-7.5-.06-7.14,7-15.27,12.81-22.25,20-2.75,2.82-3.25,5.23-.29,8,3.61,3.42,6,8,10.32,10.76.87,1.12,2.07,2.13,1.35,3.81C26.3,77,25,76.1,23.5,74.58Q15.85,66.69,8.08,58.92c-1.92-1.91-2-3.28.11-5.26C22,40.88,35.68,28,49.38,15.1c1.3-1.22,2.46-2.35,4.13-.52C59.33,21,65.18,27.33,71,33.73A.73.73,0,0,1,70.86,35c-.55,1.34-1.11,2.69-2.84,2.85l-3.93,4C64.46,43.55,63.72,44.2,62.06,44Z' transform='translate(-0.94 -0.93)'/><path class='chain-5' d='M62.06,44l2-2.13c3.17,8,3.09,16.52,4.65,24.78C70.68,76.94,70.4,77,60.11,78.92c-4.08.77-8.29,1.16-12.19,2.46-4.64,1.55-7.21.55-8-4.38.43-3.5-2.34-7,0-11.23,2.36,2.76,2.23,5.86,2.69,8.54.77,4.42,3.11,5.46,7.08,4.45,4.34-1.11,8.71-2.14,13.07-3.2,2-.5,4.29-1.32,3.86-3.75-1.59-9-1.69-18.16-4-27A3.06,3.06,0,0,0,62.06,44Z' transform='translate(-0.94 -0.93)'/><path class='chain-6' d='M68,37.83,70.86,35c-.38,2.25,1.54,3.19,2.7,4.46,5.49,6,11,12,16.72,17.77,2.63,2.65,2.59,4.44-.28,6.76-3.47,2.8-6,6.65-9.75,9.19-1.1.26-1.52-.17-1.31-1.27,2.63-2.74,5.17-5.58,7.92-8.21,2.25-2.15,2.47-4,.19-6.29C80.6,51,75,43.77,68,37.83Z' transform='translate(-0.94 -0.93)'/><path class='chain-7' d='M27.92,74.86l-3-1.72c0-1.72,1.32-2.62,2.45-3.56,5.75-4.79,11.12-10,16.43-15.24,1.51-1.49,3.06-3.24,5.62-2.1a1.57,1.57,0,0,1,.66,2L35.26,69C32.58,70.69,30.95,73.66,27.92,74.86Z' transform='translate(-0.94 -0.93)'/><path class='chain-8' d='M78.94,71.88l1.31,1.27c-2.29,2.14-4.55,4.3-6.88,6.4-.75.67-1.5,2.13-2.74.56a1.6,1.6,0,0,1,.83-2.75C74.78,76.58,76.16,73.3,78.94,71.88Z' transform='translate(-0.94 -0.93)'/><path class='chain-9' d='M50.13,54.22l-1-1.19a2.39,2.39,0,0,1,.31-3.88c3.46-2.41,5.22-6.31,8.34-9,1.5,1,1.27,3.46,3.37,3.93Z' transform='translate(-0.94 -0.93)'/><path class='chain-3' d='M57.76,40.17c.88,2.85-.14,4.92-2.39,6.78S51.19,51,49.11,53C42.9,58.79,36.68,64.54,30.5,70.33c-1.59,1.49-3,3.13-5.53,2.81-4.34-4.59-8.6-9.25-13-13.74-2.38-2.41-2.47-4.31.15-6.63,9.22-8.13,18.36-16.35,27.49-24.58C42,26,43.93,26.53,46,28.66,49.87,32.56,53.84,36.34,57.76,40.17Z' transform='translate(-0.94 -0.93)'/><path class='chain-10' d='M51.31,22.24c1.62.44,2.82,1.12,2.82,2.69a2.65,2.65,0,0,1-2.79,2.87,2.51,2.51,0,0,1-2.57-2.55C48.67,23.44,50,22.71,51.31,22.24Z' transform='translate(-0.94 -0.93)'/></svg>"
@@ -374,11 +374,11 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
     
         function addSwatchFeatures() {
           const purchase = $(".purchaseASI").length;
-          Array.from($(".subCollection ul li")).forEach(function (el, i) {
-            let ajaxUrl = $(el).children()[0].href;
-            let productSku = $($(el).children()[1]).children().closest(".prodSku");
-            let productName = $($(el).children()[1]).children().closest(".prodName");
-            let productSample = $($(el).children()[1]).children().closest(".openModal");
+          $(".subCollection ul li").each(function (i) {
+            let ajaxUrl = $(this).children()[0].href;
+            let productSku = $($(this).children()[1]).children().closest(".prodSku");
+            let productName = $($(this).children()[1]).children().closest(".prodName");
+            let productSample = $($(this).children()[1]).children().closest(".openModal");
             if (localStorage.getItem(productSku.text())) {
               productSample = localStorage.getItem(productSku.text());
             } else {
@@ -393,7 +393,7 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
             )
             productBuy.data("url", ajaxUrl);
             let iconsContainerId = "iconsContainer-" + i;
-            $($(el).children()[1]).html("").append(productSku).append(productName).append("<div id=" +
+            $($(this).children()[1]).html("").append(productSku).append(productName).append("<div id=" +
               iconsContainerId + " style='display: flex; justify-content: center;'></div>")
             $("#" + iconsContainerId).html("").append(productSpecs)
             if (productSample.length) {
@@ -412,49 +412,49 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
         }
     
         function moveWorlds() {
-          Array.from($(".sustainable")).forEach(function (el) {
-            let $world = $(el);
-            $(el).parent().parent().find("a").find("span").css("width", "inherit");
-            $(el).parent().parent().find("a").find("span").append($world);
+          $(".sustainable").each(function (i) {
+            let $world = $(this);
+            $(this).parent().parent().find("a").find("span").css("width", "inherit");
+            $(this).parent().parent().find("a").find("span").append($world);
           });
         }
     
         function moveCarts() {
-          Array.from($(".forPurchase")).forEach(function (el) {
-            let $cart = $(el);
-            $(el).parent().parent().find("a").find("span").css("width", "inherit");
-            $(el).parent().parent().find("a").find("span").append($cart);
+          $(".forPurchase").each(function (i) {
+            let $cart = $(this);
+            $(this).parent().parent().find("a").find("span").css("width", "inherit");
+            $(this).parent().parent().find("a").find("span").append($cart);
           });
         }
     
         function movePlusSigns(color) {
           if (window.location.href.indexOf("ASI-Stone")) {
-            Array.from($(".plus")).forEach(function (el, i) { 
-              $(el).parent().css("position", "absolute")
-              $(el).css("background", color)
-              $(el).css("font-size", "inherit")
-              $(el).css("border-radius", "50%")
+            $(".plus").each(function (i) { 
+              $(this).parent().css("position", "absolute")
+              $(this).css("background", color)
+              $(this).css("font-size", "inherit")
+              $(this).css("border-radius", "50%")
               if (i < 3) {
-                $(el).parent().css("top", "50px")
-                $(el).css("padding", "10px")
+                $(this).parent().css("top", "50px")
+                $(this).css("padding", "10px")
               } else if (i == 3) {
-                $(el).parent().css("top", "-15px")
-                $(el).parent().css("right", "0")                                      
-                $(el).css("padding", "5px")
+                $(this).parent().css("top", "-15px")
+                $(this).parent().css("right", "0")                                      
+                $(this).css("padding", "5px")
               } else {      
-                $(el).parent().css("top", "-15px")
-                $(el).parent().css("right", "30px")                                      
-                $(el).css("padding", "5px")
+                $(this).parent().css("top", "-15px")
+                $(this).parent().css("right", "30px")                                      
+                $(this).css("padding", "5px")
               }
             })
           } else {
-            Array.from($(".plus")).forEach(function (el) {
-              $(el).parent().css("position", "absolute")
-              $(el).parent().css("top", "50px")
-              $(el).css("background", color)
-              $(el).css("font-size", "inherit")
-              $(el).css("border-radius", "50%")
-              $(el).css("padding", "10px")
+            $(".plus").each(function (i) {
+              $(this).parent().css("position", "absolute")
+              $(this).parent().css("top", "50px")
+              $(this).css("background", color)
+              $(this).css("font-size", "inherit")
+              $(this).css("border-radius", "50%")
+              $(this).css("padding", "10px")
             })
           }
         }
