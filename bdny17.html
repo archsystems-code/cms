@@ -3,6 +3,10 @@
 'use strict';
 
   $(document).on("click", "#specs", showSpecifications);
+  $(document).on("click", ".button", function(e) {
+    const displayImageId = "#" + $(this).attr("id") + "-image"
+    showImage(displayImageId)
+  })
 
   $(document).ready(function() {
    
@@ -56,10 +60,16 @@
     })
     $("#swatchModal").parent().css("width", "400px")
   }
+
+  function showImage(el) {
+    $(".display-image").hide()
+    $(el).show()
+  }
 // ]]></script>
 </p>
 <div id="swatchModal" style="display: none;">Foo</div>
-<p><img src="/Global/Tradeshows/BDNY%2017/bdny17-header-v2-min.jpg" alt="" width="100%" height="auto" /><img src="https://placeimg.com/960/400/arch" alt="" width="100%" height="auto" /></p>
+<p><img src="/Global/Tradeshows/BDNY%2017/bdny17-header-v2-min.jpg" alt="" width="100%" height="auto" /><img src="https://placeimg.com/960/400/arch" alt="" width="100%" height="auto" id="front-image" class="display-image"/><img src="http://placeimg.com/960/400/arch" alt="" width="100%" height="auto" id="back-image" class="display-image" style="display: none"></p><div style="display: flex; justify-content: center;"><div class="button" id="front" style="padding: 10px 20px; font-size: 16px; background-color: #FFC426; margin: 10px; color: white; border-radius: 2px; cursor: pointer" >Front</div>
+<div class="button" id="back" style="padding: 10px 20px; font-size: 16px; background-color: #FFC426; margin: 10px; color: white; border-radius: 2px; cursor: pointer">Back</div></div>
 <h2>Ornamental Surfaces</h2>
 <div style="display: flex; flex-wrap: wrap;">
 <div id="DSBUS808" style="width: 220px; padding: 10px;"><a id="MainContent_MainContent_rptCollections_rptProducts_0_hlThumb_32" href="/DSBUS808.aspx"><img id="MainContent_MainContent_rptCollections_rptProducts_0_AssetImage1_32" src="/Root/Images/DecorativeSurfaces/OrnamentalSurfaces/DSBUS808_250.jpg" alt="DSBUS808" width="100%" /></a>
