@@ -1,6 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/MasterPages/MasterPage.Master" AutoEventWireup="true" CodeBehind="SampleRegistration.aspx.cs" Inherits="ASI.Web.Views.Pages.SampleRegistration" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap core CSS -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -516,6 +519,7 @@
         -moz-osx-font-smoothing: grayscale;
         }
     </style>
+    <script src="https://raw.githubusercontent.com/archsystems-code/form-progress-bar/master/assets/js/jq.progress-bar.js"></script>
     <script type="text/javascript">
         $(function () {
             $('#MainContent_FirstName, #MainContent_LastName, #MainContent_CompanyOrSchoolName, #MainContent_Phone, #MainContent_Profession, #MainContent_Address, #MainContent_City, #MainContent_Country, #MainContent_State, #MainContent_PostalCode, #MainContent_Email, #MainContent_DesiredPassword, #MainContent_ConfirmPassword').addClass("required");
@@ -582,7 +586,6 @@
             return pageValid;
         }
     </script>
-    <script src="https://raw.githubusercontent.com/archsystems-code/form-progress-bar/master/assets/js/jq.progress-bar.js"></script>
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="scripts" runat="server">
