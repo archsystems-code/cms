@@ -518,6 +518,9 @@
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         }
+        .progress-bar-info {
+            background-color: #e17b3b; 
+        }
     </style>
     <script src="https://raw.githubusercontent.com/archsystems-code/form-progress-bar/master/assets/js/jq.progress-bar.js"></script>
     <script type="text/javascript">
