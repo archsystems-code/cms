@@ -345,7 +345,7 @@
                         <asp:ListItem Value="UA">Ukraine</asp:ListItem>
                         <asp:ListItem Value="AE">United Arab Emirates</asp:ListItem>
                         <asp:ListItem Value="GB">United Kingdom</asp:ListItem>
-                        <asp:ListItem Value="US">United States</asp:ListItem>
+                        <asp:ListItem Value="US" Selected="True">United States</asp:ListItem>
                         <asp:ListItem Value="UM">United States Minor Is.</asp:ListItem>
                         <asp:ListItem Value="UY">Uruguay</asp:ListItem>
                         <asp:ListItem Value="UZ">Uzbekistan</asp:ListItem>
@@ -526,7 +526,6 @@
     <script type="text/javascript">
         $(function () {
             $('#MainContent_FirstName, #MainContent_LastName, #MainContent_CompanyOrSchoolName, #MainContent_Phone, #MainContent_Profession, #MainContent_Address, #MainContent_City, #MainContent_Country, #MainContent_State, #MainContent_PostalCode, #MainContent_Email, #MainContent_DesiredPassword, #MainContent_ConfirmPassword').addClass("required");
-            $('#form1').showProgress();
             $('.customerBtn').click(function () {
                 $('.studentEducators').hide();
                 $('.register').show();
@@ -551,6 +550,7 @@
                 $('.customerBtn').hide();
                 $('.student').hide();
                 $('#hidCustomerType').val('RegularCustomer');
+                $('#form1').showProgress();
                 return false;
             });
             $('.studentBtn').click(function () {
@@ -569,6 +569,7 @@
                 $('.customerBtn').show();
                 $('.student').hide();
                 $('#hidCustomerType').val('Student');
+                $('#form1').showProgress();
                 return false;
             });
             ToggleStates(true);
