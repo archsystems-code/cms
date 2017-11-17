@@ -256,9 +256,11 @@ function ToggleStates(pageload) {
     if (!pageload) {
         if ($('.countrydropdown').val() != 'US') {
             $('.statedropdown').val('None');
+            $("#MainContent_State").removeClass("required");
         }
         else {
             $('.statedropdown').val('');
+            $("#MainContent_State").addClass("required")
         }
     }
 }
