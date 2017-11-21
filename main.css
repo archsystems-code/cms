@@ -5036,7 +5036,7 @@ header .search div {
 header .search input {
     width: 45%;
     margin-right: 5px;
-    border: 1px solid #e17b3b ;
+    border: 1px solid #e17b3b;
 }
 
 header .search .btn {
@@ -5504,7 +5504,7 @@ nav .sub li li a.highlighted {
 
 .rotatorWrapper #nav {
     position: absolute;
-    top: 305px;
+    top: 295px;
     right: 10px;
     z-index: 9999;
 }
@@ -5530,7 +5530,7 @@ nav .sub li li a.highlighted {
 }
 
 .rotatorWrapper #nav a.activeSlide {
-    background: #6a6350;
+    background: #e17b3b;
 }
 
 .slideshow .rotator {
