@@ -345,7 +345,7 @@
                         <asp:ListItem Value="UA">Ukraine</asp:ListItem>
                         <asp:ListItem Value="AE">United Arab Emirates</asp:ListItem>
                         <asp:ListItem Value="GB">United Kingdom</asp:ListItem>
-                        <asp:ListItem Value="US" Selected="True">United States</asp:ListItem>
+                        <asp:ListItem Value="US">United States</asp:ListItem>
                         <asp:ListItem Value="UM">United States Minor Is.</asp:ListItem>
                         <asp:ListItem Value="UY">Uruguay</asp:ListItem>
                         <asp:ListItem Value="UZ">Uzbekistan</asp:ListItem>
