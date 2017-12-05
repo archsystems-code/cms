@@ -5,10 +5,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <h1>Search results for '<span id="searchtext"></span>'</h1>
     <p>Please Note: If the product or collection you are searching for is not listed, please contact <a href="mailto:sales@archsystems.com">sales@archsystems.com</a> for samples and availability.</p><br />
-<div id="results" class="searchResults">Loading ...</div>
+<div id="results" class="searchResults"></div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="scripts" runat="server">
-    <script src="//www.google.com/jsapi" type="text/javascript"></script>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script type="text/javascript">
         function getQueryString(name) {
@@ -21,20 +20,29 @@
             else
                 return decodeURIComponent(results[1].replace(/\+/g, " "));
         }
-        google.load('search', '1', { language: 'en', style: google.loader.themes.MINIMALIST });
-        function onLoad() {
-            var customSearchControl = new google.search.CustomSearchControl('<%= GoogleSiteSearchAccount  %>');
-        var drawOptions = new google.search.DrawOptions();
-        drawOptions.setAutoComplete(false);
-        drawOptions.setDrawMode(google.search.SearchControl.DRAW_MODE_LINEAR);
-        customSearchControl.draw('results', drawOptions);
-        customSearchControl.setSearchStartingCallback(this, function (control, searcher, query) {
-            $('.search_input').val(query);
+        var myCallback = function () {
+            google.search.cse.element.render({
+                div: 'results',
+                tag: 'searchresults-only',
+                gname: 'google-results-gname'
+            });
+            var element = google.search.cse.element.getElement('google-results-gname');
+            var query = getQueryString('q');
+            element.execute(query);
             $('#searchtext').text(query);
-        });
-        customSearchControl.setLinkTarget(GSearch.LINK_TARGET_SELF);
-        customSearchControl.execute(getQueryString('q'));
-    }
-    google.setOnLoadCallback(onLoad);
+        };
+        (function() {
+            var cx = '017140040529022041878:pryauxgzy1g';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
+        window.__gcse = {
+            parsetags: 'explicit',
+            callback: myCallback
+        };
 </script>
 </asp:Content>
