@@ -1,19 +1,59 @@
 
 <script type="text/javascript">
+  'use strict';
+  
+  var sampleRequests = 0;
+  
   $(document).ready(function () {
-    $("#pdf").attr("download", "")
-    $("#FLRGB001").html('<a id="MainContent_MainContent_rptCollections_rptProducts_0_lbSample_0" class="openModal" href="javascript:__doPostBack(\'ctl00$ctl00$MainContent$MainContent$rptCollections$ctl00$rptProducts$ctl01$lbSample\',\'\')"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="margin-right: 10px;" xml:space="preserve" width="30" height="100%"><style type="text/css">.sample-chain{fill:#D78F54;}</style><path class="sample-chain" d="M22,8v12H6V8H22z M24,6H4v16h20V6z M22,4H2v16h1V5h19V4z M20,2H0v16h1V3h19V2z"></path></svg></a>');
-    $("#FLRGB004").html('<a id="MainContent_MainContent_rptCollections_rptProducts_0_lbSample_10" class="openModal" href="javascript:__doPostBack(\'ctl00$ctl00$MainContent$MainContent$rptCollections$ctl00$rptProducts$ctl11$lbSample\',\'\')"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="margin-right: 10px;" xml:space="preserve" width="30" height="100%"><style type="text/css">.sample-chain{fill:#D78F54;}</style><path class="sample-chain" d="M22,8v12H6V8H22z M24,6H4v16h20V6z M22,4H2v16h1V5h19V4z M20,2H0v16h1V3h19V2z"></path></svg></a>');
-    $("#FLRGB005").html('<a id="MainContent_MainContent_rptCollections_rptProducts_0_lbSample_6" class="openModal" href="javascript:__doPostBack(\'ctl00$ctl00$MainContent$MainContent$rptCollections$ctl00$rptProducts$ctl07$lbSample\',\'\')"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="margin-right: 10px;" xml:space="preserve" width="30" height="100%"><style type="text/css">.sample-chain{fill:#D78F54;}</style><path class="sample-chain" d="M22,8v12H6V8H22z M24,6H4v16h20V6z M22,4H2v16h1V5h19V4z M20,2H0v16h1V3h19V2z"></path></svg></a>');
-    $("#FLRGB006").html('<a id="MainContent_MainContent_rptCollections_rptProducts_0_lbSample_4" class="openModal" href="javascript:__doPostBack(\'ctl00$ctl00$MainContent$MainContent$rptCollections$ctl00$rptProducts$ctl05$lbSample\',\'\')"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="margin-right: 10px;" xml:space="preserve" width="30" height="100%"><style type="text/css">.sample-chain{fill:#D78F54;}</style><path class="sample-chain" d="M22,8v12H6V8H22z M24,6H4v16h20V6z M22,4H2v16h1V5h19V4z M20,2H0v16h1V3h19V2z"></path></svg></a>');
-    $("#FLRGB016").html('<a id="MainContent_MainContent_rptCollections_rptProducts_0_lbSample_9" class="openModal" href="javascript:__doPostBack(\'ctl00$ctl00$MainContent$MainContent$rptCollections$ctl00$rptProducts$ctl10$lbSample\',\'\')"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="margin-right: 10px;" xml:space="preserve" width="30" height="100%"><style type="text/css">.sample-chain{fill:#D78F54;}</style><path class="sample-chain" d="M22,8v12H6V8H22z M24,6H4v16h20V6z M22,4H2v16h1V5h19V4z M20,2H0v16h1V3h19V2z"></path></svg></a>');
-    $("#FLRGB018").html('<a id="MainContent_MainContent_rptCollections_rptProducts_0_lbSample_7" class="openModal" href="javascript:__doPostBack(\'ctl00$ctl00$MainContent$MainContent$rptCollections$ctl00$rptProducts$ctl08$lbSample\',\'\')"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="margin-right: 10px;" xml:space="preserve" width="30" height="100%"><style type="text/css">.sample-chain{fill:#D78F54;}</style><path class="sample-chain" d="M22,8v12H6V8H22z M24,6H4v16h20V6z M22,4H2v16h1V5h19V4z M20,2H0v16h1V3h19V2z"></path></svg></a>');
-    $("#FLRGB019").html('<a id="MainContent_MainContent_rptCollections_rptProducts_0_lbSample_8" class="openModal" href="javascript:__doPostBack(\'ctl00$ctl00$MainContent$MainContent$rptCollections$ctl00$rptProducts$ctl09$lbSample\',\'\')"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="margin-right: 10px;" xml:space="preserve" width="30" height="100%"><style type="text/css">.sample-chain{fill:#D78F54;}</style><path class="sample-chain" d="M22,8v12H6V8H22z M24,6H4v16h20V6z M22,4H2v16h1V5h19V4z M20,2H0v16h1V3h19V2z"></path></svg></a>');
-    $("#FLRGB020").html('<a id="MainContent_MainContent_rptCollections_rptProducts_0_lbSample_1" class="openModal" href="javascript:__doPostBack(\'ctl00$ctl00$MainContent$MainContent$rptCollections$ctl00$rptProducts$ctl02$lbSample\',\'\')"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="margin-right: 10px;" xml:space="preserve" width="30" height="100%"><style type="text/css">.sample-chain{fill:#D78F54;}</style><path class="sample-chain" d="M22,8v12H6V8H22z M24,6H4v16h20V6z M22,4H2v16h1V5h19V4z M20,2H0v16h1V3h19V2z"></path></svg></a>');
-    $("#FLRGB070").html('<a id="MainContent_MainContent_rptCollections_rptProducts_1_lbSample_0" class="openModal" href="javascript:__doPostBack(\'ctl00$ctl00$MainContent$MainContent$rptCollections$ctl01$rptProducts$ctl01$lbSample\',\'\')"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="margin-right: 10px;" xml:space="preserve" width="30" height="100%"><style type="text/css">.sample-chain{fill:#D78F54;}</style><path class="sample-chain" d="M22,8v12H6V8H22z M24,6H4v16h20V6z M22,4H2v16h1V5h19V4z M20,2H0v16h1V3h19V2z"></path></svg></a>');
-    $("#FLRGB081").html('<a id="MainContent_MainContent_rptCollections_rptProducts_2_lbSample_0" class="openModal" href="javascript:__doPostBack(\'ctl00$ctl00$MainContent$MainContent$rptCollections$ctl02$rptProducts$ctl01$lbSample\',\'\')"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="margin-right: 10px;" xml:space="preserve" width="30" height="100%"><style type="text/css">.sample-chain{fill:#D78F54;}</style><path class="sample-chain" d="M22,8v12H6V8H22z M24,6H4v16h20V6z M22,4H2v16h1V5h19V4z M20,2H0v16h1V3h19V2z"></path></svg></a>');
+    initSwatchModal();
+    $("#pdf").attr("download", "");
+    $(document).on("click", ".samples", requestSamples);
+    $("#FLRGB001").html('<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="margin-right: 10px;" xml:space="preserve" width="30" height="100%"><style type="text/css">.sample-chain{fill:#D78F54;}</style><path class="sample-chain" d="M22,8v12H6V8H22z M24,6H4v16h20V6z M22,4H2v16h1V5h19V4z M20,2H0v16h1V3h19V2z"></path></svg>');
+    $("#FLRGB004").html('<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="margin-right: 10px;" xml:space="preserve" width="30" height="100%"><style type="text/css">.sample-chain{fill:#D78F54;}</style><path class="sample-chain" d="M22,8v12H6V8H22z M24,6H4v16h20V6z M22,4H2v16h1V5h19V4z M20,2H0v16h1V3h19V2z"></path></svg>');
+    $("#FLRGB005").html('<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="margin-right: 10px;" xml:space="preserve" width="30" height="100%"><style type="text/css">.sample-chain{fill:#D78F54;}</style><path class="sample-chain" d="M22,8v12H6V8H22z M24,6H4v16h20V6z M22,4H2v16h1V5h19V4z M20,2H0v16h1V3h19V2z"></path></svg>');
+    $("#FLRGB006").html('<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="margin-right: 10px;" xml:space="preserve" width="30" height="100%"><style type="text/css">.sample-chain{fill:#D78F54;}</style><path class="sample-chain" d="M22,8v12H6V8H22z M24,6H4v16h20V6z M22,4H2v16h1V5h19V4z M20,2H0v16h1V3h19V2z"></path></svg>');
+    $("#FLRGB016").html('<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="margin-right: 10px;" xml:space="preserve" width="30" height="100%"><style type="text/css">.sample-chain{fill:#D78F54;}</style><path class="sample-chain" d="M22,8v12H6V8H22z M24,6H4v16h20V6z M22,4H2v16h1V5h19V4z M20,2H0v16h1V3h19V2z"></path></svg>');
+    $("#FLRGB018").html('<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="margin-right: 10px;" xml:space="preserve" width="30" height="100%"><style type="text/css">.sample-chain{fill:#D78F54;}</style><path class="sample-chain" d="M22,8v12H6V8H22z M24,6H4v16h20V6z M22,4H2v16h1V5h19V4z M20,2H0v16h1V3h19V2z"></path></svg>');
+    $("#FLRGB019").html('<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="margin-right: 10px;" xml:space="preserve" width="30" height="100%"><style type="text/css">.sample-chain{fill:#D78F54;}</style><path class="sample-chain" d="M22,8v12H6V8H22z M24,6H4v16h20V6z M22,4H2v16h1V5h19V4z M20,2H0v16h1V3h19V2z"></path></svg>');
+    $("#FLRGB020").html('<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="margin-right: 10px;" xml:space="preserve" width="30" height="100%"><style type="text/css">.sample-chain{fill:#D78F54;}</style><path class="sample-chain" d="M22,8v12H6V8H22z M24,6H4v16h20V6z M22,4H2v16h1V5h19V4z M20,2H0v16h1V3h19V2z"></path></svg>');
+    $("#FLRGB070").html('<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="margin-right: 10px;" xml:space="preserve" width="30" height="100%"><style type="text/css">.sample-chain{fill:#D78F54;}</style><path class="sample-chain" d="M22,8v12H6V8H22z M24,6H4v16h20V6z M22,4H2v16h1V5h19V4z M20,2H0v16h1V3h19V2z"></path></svg>');
+    $("#FLRGB081").html('<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="margin-right: 10px;" xml:space="preserve" width="30" height="100%"><style type="text/css">.sample-chain{fill:#D78F54;}</style><path class="sample-chain" d="M22,8v12H6V8H22z M24,6H4v16h20V6z M22,4H2v16h1V5h19V4z M20,2H0v16h1V3h19V2z"></path></svg>');
   });
+  function requestSamples() {
+    console.log("samples requested")
+    let url = "https://www.archsystems.com/" + $(this).attr("id") + ".aspx";
+    let productPage =
+    "<div id='loading' style='display: flex; justify-content: center'><p>Loading...</p></div><iframe src=" +
+    url +
+    " id='productPage' style='display: none; position: relative; top: -316px; left: -600px;' width='1024' height='1400' scrolling='no'></iframe>"
+    $("#swatchModal").html(productPage);
+    $("#swatchModal").dialog("open");
+    $("#productPage").load(function () {
+      if (sampleRequests) {
+        $("#swatchModal").css("height", "600px")
+        $("#swatchModal").parent().css("width", "600px")
+        $("#swatchModal").html($("#productPage").contents().find(".modal"))
+        sampleRequests = 0;
+      } else {
+        $("#loading").hide();
+        $("#productPage").show();
+      }
+      document.getElementById('productPage').contentWindow.$(".buttons-container a").on("click", function () {
+        $("#productPage").hide();
+        $("#loading").show();
+        sampleRequests = 1;
+      })
+    })
+    $("#swatchModal").parent().css("width", "400px")
+    $("#swatchModal").css("height", "90px")
+  }
+  function initSwatchModal() {
+    $("#swatchModal").dialog({
+      autoOpen: false
+    });
+  }
 </script>
+<div id="swatchModal" style="display: none;">.</div>
 <table border="0" width="600">
   <tbody>
     <tr>
@@ -30,7 +70,7 @@
       </a>
       <p style="display: flex; justify-content: space-evenly; align-items: center; font-size: large;">
         <span>FLRGB001</span>
-        <span id="FLRGB001">.</span>
+        <span id="FLRGB001" class="samples">.</span>
       </p>
     </td>
     <td>
@@ -41,7 +81,7 @@
     </a>
     <p style="display: flex; justify-content: space-evenly; align-items: center; font-size: large;">
       <span>FLRGB004</span>
-      <span id="FLRGB004">.</span>
+      <span id="FLRGB004" class="samples">.</span>
     </p>
   </td>
   <td>
@@ -52,7 +92,7 @@
   </a>
   <p style="display: flex; justify-content: space-evenly; align-items: center; font-size: large;">
     <span>FLRGB005</span>
-    <span id="FLRGB005">.</span>
+    <span id="FLRGB005" class="samples">.</span>
   </p>
 </td>
 <td>
@@ -63,7 +103,7 @@
 </a>
 <p style="display: flex; justify-content: space-evenly; align-items: center; font-size: large;">
   <span>FLRGB006</span>
-  <span id="FLRGB006">.</span>
+  <span id="FLRGB006" class="samples">.</span>
 </p>
 </td>
 </tr>
@@ -90,7 +130,7 @@
     </a>
     <p style="display: flex; justify-content: space-evenly; align-items: center; font-size: large;">
       <span>FLRGB016</span>
-      <span id="FLRGB016">.</span>
+      <span id="FLRGB016" class="samples">.</span>
     </p>
   </td>
   <td>
@@ -101,7 +141,7 @@
   </a>
   <p style="display: flex; justify-content: space-evenly; align-items: center; font-size: large;">
     <span>FLRGB018</span>
-    <span id="FLRGB018">.</span>
+    <span id="FLRGB018" class="samples">.</span>
   </p>
 </td>
 <td>
@@ -112,7 +152,7 @@
 </a>
 <p style="display: flex; justify-content: space-evenly; align-items: center; font-size: large;">
   <span>FLRGB019</span>
-  <span id="FLRGB019">.</span>
+  <span id="FLRGB019" class="samples">.</span>
 </p>
 </td>
 <td>
@@ -123,7 +163,7 @@
 </a>
 <p style="display: flex; justify-content: space-evenly; align-items: center; font-size: large;">
   <span>FLRGB020</span>
-  <span id="FLRGB020">.</span>
+  <span id="FLRGB020" class="samples">.</span>
 </p>
 </td>
 </tr>
@@ -135,7 +175,7 @@
     </a>
     <p style="display: flex; justify-content: space-evenly; align-items: center; font-size: large;">
       <span>FLRGB070</span>
-      <span id="FLRGB070">.</span>
+      <span id="FLRGB070" class="samples">.</span>
     </p>
   </td>
   <td>
@@ -144,7 +184,7 @@
     </a>
     <p style="display: flex; justify-content: space-evenly; align-items: center; font-size: large;">
       <span>FLRGB081</span>
-      <span id="FLRGB081">.</span>
+      <span id="FLRGB081" class="samples">.</span>
     </p>
   </td>
   <td>&nbsp;</td>
