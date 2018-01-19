@@ -138,14 +138,6 @@
                         </select>
                         <asp:HiddenField runat="server" ID="hidShippingOption" Value="" ClientIDMode="Static" />
                     </p>
-                    <p>
-                        <label>Thank You Letter:</label>
-                        <asp:DropDownList runat="server" ID="ddlThankYouLetter" ClientIDMode="Static">
-                            <asp:ListItem Value="">--Select--</asp:ListItem>
-                            <asp:ListItem Value="Yes">Yes</asp:ListItem>
-                            <asp:ListItem Value="No">No</asp:ListItem>
-                        </asp:DropDownList>
-                    </p>
                 </div>
 
                 <div class="half">
