@@ -19,7 +19,7 @@
     <link rel="icon" href="favicon.ico">
 
     <link rel="stylesheet" href="/stylesheets/liteAccordion.css"/>
-	<link href="/stylesheets/main.css" rel="stylesheet" />
+	<link href="/stylesheets/main.css?v=2" rel="stylesheet" />
     
     <%-- jQuery / UI: Served from CDN with local fallback. Be sure to update jquery.local if you update CDN versions. --%>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
