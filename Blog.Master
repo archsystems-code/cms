@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Blog.master.cs" Inherits="ASI.Web.Views.MasterPages.Blog" %>
+<%@ Register TagPrefix="uc" TagName="TrackingScripts" Src="~/Views/Controls/WebTrackingScripts.ascx" %>
+
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head id="Head1" runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="/stylesheets/liteAccordion.css"/>
+	<link href="/stylesheets/main.css" rel="stylesheet" />
+    
+    <%-- jQuery / UI: Served from CDN with local fallback. Be sure to update jquery.local if you update CDN versions. --%>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+    <script> window.jQuery || document.write('<script src="js/lib/jquery.js"><\/script>') </script>
+    <script src="/js/lib/modernizr.js"></script>
+	<script src="/js/jquery.cycle.all.js"></script>
+
+	<%-- Library for Full Selectivizir Support --%>
+	<script src="//s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>
+	<!--[if (gte IE 6)&(lte IE 8)]><script src="/js/lib/selectivizr-min.js"></script></script><![endif]-->
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <uc:TrackingScripts runat="server" ID="trackingScripts" />
+
+</head>
+<body>
+    <form id="form1" runat="server">
+		<div class="blogSite">
+			<header>
+                <asp:Hyperlink runat="server" ID="hlLogo">
+                    <AdageEpiLibrary:ImageProperty runat="server" PropertyName="Logo" PageLink='<%# BlogListPageLink %>' AltTextMetaName="Description" />
+                </asp:Hyperlink>
+				<EPiServer:Property runat="server" PropertyName="Heading" PageLink='<%# BlogListPageLink %>'  CustomTagName="p" />
+			</header>
+			
+			<aside>
+				<asp:ContentPlaceHolder ID="Sidebar" runat="server">
+				</asp:ContentPlaceHolder>
+			</aside>
+			<section>
+				<asp:ContentPlaceHolder ID="MainContent" runat="server">
+				</asp:ContentPlaceHolder>
+				<asp:ContentPlaceHolder ID="Comments" runat="server">		
+				</asp:ContentPlaceHolder>
+			</section>
+		</div>
+		<footer>
+			<div class="footerWrap">    
+				<EPiServer:Property ID="masterFooter" runat="server" PropertyName="Footer" PageLink='<%# EPiServer.Core.PageReference.StartPage %>' />
+			</div>
+		</footer> 
+		
+
+		<script src="/js/plugins.js"></script>
+		<script src="/js/global.js"></script>
+
+		<script>
+			$(document).ready(function () {
+				$('.archive > ul > li > a').on('click', function () {
+					$(this).siblings('ul').slideToggle();
+					return false;
+				});
+
+				$('.archive > ul > li > ul > li > a').on('click', function () {
+					$(this).siblings('ul').slideToggle();
+					return false;
+				});
+
+			});
+		</script>
+
+		<asp:ContentPlaceHolder ID="scripts" runat="server">
+		</asp:ContentPlaceHolder>
+
+    </form>
+</body>
+</html>
