@@ -62,5 +62,10 @@
     $($("h2:contains('Creativity and Collaboration®')").parent().find("img")[0]).css("height", "210px")
     $("h2:contains('Testimonials')").parent().find("img").css("height", "210px")
     $(".affiliations").before("<p style='font-size: 18px; color: #e17b3b;'>ASI Is Proud to be Affiliated With</p>")
+    if ($(".remove-me").length) {
+      $(".remove-me").parent().find("img").css("width", "100%")
+      $(".remove-me").parent().find("img").css("height", "auto")      
+      $(".remove-me").remove()
+    }
   });
 // ]]></script>
