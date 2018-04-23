@@ -339,7 +339,7 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
             "<div class='tabsContainer'><ul style='margin: 15px 0 0 0; display: flex; list-style-type: none; width: 100%; flex-wrap: wrap;'></div>"
           )
           let instructions = $(
-            "<p id='instructions'><strong style='font-size: 18px; font-weight: lighter; line-height: 2em; font-family: Helvetica Neue LT Std;'>Click icons below for <img src='http://www.archsystems.com/Global/Products/specs.png' style='width: 14px;vertical-align: sub;'> specifications, <img src='http://www.archsystems.com/Global/Products/samples.png' style='width: 25px;vertical-align: sub;'> to request individual samples, or  <img src='http://www.archsystems.com/Global/Products/cart.png' style='width: 25px;vertical-align: sub;'> to purchase the material.</strong></p>"
+            "<p id='instructions'><strong style='font-size: 18px; font-weight: lighter; line-height: 2em; font-family: Helvetica Neue LT Std;'>Click icons below for <img src='https://www.archsystems.com/Global/Products/specs.png' style='width: 14px;vertical-align: sub;'> specifications, <img src='https://www.archsystems.com/Global/Products/samples.png' style='width: 25px;vertical-align: sub;'> to request individual samples, or  <img src='https://www.archsystems.com/Global/Products/cart.png' style='width: 25px;vertical-align: sub;'> to purchase the material.</strong></p>"
           );
           $("#mainContainer").html("").append("<div id='main'></div>")
           $("#main").append(content).append(tabsContainer).append(instructions);
@@ -356,9 +356,6 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
           $(".subCollection ul li").css("width", "200px");
           $(".tabsContainer ul li").css("cursor", "pointer");
           $(".interior nav ul li a").css("width", "200px");
-          $(".interior nav ul li a img:first-child").css("width", "125px");
-          $(".interior nav ul li a img:first-child").css("height", "125px");
-          $(".interior nav ul li a img:first-child").css("margin-left", "0");
           $(".interior nav ul li a span img").css("width", "15px");
           $(".interior nav ul li a span img").css("height", "15px");
           $(".interior nav ul li a span img:first-child").css("margin-left", "5px");
