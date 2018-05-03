@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <h1>Search results for '<span id="searchtext"></span>'</h1>
-    <p>Please Note: If the product or collection you are searching for is not listed, please contact <a href="mailto:sales@archsystems.com">sales@archsystems.com</a> for samples and availability.</p><br />
+    <p><span style="font-size: 16px; color: #996699; font-style: italic;">Please Note: </span>If the product or collection you are searching for is not listed contact <a href="mailto:sales@archsystems.com">sales@archsystems.com</a> for samples and availability.</p><br />
 <div id="results" class="searchResults"></div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="scripts" runat="server">
