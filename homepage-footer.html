@@ -35,7 +35,8 @@
     <a href="/Views/Pages/OneColStandard.aspx?id=1334">Terms of Use</a>
   </li>
 </ul>
-<script type="text/javascript">// <![CDATA[
+<script type="text/javascript">
+  // <![CDATA[
   $(document).ready(function () {
     if (!$(".requestNote").length) {
       $('.loggedIn').css("margin-top", "15px")
@@ -47,25 +48,30 @@
     $(".socialMedia ul li:first-child").remove()
     $(".socialMedia ul li img").css("width", "40px")
     $(".socialMedia ul li img").css("height", "40px")
-    $(".socialMedia").append("<p style='margin-top: 15px; font-size: 18px; font-weight: lighter; color: #e17b3b; text-align: center;'>FOLLOW. TAG. SHARE</p>")
+    $(".socialMedia").append(
+      "<p style='margin-top: 15px; font-size: 18px; font-weight: 700; color: #AD619D; text-align: center; font-family: 'Hind Siliguri', sans-serif;'>FOLLOW. TAG. SHARE</p>"
+    )
     $(".social").hide()
     $($(".social ul li")[1]).css("border", "none")
     $($(".social ul li")[1]).css("box-shadow", "none")
     $($(".social ul li")[1]).find("img").css("width", "100%")
-    $("h2:contains('Let\'s Get Social')").css("border-left", "#e17b3b 1px solid")
-    $("h2:contains('ASI Catalog')").css("border-right", "#e17b3b 1px solid")
-    $("h2:contains('Testimonials')").css("border-left", "#e17b3b 1px solid")
-    $("h2:contains('Calendar of Events')").css("border-right", "#e17b3b 1px solid")
+    $("h2:contains('Let\'s Get Social')").css("border-left", "#AD619D 1px solid")
+    $("h2:contains('ASI Catalog')").css("border-right", "#AD619D 1px solid")
+    $("h2:contains('Testimonials')").css("border-left", "#AD619D 1px solid")
+    $("h2:contains('Calendar of Events')").css("border-right", "#AD619D 1px solid")
     $("h2:contains('Creativity and Collaboration®')").css("position", "relative")
     $("h2:contains('Creativity and Collaboration®')").css("left", "-322px")
     $("h2:contains('Creativity and Collaboration®')").css("width", "206%")
     $($("h2:contains('Creativity and Collaboration®')").parent().find("img")[0]).css("height", "210px")
     $("h2:contains('Testimonials')").parent().find("img").css("height", "210px")
-    $(".affiliations").before("<p style='font-size: 18px; color: #e17b3b;'>ASI Is Proud to be Affiliated With</p>")
+    $(".affiliations").before(
+      "<p style='font-size: 18px; color: #434343; font-family: 'Hind Siliguri', sans-serif; font-weight: 500; '>ASI Is Proud to be Affiliated With</p>"
+    )
     if ($(".remove-me").length) {
       $(".remove-me").parent().find("img").css("width", "100%")
-      $(".remove-me").parent().find("img").css("height", "auto")      
+      $(".remove-me").parent().find("img").css("height", "auto")
       $(".remove-me").remove()
     }
   });
-// ]]></script>
+  // ]]>
+</script>

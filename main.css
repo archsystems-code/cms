@@ -44,6 +44,76 @@
     font-family: JennaSue;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #434343;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 45px;
+  line-height: 55px;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 35px;
+  line-height: 45px;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+h4 {
+  font-family: 'Hind Siliguri', sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+}
+
+h5 {
+  font-family: 'Hind Siliguri', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+h6 {
+  font-family: 'Hind Siliguri', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+a {
+  color: #61A60D;
+  text-decoration: none;
+  outline: none;
+}
+
+text.wood-panels-1,
+text.flooring-1,
+text.decorative-1,
+text.specialty-1,
+text.furniture-1 {
+  fill: #434343;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 52px;
+}
+
 
 /* FONT AWESOME CORE -------------------------- */
 
@@ -4421,17 +4491,16 @@ body>form {
 body {
     color: #333;
     background: #fff;
-    font-size: 11px;
 }
 
 a {
-    color: #996699;
+    color: #61A60D;
     text-decoration: none;
     outline: none;
 }
 
 p {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 18px;
     margin: 0 0 15px;
 }
@@ -4455,7 +4524,6 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: bold;
     margin: 0 0 15px;
 }
 
@@ -4498,7 +4566,7 @@ ul {
 }
 
 li {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 18px;
     margin-bottom: 5px;
 }
@@ -4659,7 +4727,11 @@ table tr:last-child td {
 .fontStack,
 body,
 .accordion.ui-widget {
-    font-family: Arial, Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
 }
 
 .left {
@@ -5030,18 +5102,22 @@ header .search {
 header .search div {
     display: inherit;
     width: 100%;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 header .search input {
     width: 45%;
     margin-right: 5px;
-    border: 1px solid #e17b3b;
+    border-radius: 4px;
 }
 
 header .search .btn {
-    background: #e17b3b;
-    border: 1px solid #e17b3b;
+    background: #61A60D;
+    border: 1px solid #61A60D;
+    border-radius: 4px;
+    font-family: 'Hind Siliguri', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
 header .search .btn,
@@ -5201,7 +5277,7 @@ nav .sub {
     list-style: none;
     float: left;
     position: absolute;
-    top: -78px;
+    top: -85px;
     right: 155px;
 }
 
@@ -5223,18 +5299,20 @@ nav .sub li {
 nav .sub li:hover.has-popup,
 nav .sub li a.highlighted {
     color: #F0F0F0;
-    background: #e17b3b;
+    background: #AD619D;
 }
 
 nav .sub li a {
-    color: #e17b3b;
+    color: #434343;
     font-size: 12px;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
-    border-left: #e17b3b 1px solid;
+    border-left: #AD619D 1px solid;
     padding: 0px 20px;
     display: block;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 500;
 }
 
 nav .sub li a:hover {
@@ -5530,7 +5608,7 @@ nav .sub li li a.highlighted {
 }
 
 .rotatorWrapper #nav a.activeSlide {
-    background: #e17b3b;
+    background: #AD619D;
 }
 
 .slideshow .rotator {
@@ -5584,20 +5662,22 @@ nav .sub li li a.highlighted {
 
 .homeSubNavigation ul li {
     list-style: none;
-    border-right: #e17b3b 1px solid;
+    border-right: #AD619D 1px solid;
     margin-bottom: 0;
     float: left;
     line-height: 1em;
 }
 
 .homeSubNavigation ul li a {
-    color: #e17b3b;
+    color: #434343;
     font-size: 12px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     padding: 0px 15px 0px;
     display: block;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 500;
 }
 
 .homeSubNavigation ul li a:hover {
@@ -5605,17 +5685,23 @@ nav .sub li li a.highlighted {
 }
 
 .homeSubNavigation span {
-    color: #e17b3b;
-    font-size: 12px;
+    color: #434343;
+    font-size: 14px;
     float: left;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 500;
 }
 
 .homeSubNavigation .signUpNow {
     margin: -9px 5px 10px 20px;
     float: right;
-    background: none;
-    border: 1px solid #e17b3b;
-    color: #e17b3b;
+    background: #61A60D;
+    border: 1px solid #61A60D;
+    color: white;
+    border-radius: 4px;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
 .welcome {
@@ -5792,17 +5878,18 @@ nav .sub li li a.highlighted {
 }
 
 .homeBottom .third h2 {
-    color: #000;
     font-size: 18px;
-    border-top: #e17b3b 1px solid;
-    border-bottom: #e17b3b 1px solid;
+    border-top: #DD4E75 1px solid;
+    border-bottom: #DD4E75 1px solid;
     margin: 0 0 15px;
     width: 106%;
     margin-left: -3%;
     padding: 5px 0;
     text-align: center;
     color: white;
-    background-color: #e17b3b;
+    background-color: #DD4E75;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
 }
 
 .homeBottom .third h2 span {
@@ -5833,9 +5920,13 @@ nav .sub li li a.highlighted {
 .homeBottom .third a.btn {
     display: inline-block;
     margin-top: 10px;
-    color: #e17b3b;
-    background: none;
-    border: 1px solid #e17b3b;
+    color: white;
+    background: #61A60D;
+    border: 1px solid #61A60D;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 4px;
 }
 
 .homeBottom .third small {
@@ -5883,7 +5974,7 @@ nav .sub li li a.highlighted {
 }
 
 .homeBottom .third ul.wide li a {
-    color: #996699;
+    color: #61A60D;
     font-weight: normal;
 }
 
@@ -5950,8 +6041,8 @@ nav .sub li li a.highlighted {
     width: 960px;
     background: #fff;
     text-align: center;
-    border-top: solid 4px #e17b3b;
-    border-bottom: solid 4px #e17b3b;
+    border-top: solid 2px #AD619D;
+    border-bottom: solid 2px #AD619D;
     padding: 10px 0;
 }
 
@@ -10869,4 +10960,9 @@ img.popupsample.popupsample-active {
 .tabsContainer ul li {
     cursor: pointer;
     max-height: 40px;
+}
+
+p.normalize {
+    width: auto !important;
+    margin: 10px 0 0 !important;
 }
