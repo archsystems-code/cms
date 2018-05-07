@@ -25,7 +25,7 @@
                     <link href="https://fonts.googleapis.com/css?family=Encode+Sans:500|Hind+Siliguri:500,700|Montserrat:200,500" rel="stylesheet">
 
                     <link rel="stylesheet" href="/stylesheets/liteAccordion.css" />
-                    <link href="/stylesheets/main.css?v=29" rel="stylesheet" />
+                    <link href="/stylesheets/main.css?v=33" rel="stylesheet" />
 
                     <%-- jQuery / UI: Served from CDN with local fallback. Be sure to update jquery.local if you update CDN versions. --%>
                         <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/themes/base/jquery-ui.css" type="text/css" media="all"

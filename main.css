@@ -8345,14 +8345,6 @@ footer p {
     float: right;
 }
 
-.collectionInfo p {
-    font-size: 12px;
-}
-
-.collectionInfo p a {
-    font-weight: bold;
-}
-
 .collectionInfo .purchaseASI {
     margin-right: 15px;
     float: left;
@@ -8667,8 +8659,39 @@ footer p {
     margin-bottom: 1px;
 }
 
-.addsamplerequest a {
-    font-weight: bold;
+.addsamplerequest a,
+.tabsContainer p  {
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+#pager {
+    position: relative;
+    top: 375px;
+    z-index: 1000000000000;
+    left: 330px;
+    margin: 0;
+    padding: 0;
+    height: 0;
+}
+
+#pager a {
+    margin-right: 10px;
+    display: block;
+    height: 10px;
+    width: 10px;
+    background: #fff;
+    text-indent: -9999px;
+    font-size: 0;
+    float: left;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+#pager a.activeSlide {
+    background: #61A60D;
 }
 
 .viewAssort {

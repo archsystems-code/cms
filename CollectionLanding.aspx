@@ -104,7 +104,7 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
             </div>
             <EPiServer:Property ID="Property6" runat="server" CssClass="extraTxt" PropertyName="ExtraContent" />
         </asp:Panel>
-        
+
         <div class="collectionCallouts calloutBucket" runat="server" id="RightSideDiv">
             <asp:Panel runat="server" ID="pnlFeaturedProject" CssClass="featuredProject">
                 <EPiServer:Property ID="Property3" runat="server" PropertyName="FeaturedProject" />
@@ -212,9 +212,9 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
     </script>
     <script type="text/javascript" src="https://malsup.github.io/min/jquery.cycle.all.min.js"></script>
     <script type="text/javascript">
-      
+
       'use strict';
-    
+
       $(document).ready(function () {
         const hasDigitalCatalog = $("body").html().indexOf("Download Digital Catalog") > 0;
         const hasProductBinder = $("body").html().indexOf("Product binder offered") > 0;
@@ -224,7 +224,7 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
         const hasSamples = $(".addsamplerequest").length;
         const collectionColor = $(".productInfoWrapper h1").css("background-color");
         const availableForPurchase = $(".purchaseASI").length;
-    
+
         addContentSkeleton();
         movePlusSigns(collectionColor);
         moveWorlds();
@@ -234,42 +234,43 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
         redesignLayout();
         addSwatchFeatures();
         removeEmptyProdNames();
-    
+        setPurchaseASIFontSize();
+
         let $materialExpert = $($(".askExpert")[0]);
         let $featuredProject = $(".featuredProject");
         if ($featuredProject.length) {
           $($featuredProject.children().children()[0]).text("Additional Inspirational Project Photos")
           $($(".tabsContainer ul")[0]).append("<li class='projectPhotos Featured' style='cursor: pointer'></li>")
           let projectPhotos =
-            "<svg id='featured' width='35' height='100%' data-name='featured' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 130 145'><defs><style>.featured-cls-1{fill:#d97e43;}.featured-cls-2{fill:none;opacity:0.08;}.featured-cls-3{fill:#5b7f71;}.featured-cls-4{fill:#7ea0c4;}.featured-cls-5{fill:#815374;}.featured-cls-6{fill:#edaa00;}.featured-cls-7{fill:#753d29;}</style></defs><circle class='featured-cls-2' cx='76.91' cy='76.91' r='76.91'/><polygon class='featured-cls-3' points='77.09 79.14 107.4 91.49 106.84 122.5 77.09 79.14'/><polygon class='featured-cls-4' points='77.09 79.14 77.09 113.94 106.84 122.5 77.09 79.14'/><polygon class='featured-cls-5' points='77.09 79.14 77.09 113.94 47.48 122.5 77.09 79.14'/><polygon class='featured-cls-6' points='77.09 79.14 46.47 91.61 47.48 122.5 77.09 79.14'/><polygon class='featured-cls-7' points='77.09 79.14 28.99 66.09 46.47 91.61 77.09 79.14'/><polygon class='featured-cls-3' points='77.09 79.14 58.04 55.52 28.99 66.09 77.09 79.14'/><polygon class='featured-cls-4' points='77.09 79.14 58.04 55.52 77.09 31.31 77.09 79.14'/><polygon class='featured-cls-5' points='77.09 79.14 95.93 55.52 77.09 31.31 77.09 79.14'/><polygon class='featured-cls-6' points='124.82 66.09 95.93 55.52 77.09 79.14 124.82 66.09'/><polygon class='featured-cls-7' points='124.82 66.09 107.4 91.49 77.09 79.14 124.82 66.09'/></svg><p style='display: inline-flex; font-size: 18px; font-family:Helvetica Neue LT Std; font-weight: lighter;vertical-align: middle; color: #d78f54; margin-bottom: 10px; margin-left: 5px; height: 100%;'>Additional Project Photos, Ideas & Inspiration</p>"
+            "<svg id='featured' width='35' height='100%' data-name='featured' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 130 145'><defs><style>.featured-cls-1{fill:#d97e43;}.featured-cls-2{fill:none;opacity:0.08;}.featured-cls-3{fill:#5b7f71;}.featured-cls-4{fill:#7ea0c4;}.featured-cls-5{fill:#815374;}.featured-cls-6{fill:#edaa00;}.featured-cls-7{fill:#753d29;}</style></defs><circle class='featured-cls-2' cx='76.91' cy='76.91' r='76.91'/><polygon class='featured-cls-3' points='77.09 79.14 107.4 91.49 106.84 122.5 77.09 79.14'/><polygon class='featured-cls-4' points='77.09 79.14 77.09 113.94 106.84 122.5 77.09 79.14'/><polygon class='featured-cls-5' points='77.09 79.14 77.09 113.94 47.48 122.5 77.09 79.14'/><polygon class='featured-cls-6' points='77.09 79.14 46.47 91.61 47.48 122.5 77.09 79.14'/><polygon class='featured-cls-7' points='77.09 79.14 28.99 66.09 46.47 91.61 77.09 79.14'/><polygon class='featured-cls-3' points='77.09 79.14 58.04 55.52 28.99 66.09 77.09 79.14'/><polygon class='featured-cls-4' points='77.09 79.14 58.04 55.52 77.09 31.31 77.09 79.14'/><polygon class='featured-cls-5' points='77.09 79.14 95.93 55.52 77.09 31.31 77.09 79.14'/><polygon class='featured-cls-6' points='124.82 66.09 95.93 55.52 77.09 79.14 124.82 66.09'/><polygon class='featured-cls-7' points='124.82 66.09 107.4 91.49 77.09 79.14 124.82 66.09'/></svg><p style='display: inline-flex; font-size: 16px; font-weight: 700;vertical-align: middle; color: #61A60D; margin-bottom: 10px; margin-left: 5px; height: 100%;'>Additional Project Photos, Ideas & Inspiration</p>"
           $(".projectPhotos").append(projectPhotos);
         }
         let $productSpecs = $(".productSpecs");
         let $press = $(".collectionPress");
         let $images = $(".collectionThumbs");
         $images.addClass("tabContentContainer");
-    
+
         $materialExpert.removeClass("askExpert");
         $materialExpert.remove();
         $press.remove();
         $featuredProject.remove();
         $productSpecs.remove();
-    
+
         let productPhotos =
-          "<svg version='1.1' id='pictures' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 60 50' xml:space='preserve' width='45' height='100%'><style type='text/css'>.st0{fill:" +
+          "<svg version='1.1' id='pictures' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 40 50' xml:space='preserve' width='45' height='100%'><style type='text/css'>.st0{fill:" +
           collectionColor +
-          ";}.st1{font-size:20.25px;font-family:HelveticaNeueLTStd-Th, Helvetica Neue LT Std; font-weight: lighter;}.st3{fill:none;}.st4{fill:" + collectionColor + ";}.st5{fill:" + collectionColor + ";}.st6{fill:" + collectionColor + ";}</style><path class='st3' d='M25.9,0C11.6,0,0,11.6,0,25.9s11.6,25.9,25.9,25.9s25.9-11.6,25.9-25.9C51.7,11.6,40.2,0,25.9,0L25.9,0L25.9,0'/><polygon class='st0' points='35.4,12.8 24,24.3 35.5,35.8 '/><polygon class='st4' points='35.4,12.8 24,24.3 12.4,12.7 '/><polygon class='st5' points='12.7,35.7 24.1,24.3 12.5,12.8 '/><polygon class='st6' points='35.5,35.7 24.1,24.3 12.5,35.9 '/><polygon class='st0' points='36.9,15.4 36.9,36.9 15.6,36.9 15.6,39.1 39.3,39.1 39.3,15.4 '/></svg><p style='display: inline-flex; font-size: 18px; font-family: Helvetica Neue LT Std; font-weight: lighter; vertical-align: middle; height: 100%; margin-bottom: 10px; color: " + collectionColor + ";'>Product Images</p>";
+          ";}.st1{font-size:20.25px; font-weight: 700;}.st3{fill:none;}.st4{fill:" + collectionColor + ";}.st5{fill:" + collectionColor + ";}.st6{fill:" + collectionColor + ";}</style><path class='st3' d='M25.9,0C11.6,0,0,11.6,0,25.9s11.6,25.9,25.9,25.9s25.9-11.6,25.9-25.9C51.7,11.6,40.2,0,25.9,0L25.9,0L25.9,0'/><polygon class='st0' points='35.4,12.8 24,24.3 35.5,35.8 '/><polygon class='st4' points='35.4,12.8 24,24.3 12.4,12.7 '/><polygon class='st5' points='12.7,35.7 24.1,24.3 12.5,12.8 '/><polygon class='st6' points='35.5,35.7 24.1,24.3 12.5,35.9 '/><polygon class='st0' points='36.9,15.4 36.9,36.9 15.6,36.9 15.6,39.1 39.3,39.1 39.3,15.4 '/></svg><p style='display: inline-flex;font-weight: 700; font-size: 16px; vertical-align: middle; height: 100%; margin-bottom: 10px; color: " + collectionColor + ";'>Product Images</p>";
         $($(".tabsContainer ul")[0]).append("<li class='productImages Pictures' ></li>")
         $(".productImages").append(productPhotos);
-    
+
         if (hasSamples) {
           $($(".tabsContainer ul")[0]).append("<li class='requestSample'></li>");
           $(".requestSample").css("display", "flex");
           $(".requestSample").html($('.addsamplerequest'));
-          $(".requestSample a").css("color", "#d78f54");
-          $(".requestSample a").css("font-family", "HelveticaNeueLTStd-Th, Helvetica Neue LT Std");
-          $(".requestSample a").css("font-size", "18px");
-          $(".requestSample a").css("font-weight", "lighter");
+          $(".requestSample a").css("color", "#61A60D");
+          $(".requestSample a").css("font-family", "'Hind Siliguri', sans-serif;");
+          $(".requestSample a").css("font-size", "16px");
+          $(".requestSample a").css("font-weight", "700");
           $(".requestSample a").css("display", "flex");
           $(".requestSample a").css("align-items", "center");
           $(".addsamplerequest").css("background-image", "none");
@@ -288,16 +289,16 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
           }
         }
 
-        
+
         let $catalogLi = '';
         if (hasDigitalCatalog) {
-          $catalogLi = $("<li class='' style='display: flex; margin-left: 10px;'></li>")
+          $catalogLi = $("<li class='' style='display: flex; margin-left: 8px;'></li>")
           let $catalog = $('a:contains("Download Digital Catalog")')
           $('p:contains("Download Digital Catalog")').css("display", "none")
           $catalog.css("display", "flex")
           $catalog.css("align-items", "center")
           $catalog.attr("target", "_blank")
-          $catalog.html("<svg version='1.1' id='plusIcon' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 24 24' style='enable-background:new 0 0 24 24;' xml:space='preserve' width='35'> <style type='text/css'>.plus{fill:#D78F54;}</style><path class='plus' d='M12,0C5.4,0,0,5.4,0,12s5.4,12,12,12s12-5.4,12-12S18.6,0,12,0z M19,14h-5v5h-4v-5H5v-4h5V5h4v5h5V14z'/></svg><p style='color: #d78f54; font-family: HelveticaNeueLTStd-Th, Helvetica Neue LT Std; font-size: 18px; font-weight: lighter; margin-bottom: 0; margin-left: 10px;'>Catalog</p>")
+          $catalog.html("<svg version='1.1' id='plusIcon' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 24 24' style='enable-background:new 0 0 24 24;' xml:space='preserve' width='35'> <style type='text/css'>.plus{fill:#61A60D;}</style><path class='plus' d='M12,0C5.4,0,0,5.4,0,12s5.4,12,12,12s12-5.4,12-12S18.6,0,12,0z M19,14h-5v5h-4v-5H5v-4h5V5h4v5h5V14z'/></svg><p style='color: #61A60D; font-size: 16px; font-weight: 700; margin-bottom: 0; margin-left: 8px;'>Catalog</p>")
           $catalogLi.append($catalog)
         }
         let $videoLi = '';
@@ -308,30 +309,30 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
           $video.css("display", "flex")
           $video.css("align-items", "center")
           $video.attr("target", "_blank")
-          $video.html("<svg version='1.1' id='video' width='45'  xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 512.001 512.001' style='fill:#d78f54; margin-left: 10px' xml:space='preserve'><g><g>	<path d='M481.086,188.037c-3.454-2.062-7.737-2.159-11.278-0.253l-73.901,39.777v-34.087c0-6.312-5.118-11.429-11.428-11.429 h-18.586c23.179-18.799,38.024-47.493,38.024-79.594C403.918,45.96,357.958,0,301.465,0c-48.218,0-88.757,33.487-99.598,78.424   c-14.182-17.112-35.587-28.032-59.497-28.032c-42.6,0-77.256,34.657-77.256,77.256c0,21.199,8.586,40.426,22.459,54.4H77.138 c-6.312,0-11.429,5.117-11.429,11.429v51.879H36.776c-6.312,0-11.429,5.117-11.429,11.429v44.944 c0,6.312,5.117,11.429,11.429,11.429h28.932v51.879c0,6.312,5.117,11.429,11.429,11.429h134.825l-61.946,118.825 c-2.918,5.596-0.746,12.499,4.851,15.417c1.688,0.88,3.494,1.297,5.273,1.297c4.123,0,8.105-2.239,10.143-6.147l60.523-116.098 l60.524,116.098c2.038,3.91,6.021,6.147,10.144,6.147c1.779,0,3.586-0.417,5.273-1.297c5.597-2.918,7.769-9.821,4.85-15.417 l-61.946-118.825h134.827c6.311,0,11.429-5.117,11.429-11.429v-34.088l73.901,39.777c1.694,0.911,3.555,1.365,5.416,1.365 c2.03,0,4.059-0.541,5.862-1.617c3.454-2.063,5.567-5.789,5.567-9.811V197.848C486.653,193.825,484.54,190.1,481.086,188.037z			 M65.709,290.297H48.205V268.21h17.504V290.297z M301.465,22.857c43.888,0,79.595,35.706,79.595,79.595 c0,43.889-35.706,79.594-79.595,79.594c-43.888,0-79.594-35.706-79.594-79.594C221.872,58.564,257.578,22.857,301.465,22.857z M214.192,156.054c6.104,9.904,13.847,18.693,22.847,25.992h-39.872C204.476,174.684,210.3,165.855,214.192,156.054z M142.37,73.248c29.995,0,54.399,24.403,54.399,54.399c0,29.996-24.403,54.4-54.399,54.4c-29.995,0-54.399-24.403-54.399-54.4 C87.972,97.651,112.375,73.248,142.37,73.248z M373.05,246.691v65.123v41.79H231.013c-0.021,0-0.041,0-0.062,0h-0.302 c-0.013,0-0.026,0-0.039,0H88.566v-51.879v-44.944v-51.879H373.05V246.691z M463.796,341.529l-67.889-36.542v-51.468   l67.889-36.542V341.529z'/></g></g><g>	<g>	<path d='M142.37,92.931c-19.143,0-34.716,15.574-34.716,34.716c0,19.143,15.574,34.716,34.716,34.716 c19.143,0,34.716-15.574,34.716-34.716C177.087,108.505,161.513,92.931,142.37,92.931z M142.37,141.791 c-7.8,0-14.145-6.345-14.145-14.145c0-7.8,6.345-14.145,14.145-14.145c7.8,0,14.145,6.345,14.145,14.145 C156.515,135.446,150.169,141.791,142.37,141.791z'/></g></g><g>	<g>	<path d='M301.465,52.595c-27.491,0-49.856,22.366-49.856,49.857c0,27.49,22.365,49.856,49.856,49.856 c27.491,0,49.856-22.366,49.856-49.856C351.321,74.961,328.957,52.595,301.465,52.595z M301.465,129.451 c-14.887,0-26.999-12.112-26.999-26.999c0-14.887,12.112-27,26.999-27s26.999,12.112,26.999,27S316.352,129.451,301.465,129.451z'	/></g></g><g>	<g>	<path d='M264.593,238.137h-124.26c-5.997,0-10.857,4.861-10.857,10.857v60.519c0,5.997,4.861,10.857,10.857,10.857h124.26	c5.997,0,10.857-4.861,10.857-10.857v-60.519C275.45,242.999,270.589,238.137,264.593,238.137z M253.735,298.656H151.19v-38.804 h102.546V298.656z'/>	</g></g><g>	<g>	<circle cx='324.536' cy='260.422' r='11.429'/></g></g><g>	<g>	<circle cx='324.536' cy='298.079' r='11.429'/></g></g></svg><p style='color: #d78f54; font-family: HelveticaNeueLTStd-Th, Helvetica Neue LT Std; font-size: 18px; font-weight: lighter; margin-bottom: 0; margin-left: 10px;'>Installation Video</p>")
+          $video.html("<svg version='1.1' id='video' width='45'  xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 512.001 512.001' style='fill:#6d6c72; margin-left: 10px' xml:space='preserve'><g><g>	<path d='M481.086,188.037c-3.454-2.062-7.737-2.159-11.278-0.253l-73.901,39.777v-34.087c0-6.312-5.118-11.429-11.428-11.429 h-18.586c23.179-18.799,38.024-47.493,38.024-79.594C403.918,45.96,357.958,0,301.465,0c-48.218,0-88.757,33.487-99.598,78.424   c-14.182-17.112-35.587-28.032-59.497-28.032c-42.6,0-77.256,34.657-77.256,77.256c0,21.199,8.586,40.426,22.459,54.4H77.138 c-6.312,0-11.429,5.117-11.429,11.429v51.879H36.776c-6.312,0-11.429,5.117-11.429,11.429v44.944 c0,6.312,5.117,11.429,11.429,11.429h28.932v51.879c0,6.312,5.117,11.429,11.429,11.429h134.825l-61.946,118.825 c-2.918,5.596-0.746,12.499,4.851,15.417c1.688,0.88,3.494,1.297,5.273,1.297c4.123,0,8.105-2.239,10.143-6.147l60.523-116.098 l60.524,116.098c2.038,3.91,6.021,6.147,10.144,6.147c1.779,0,3.586-0.417,5.273-1.297c5.597-2.918,7.769-9.821,4.85-15.417 l-61.946-118.825h134.827c6.311,0,11.429-5.117,11.429-11.429v-34.088l73.901,39.777c1.694,0.911,3.555,1.365,5.416,1.365 c2.03,0,4.059-0.541,5.862-1.617c3.454-2.063,5.567-5.789,5.567-9.811V197.848C486.653,193.825,484.54,190.1,481.086,188.037z			 M65.709,290.297H48.205V268.21h17.504V290.297z M301.465,22.857c43.888,0,79.595,35.706,79.595,79.595 c0,43.889-35.706,79.594-79.595,79.594c-43.888,0-79.594-35.706-79.594-79.594C221.872,58.564,257.578,22.857,301.465,22.857z M214.192,156.054c6.104,9.904,13.847,18.693,22.847,25.992h-39.872C204.476,174.684,210.3,165.855,214.192,156.054z M142.37,73.248c29.995,0,54.399,24.403,54.399,54.399c0,29.996-24.403,54.4-54.399,54.4c-29.995,0-54.399-24.403-54.399-54.4 C87.972,97.651,112.375,73.248,142.37,73.248z M373.05,246.691v65.123v41.79H231.013c-0.021,0-0.041,0-0.062,0h-0.302 c-0.013,0-0.026,0-0.039,0H88.566v-51.879v-44.944v-51.879H373.05V246.691z M463.796,341.529l-67.889-36.542v-51.468   l67.889-36.542V341.529z'/></g></g><g>	<g>	<path d='M142.37,92.931c-19.143,0-34.716,15.574-34.716,34.716c0,19.143,15.574,34.716,34.716,34.716 c19.143,0,34.716-15.574,34.716-34.716C177.087,108.505,161.513,92.931,142.37,92.931z M142.37,141.791 c-7.8,0-14.145-6.345-14.145-14.145c0-7.8,6.345-14.145,14.145-14.145c7.8,0,14.145,6.345,14.145,14.145 C156.515,135.446,150.169,141.791,142.37,141.791z'/></g></g><g>	<g>	<path d='M301.465,52.595c-27.491,0-49.856,22.366-49.856,49.857c0,27.49,22.365,49.856,49.856,49.856 c27.491,0,49.856-22.366,49.856-49.856C351.321,74.961,328.957,52.595,301.465,52.595z M301.465,129.451 c-14.887,0-26.999-12.112-26.999-26.999c0-14.887,12.112-27,26.999-27s26.999,12.112,26.999,27S316.352,129.451,301.465,129.451z'	/></g></g><g>	<g>	<path d='M264.593,238.137h-124.26c-5.997,0-10.857,4.861-10.857,10.857v60.519c0,5.997,4.861,10.857,10.857,10.857h124.26	c5.997,0,10.857-4.861,10.857-10.857v-60.519C275.45,242.999,270.589,238.137,264.593,238.137z M253.735,298.656H151.19v-38.804 h102.546V298.656z'/>	</g></g><g>	<g>	<circle cx='324.536' cy='260.422' r='11.429'/></g></g><g>	<g>	<circle cx='324.536' cy='298.079' r='11.429'/></g></g></svg><p style='color: #61A60D; font-size: 16px; font-weight: 700; margin-bottom: 0; margin-left: 10px;'>Installation Video</p>")
           $videoLi.append($video);
         }
-    
+
         let $materialLi = '';
         if (hasMaterialExpert) {
           $materialLi = $("<li class='Materials'></li>");
-          $materialLi.append("<svg id='expert' width='35' height='100%' data-name='expert' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 130' style='margin-right: 10px;'><defs><style>.expert-cls-1{font-size:66.25px;fill:#d78f54;font-family:HelveticaNeueLTStd-Th, Helvetica Neue LT Std; font-weight: lighter;}.materials-cls-2{fill:none;}.materials-cls-3{fill:#763e2a;}.materials-cls-4{fill:#7ea0c3;}.materials-cls-5{fill:#5b7f71;}.materials-cls-6{fill:#ebab21;}.materials-cls-7{fill:#825474;}</style></defs><path class='materials-cls-2' d='M81.44-23.42A66.44,66.44,0,1,0,147.88,43,66.44,66.44,0,0,0,81.44-23.42' transform='translate(-15 23.42)'/><polygon class='materials-cls-3' points='66.42 77.46 57.18 61.44 47.94 77.46 66.42 77.46 66.42 77.46'/><polygon class='materials-cls-4' points='75.62 93.4 66.38 77.39 57.13 93.4 75.62 93.4 75.62 93.4'/><polygon class='materials-cls-5' points='84.94 109.45 75.69 93.44 66.45 109.45 84.94 109.45 84.94 109.45'/><polygon class='materials-cls-3' points='66.42 109.45 57.18 93.44 47.94 109.45 66.42 109.45 66.42 109.45'/><polygon class='materials-cls-6' points='84.94 77.42 75.69 61.41 66.45 77.42 84.94 77.42 84.94 77.42'/><polygon class='materials-cls-5' points='66.42 77.36 57.18 93.37 47.94 77.36 66.42 77.36 66.42 77.36'/><polygon class='materials-cls-6' points='75.62 93.36 66.38 109.37 57.13 93.36 75.62 93.36 75.62 93.36'/><polygon class='materials-cls-4' points='75.62 61.51 66.38 77.52 57.13 61.51 75.62 61.51 75.62 61.51'/><polygon class='materials-cls-4' points='57.18 61.51 47.94 77.52 38.69 61.51 57.18 61.51 57.18 61.51'/><polygon class='materials-cls-7' points='84.94 77.36 75.69 93.37 66.45 77.36 84.94 77.36 84.94 77.36'/><polygon class='materials-cls-7' points='94.18 61.62 84.94 77.64 75.69 61.62 94.18 61.62 94.18 61.62'/><polygon class='materials-cls-3' points='66.42 39.47 57.18 23.45 47.94 39.47 66.42 39.47 66.42 39.47'/><polygon class='materials-cls-4' points='75.62 55.41 66.38 39.4 57.13 55.41 75.62 55.41 75.62 55.41'/><polygon class='materials-cls-6' points='84.94 39.44 75.69 23.43 66.45 39.44 84.94 39.44 84.94 39.44'/><polygon class='materials-cls-5' points='66.42 39.37 57.18 55.38 47.94 39.37 66.42 39.37 66.42 39.37'/><polygon class='materials-cls-4' points='75.62 23.52 66.38 39.53 57.13 23.52 75.62 23.52 75.62 23.52'/><polygon class='materials-cls-7' points='84.94 39.37 75.69 55.38 66.45 39.37 84.94 39.37 84.94 39.37'/></svg><p style='display: inline-flex; font-size: 18px; font-family: Helvetica Neue LT Std; font-weight: lighter; color: #d78f54;vertical-align: middle; height: 100%;'>Material Expert</p>")
+          $materialLi.append("<svg id='expert' width='35' height='100%' data-name='expert' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 130' style='margin-right: 5px;'><defs><style>.expert-cls-1{font-size:66.25px;fill:#d78f54; font-weight: 500;}.materials-cls-2{fill:none;}.materials-cls-3{fill:#763e2a;}.materials-cls-4{fill:#7ea0c3;}.materials-cls-5{fill:#5b7f71;}.materials-cls-6{fill:#ebab21;}.materials-cls-7{fill:#825474;}</style></defs><path class='materials-cls-2' d='M81.44-23.42A66.44,66.44,0,1,0,147.88,43,66.44,66.44,0,0,0,81.44-23.42' transform='translate(-15 23.42)'/><polygon class='materials-cls-3' points='66.42 77.46 57.18 61.44 47.94 77.46 66.42 77.46 66.42 77.46'/><polygon class='materials-cls-4' points='75.62 93.4 66.38 77.39 57.13 93.4 75.62 93.4 75.62 93.4'/><polygon class='materials-cls-5' points='84.94 109.45 75.69 93.44 66.45 109.45 84.94 109.45 84.94 109.45'/><polygon class='materials-cls-3' points='66.42 109.45 57.18 93.44 47.94 109.45 66.42 109.45 66.42 109.45'/><polygon class='materials-cls-6' points='84.94 77.42 75.69 61.41 66.45 77.42 84.94 77.42 84.94 77.42'/><polygon class='materials-cls-5' points='66.42 77.36 57.18 93.37 47.94 77.36 66.42 77.36 66.42 77.36'/><polygon class='materials-cls-6' points='75.62 93.36 66.38 109.37 57.13 93.36 75.62 93.36 75.62 93.36'/><polygon class='materials-cls-4' points='75.62 61.51 66.38 77.52 57.13 61.51 75.62 61.51 75.62 61.51'/><polygon class='materials-cls-4' points='57.18 61.51 47.94 77.52 38.69 61.51 57.18 61.51 57.18 61.51'/><polygon class='materials-cls-7' points='84.94 77.36 75.69 93.37 66.45 77.36 84.94 77.36 84.94 77.36'/><polygon class='materials-cls-7' points='94.18 61.62 84.94 77.64 75.69 61.62 94.18 61.62 94.18 61.62'/><polygon class='materials-cls-3' points='66.42 39.47 57.18 23.45 47.94 39.47 66.42 39.47 66.42 39.47'/><polygon class='materials-cls-4' points='75.62 55.41 66.38 39.4 57.13 55.41 75.62 55.41 75.62 55.41'/><polygon class='materials-cls-6' points='84.94 39.44 75.69 23.43 66.45 39.44 84.94 39.44 84.94 39.44'/><polygon class='materials-cls-5' points='66.42 39.37 57.18 55.38 47.94 39.37 66.42 39.37 66.42 39.37'/><polygon class='materials-cls-4' points='75.62 23.52 66.38 39.53 57.13 23.52 75.62 23.52 75.62 23.52'/><polygon class='materials-cls-7' points='84.94 39.37 75.69 55.38 66.45 39.37 84.94 39.37 84.94 39.37'/></svg><p style='display: inline-flex; font-size: 16px; font-weight: 700; color: #61A60D;vertical-align: middle; height: 100%;'>Material Expert</p>")
         }
-    
+
         let $pressLi = '';
         if (hasPress) {
           $pressLi = $("<li class='Press'></li>")
-          $pressLi.append("<svg id='press'  width='35' height='100%' data-name='press' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 90 125'><defs><style>.press-cls-1{font-size:50.25px;font-family:HelveticaNeueLTStd-Th, Helvetica Neue LT Std;font-weight: lighter;}.press-cls-1,.press-cls-8{fill:#d78f54;}.press-cls-2{fill:none;}.press-cls-3{fill:#5b7f71;}.press-cls-4{fill:#7ea0c3;}.press-cls-5{fill:#825474;}.press-cls-6{fill:#763e2a;}.press-cls-7{fill:#ebab21;}</style></defs><title>ASI-Press</title><path class='press-cls-2' d='M19.06-20.27A66.44,66.44,0,1,0,85.5,46.16,66.44,66.44,0,0,0,19.06-20.27' transform='translate(47.38 20.27)'/><polygon class='press-cls-3' points='63.25 30.09 47.38 20.93 47.38 39.26 63.25 30.09 63.25 30.09'/><polygon class='press-cls-4' points='63.25 30.09 47.38 39.26 63.25 48.42 63.25 30.09 63.25 30.09'/><polygon class='press-cls-5' points='63.25 30.09 63.25 48.42 79.13 39.26 63.25 30.09 63.25 30.09'/><polygon class='press-cls-4' points='63.25 48.42 63.25 66.75 79.13 57.59 63.25 48.42 63.25 48.42'/><polygon class='press-cls-6' points='63.25 84.89 63.25 103.22 79.13 94.05 63.25 84.89 63.25 84.89'/><polygon class='press-cls-3' points='63.25 48.42 47.38 57.59 63.25 66.75 63.25 48.42 63.25 48.42'/><polygon class='press-cls-6' points='63.28 66.68 47.4 75.84 63.28 85.01 63.28 66.68 63.28 66.68'/><polygon class='press-cls-7' points='79.13 39.26 63.25 48.42 79.13 57.59 79.13 39.26 79.13 39.26'/><polygon class='press-cls-5' points='79.13 57.59 63.25 66.75 79.13 75.92 79.13 57.59 79.13 57.59'/><polygon class='press-cls-4' points='79.13 75.72 63.25 84.89 79.13 94.05 79.13 75.72 79.13 75.72'/><polygon class='press-cls-3' points='79.13 94.05 63.25 103.22 79.13 112.38 79.13 94.05 79.13 94.05'/><polygon class='press-cls-6' points='63.25 48.42 47.38 39.26 47.38 57.59 63.25 48.42 63.25 48.42'/><polygon class='press-cls-7' points='63.25 66.75 47.38 57.59 47.38 75.92 63.25 66.75 63.25 66.75'/><polygon class='press-cls-5' points='63.25 84.89 47.38 75.72 47.38 94.05 63.25 84.89 63.25 84.89'/><polygon class='press-cls-7' points='63.25 103.22 63.25 84.89 47.38 94.05 63.25 103.22 63.25 103.22'/><polygon class='press-cls-8' points='49.06 20.27 80.81 38.6 80.81 103.8 86.94 106.49 86.94 36.89 49.06 20.27 49.06 20.27'/><polygon class='press-cls-3' points='63.28 66.68 63.28 85.01 79.15 75.84 63.28 66.68 63.28 66.68'/></svg><p style='display: inline-flex; font-size: 18px; font-family:Helvetica Neue LT Std ;font-weight: lighter; vertical-align: middle; color: #d78f54; height: 100%; margin-left: 10px;'>Press</p>")
+          $pressLi.append("<svg id='press'  width='35' height='100%' data-name='press' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 90 125'><defs><style>.press-cls-1{font-size:50.25px;font-weight: 700;}.press-cls-1,.press-cls-8{fill:#d78f54;}.press-cls-2{fill:none;}.press-cls-3{fill:#5b7f71;}.press-cls-4{fill:#7ea0c3;}.press-cls-5{fill:#825474;}.press-cls-6{fill:#763e2a;}.press-cls-7{fill:#ebab21;}</style></defs><title>ASI-Press</title><path class='press-cls-2' d='M19.06-20.27A66.44,66.44,0,1,0,85.5,46.16,66.44,66.44,0,0,0,19.06-20.27' transform='translate(47.38 20.27)'/><polygon class='press-cls-3' points='63.25 30.09 47.38 20.93 47.38 39.26 63.25 30.09 63.25 30.09'/><polygon class='press-cls-4' points='63.25 30.09 47.38 39.26 63.25 48.42 63.25 30.09 63.25 30.09'/><polygon class='press-cls-5' points='63.25 30.09 63.25 48.42 79.13 39.26 63.25 30.09 63.25 30.09'/><polygon class='press-cls-4' points='63.25 48.42 63.25 66.75 79.13 57.59 63.25 48.42 63.25 48.42'/><polygon class='press-cls-6' points='63.25 84.89 63.25 103.22 79.13 94.05 63.25 84.89 63.25 84.89'/><polygon class='press-cls-3' points='63.25 48.42 47.38 57.59 63.25 66.75 63.25 48.42 63.25 48.42'/><polygon class='press-cls-6' points='63.28 66.68 47.4 75.84 63.28 85.01 63.28 66.68 63.28 66.68'/><polygon class='press-cls-7' points='79.13 39.26 63.25 48.42 79.13 57.59 79.13 39.26 79.13 39.26'/><polygon class='press-cls-5' points='79.13 57.59 63.25 66.75 79.13 75.92 79.13 57.59 79.13 57.59'/><polygon class='press-cls-4' points='79.13 75.72 63.25 84.89 79.13 94.05 79.13 75.72 79.13 75.72'/><polygon class='press-cls-3' points='79.13 94.05 63.25 103.22 79.13 112.38 79.13 94.05 79.13 94.05'/><polygon class='press-cls-6' points='63.25 48.42 47.38 39.26 47.38 57.59 63.25 48.42 63.25 48.42'/><polygon class='press-cls-7' points='63.25 66.75 47.38 57.59 47.38 75.92 63.25 66.75 63.25 66.75'/><polygon class='press-cls-5' points='63.25 84.89 47.38 75.72 47.38 94.05 63.25 84.89 63.25 84.89'/><polygon class='press-cls-7' points='63.25 103.22 63.25 84.89 47.38 94.05 63.25 103.22 63.25 103.22'/><polygon class='press-cls-8' points='49.06 20.27 80.81 38.6 80.81 103.8 86.94 106.49 86.94 36.89 49.06 20.27 49.06 20.27'/><polygon class='press-cls-3' points='63.28 66.68 63.28 85.01 79.15 75.84 63.28 66.68 63.28 66.68'/></svg><p style='display: inline-flex; font-size: 16px; font-weight: 700; vertical-align: middle; color: #61A60D; height: 100%; margin-left: 5px;'>Press</p>")
         }
 
         $($(".tabsContainer ul")[0]).append($catalogLi).append($videoLi).append($materialLi).append($pressLi)
 
         if ($(".tabsContainer > ul > li").length === 1) {
           $(".tabsContainer > ul").html("")
-          $($("#instructions strong span")[0]).prepend('<svg version="1.1" id="pictures" class="Pictures" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 75" style="vertical-align: bottom; margin-right: 10px;" xml:space="preserve" width="45" height="100%"><style type="text/css">.st0{fill:rgb(97, 144, 128);}.st1{font-size:20.25px;font-family:HelveticaNeueLTStd-Th, Helvetica Neue LT Std; font-weight: lighter;}.st3{fill:none;}.st4{fill:rgb(97, 144, 128);}.st5{fill:rgb(97, 144, 128);}.st6{fill:rgb(97, 144, 128);}</style><text transform="matrix(1 0 0 1 46.3057 36.5787)" class="st0 st1 st2">product images,</text><path class="st3" d="M25.9,0C11.6,0,0,11.6,0,25.9s11.6,25.9,25.9,25.9s25.9-11.6,25.9-25.9C51.7,11.6,40.2,0,25.9,0L25.9,0L25.9,0"></path><polygon class="st0" points="35.4,12.8 24,24.3 35.5,35.8 "></polygon><polygon class="st4" points="35.4,12.8 24,24.3 12.4,12.7 "></polygon><polygon class="st5" points="12.7,35.7 24.1,24.3 12.5,12.8 "></polygon><polygon class="st6" points="35.5,35.7 24.1,24.3 12.5,35.9 "></polygon><polygon class="st0" points="36.9,15.4 36.9,36.9 15.6,36.9 15.6,39.1 39.3,39.1 39.3,15.4 "></polygon></svg>')
+          $($("#instructions strong span")[0]).prepend('<svg version="1.1" id="pictures" class="Pictures" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 75" style="vertical-align: bottom; margin-right: 10px;" xml:space="preserve" width="45" height="100%"><style type="text/css">.st0{fill:rgb(97, 144, 128);}.st1{font-size:20.25px; font-weight: 700;}.st3{fill:none;}.st4{fill:rgb(97, 144, 128);}.st5{fill:rgb(97, 144, 128);}.st6{fill:rgb(97, 144, 128);}</style><text transform="matrix(1 0 0 1 46.3057 36.5787)" class="st0 st1 st2">product images,</text><path class="st3" d="M25.9,0C11.6,0,0,11.6,0,25.9s11.6,25.9,25.9,25.9s25.9-11.6,25.9-25.9C51.7,11.6,40.2,0,25.9,0L25.9,0L25.9,0"></path><polygon class="st0" points="35.4,12.8 24,24.3 35.5,35.8 "></polygon><polygon class="st4" points="35.4,12.8 24,24.3 12.4,12.7 "></polygon><polygon class="st5" points="12.7,35.7 24.1,24.3 12.5,12.8 "></polygon><polygon class="st6" points="35.5,35.7 24.1,24.3 12.5,35.9 "></polygon><polygon class="st0" points="36.9,15.4 36.9,36.9 15.6,36.9 15.6,39.1 39.3,39.1 39.3,15.4 "></polygon></svg>')
         }
 
-    
+
         function addContentSkeleton() {
           $($('.collectionInfo').children()[0]).children().attr("id", "mainContainer");
           let content = $("#mainContainer").children();
@@ -339,13 +340,14 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
             "<div class='tabsContainer'><ul style='margin: 15px 0 0 0; display: flex; list-style-type: none; width: 100%; flex-wrap: wrap;'></div>"
           )
           let instructions = $(
-            "<p id='instructions'><strong style='font-size: 18px; font-weight: lighter; line-height: 2em; font-family: Helvetica Neue LT Std;'>Click icons below for <img src='https://www.archsystems.com/Global/Products/specs.png' style='width: 14px;vertical-align: sub;'> specifications, <img src='https://www.archsystems.com/Global/Products/samples.png' style='width: 25px;vertical-align: sub;'> to request individual samples, or  <img src='https://www.archsystems.com/Global/Products/cart.png' style='width: 25px;vertical-align: sub;'> to purchase the material.</strong></p>"
+            "<p id='instructions'>Click icons below for <img src='https://www.archsystems.com/Global/Products/specs.png' style='width: 14px;vertical-align: sub;'> specifications, <img src='https://www.archsystems.com/Global/Products/samples-v2.png' style='width: 25px;vertical-align: sub;'> to request individual samples, or  <img src='https://www.archsystems.com/Global/Products/cart.png' style='width: 25px;vertical-align: sub;'> to purchase the material.</p>"
           );
           $("#mainContainer").html("").append("<div id='main'></div>")
           $("#main").append(content).append(tabsContainer).append(instructions);
+          $("#instructions").css("font-family", "'Encode Sans', sans-serif");
           $(".slideshow").css("margin-bottom", "10px");
         }
-    
+
         function redesignLayout() {
           $(".productInfoWrapper h1").css("margin", "0");
           $("#MainContent_MainContent_RightSideDiv").hide();
@@ -377,7 +379,7 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
         function smoothlyScollToContent() {
           $('html, body').animate({ scrollTop: $('.tabContentContainer').offset().top}, 800)
         }
-    
+
         function addSwatchFeatures() {
           const purchase = $(".purchaseASI").length;
           Array.from($(".subCollection ul li")).forEach(function (el, i) {
@@ -404,7 +406,7 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
             $("#" + iconsContainerId).html("").append(productSpecs)
             if (productSample.length) {
               $("#" + iconsContainerId).append($(productSample).html(
-                "<svg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 24 24' style='margin-right: 10px;' xml:space='preserve' width='30' height='100%'><style type='text/css'>.sample-chain{fill:#D78F54;}</style><path class='sample-chain' d='M22,8v12H6V8H22z M24,6H4v16h20V6z M22,4H2v16h1V5h19V4z M20,2H0v16h1V3h19V2z'/></svg>"
+                "<svg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 24 24' style='margin-right: 10px;' xml:space='preserve' width='30' height='100%'><style type='text/css'>.sample-chain{fill:#61A60D;}</style><path class='sample-chain' d='M22,8v12H6V8H22z M24,6H4v16h20V6z M22,4H2v16h1V5h19V4z M20,2H0v16h1V3h19V2z'/></svg>"
               ));
             }
             if (purchase) {
@@ -416,7 +418,7 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
         function updateSampleIcon() {
           $(".requestSample a").prepend('<svg width="35" style="margin-right: 5px" version="1.1" id="binder" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100.1 110.1" xml:space="preserve"><style type="text/css">.binder-st0{fill:#6D6C72;}.binder-st1{fill:#FEFEFE;}.binder-st2{fill:#6F6F71;}.binder-st3{fill:#FFFFFF;}</style><path class="binder-st0" d="M46.1,0.1h7c2.5,1,5.3,0.9,7.8,0.9c17.4,0.1,38.5,20.5,38.2,41.2c-0.1,5.2,0.2,10.3-0.1,15.5 c-1.3,25.8-28.3,42-46.3,42C31.4,99.8,15.8,91,5.2,72.9c-2.9-5-3.7-10.4-3.9-15.9c-0.5-13.6-1-27.2,8.5-38.8 c8.7-10.6,19-17.2,32.9-17.5C43.8,0.6,45.1,0.9,46.1,0.1z"/><path class="binder-st1" d="M46.1,0.1c-1.3,1.7-3.3,1.2-5,1.5c-25,5.2-41.9,28.1-39,52.6c3,25.2,24.3,43.8,49.2,43.1s45.5-20.5,47-45.1 C99.8,26.8,82.1,5.1,56.7,1.2c-1.2-0.2-2.7,0.4-3.6-1.1c14.7,0,29.3,0.1,44-0.1c2.5,0,3.1,0.6,3.1,3.1c-0.1,34.7-0.1,69.3,0,104 c0,2.5-0.6,3.1-3.1,3.1c-31.3-0.1-62.7-0.1-94,0c-2.5,0-3.1-0.6-3.1-3.1c0.1-34.7,0.1-69.3,0-104C0,0.6,0.6,0,3.1,0 C17.4,0.1,31.7,0.1,46.1,0.1z"/><path class="binder-st2" d="M50.4,21.3c1.6,0.4,2.8,1.1,2.8,2.7c0.1,1.5-1,2.7-2.4,2.9c-0.1,0-0.2,0-0.4,0c-1.4,0-2.5-1.1-2.6-2.4 c0,0,0-0.1,0-0.1C47.7,22.5,49.1,21.8,50.4,21.3z"/><g><g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)"><path class="binder-st3" d="M332.3,4909.5c-4.4-3.3-5.9-8.3-5.9-19.7v-11.4h-12.8c-13.4,0-20.6-2.3-22.4-6.8c-0.5-1.4-0.9-11.9-0.9-23.4 v-20.9h-5.9c-4.7,0-6.6-0.9-9-3.9c-6.3-8-1.8-17.6,8.9-19.4l6.2-1.1l-0.5-17.4l-0.5-17.6l-5.6-0.5c-10.2-0.9-14.9-11-8.6-18.9 c2.4-3,4.4-3.9,9-3.9h5.9v-17.9v-17.7l-5.9-1.1c-6.8-1.1-12.2-6.6-12.2-12.5c0-5.4,6.3-11,12.8-11h5.3v-18v-18h-3.7 c-5,0-12.2-3.8-13.4-6.8c-3.3-8.6,2.7-17.3,11.9-17.3h5.3v-18v-18h-5.3c-6.9,0-12.8-5.6-12.8-12s5.9-12,12.8-12h5.3v-18v-18h-5.3 c-9.2,0-15.2-8.7-11.9-17.3c1.2-3,8.4-6.8,13.4-6.8h3.8v-18v-18h-5.3c-6.5,0-12.8-5.6-12.8-11c0-5.9,5.4-11.4,12.2-12.5l6-1.1 l-0.5-17.4l-0.5-17.4l-5.6-0.4c-6.3-0.6-11.7-5.9-11.7-11.6c0-5.7,5.4-11,11.7-11.6l5.6-0.5l0.8-22.2c0.8-21.2,0.9-22.5,4.4-25.2 c3.5-2.7,8.7-2.9,192-2.9h188.5l4.4,4.4c4.1,4.2,4.4,5.1,4.4,16.5v12.2h13.7c13.1,0,13.8,0.1,18,4.4l4.4,4.4v263.9v263.8l-3.8,3.6 l-3.6,3.8H523.6C377.5,4911.3,334.1,4911,332.3,4909.5z M695.9,4639.6v-247.8h-6h-6l-0.3,239.6l-0.5,239.4l-3.5,3.5l-3.5,3.5 l-162.8,0.5l-163,0.3v4.5v4.5h172.7h172.7L695.9,4639.6L695.9,4639.6z M659.8,4606.6l-0.1-247.8H487.1H314.4v13.5v13.5h6 c7.7,0,12,4.1,12,11.3s-4.4,11.3-12,11.3h-6v18v18h3.8c5,0,12.2,3.8,13.4,6.8c3.3,9-2.1,17.3-11.4,17.3h-5.7v17.9v17.7l6.3,0.9 c7.7,1.1,11.7,5.3,11.7,12.3c0,6.3-5.7,11.3-12.9,11.3h-5.1v18v18h5.1c7.7,0,12.9,5,12.9,12s-5.3,12-12.9,12h-5.1v18v18h5.1 c2.9,0,6.8,1.4,9,3.2c8.6,6.8,2.6,20.9-8.9,20.9h-5.3v18v18h5.6c7.2,0,12.5,4.8,12.5,11.4c0,6.9-4.1,11.1-11.7,12.2l-6.3,0.9v17.7 v17.9h6c9.9,0,15.3,9.2,10.5,18c-1.8,3.3-9.2,6-13.4,5c-3-0.8-3.2-0.3-3.2,17.3v17.9l6,1.1c7.8,1.2,12,5.4,12,12.2 c0,7.2-4.4,11.3-12,11.3h-6v13.5v13.5h172.7h172.7V4606.6z"/></g></g></svg>')
         }
-    
+
         function moveWorlds() {
           Array.from($(".sustainable")).forEach(function (el) {
             let $world = $(el);
@@ -424,7 +426,7 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
             $(el).parent().parent().find("a").find("span").append($world);
           });
         }
-    
+
         function moveCarts() {
           Array.from($(".forPurchase")).forEach(function (el) {
             let $cart = $(el);
@@ -432,10 +434,10 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
             $(el).parent().parent().find("a").find("span").append($cart);
           });
         }
-    
+
         function movePlusSigns(color) {
           if (window.location.href.indexOf("ASI-Stone")) {
-            Array.from($(".plus")).forEach(function (el, i) { 
+            Array.from($(".plus")).forEach(function (el, i) {
               $(el).parent().css("position", "absolute")
               $(el).css("background", color)
               $(el).css("font-size", "inherit")
@@ -445,11 +447,11 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
                 $(el).css("padding", "10px")
               } else if (i == 3) {
                 $(el).parent().css("top", "-15px")
-                $(el).parent().css("right", "0")                                      
+                $(el).parent().css("right", "0")
                 $(el).css("padding", "5px")
-              } else {      
+              } else {
                 $(el).parent().css("top", "-15px")
-                $(el).parent().css("right", "30px")                                      
+                $(el).parent().css("right", "30px")
                 $(el).css("padding", "5px")
               }
             })
@@ -464,26 +466,28 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
             })
           }
         }
-    
+
         function initSwatchModal() {
           $("#swatchModal").dialog({
             autoOpen: false
           });
         }
-    
+
         function initSlideshow() {
           if ($(".slideshow").length) {
             $(".slideshow")
               .before(
-                '<div id="prev"><svg version="1.1" id="Livello" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve"><style type="text/css">.st10{fill:#D78F54;stroke:#D78F54;}</style><path class="st10" d="M204.5,31.3c0.1,6.2-2.3,12.5-7,17.3l-78,79.3L199,206c9.6,9.4,9.7,24.9,0.3,34.5c-9.4,9.6-24.9,9.7-34.5,0.3L50.6,128.6L162.8,14.5c9.4-9.6,24.9-9.734.5-0.3C202,18.9,204.5,25.1,204.5,31.3z"/></svg><div>'
+                '<div id="prev"><svg version="1.1" id="Livello" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve"><style type="text/css">.st10{fill:#61A60D;stroke:#61A60D;}</style><path class="st10" d="M204.5,31.3c0.1,6.2-2.3,12.5-7,17.3l-78,79.3L199,206c9.6,9.4,9.7,24.9,0.3,34.5c-9.4,9.6-24.9,9.7-34.5,0.3L50.6,128.6L162.8,14.5c9.4-9.6,24.9-9.734.5-0.3C202,18.9,204.5,25.1,204.5,31.3z"/></svg><div>'
               )
               .before(
-                '<div id="next"><svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256" enable-background="new 0 0 256 256" xml:space="preserve"><path fill="#D78F54" stroke="#D78F54" d="M50.6,223.9c0-6.2,2.4-12.5,7.1-17.2l78.7-78.6L57.7,49.3c-9.5-9.5-9.5-25,0-34.5c9.5-9.5,25-9.5,34.5,0L205.4,128L92.2,241.1c-9.5,9.5-25,9.5-34.5,0C53,236.4,50.6,230.1,50.6,223.9z"/></svg></div>'
+                '<div id="next"><svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256" enable-background="new 0 0 256 256" xml:space="preserve"><path fill="#61A60D" stroke="#61A60D" d="M50.6,223.9c0-6.2,2.4-12.5,7.1-17.2l78.7-78.6L57.7,49.3c-9.5-9.5-9.5-25,0-34.5c9.5-9.5,25-9.5,34.5,0L205.4,128L92.2,241.1c-9.5,9.5-25,9.5-34.5,0C53,236.4,50.6,230.1,50.6,223.9z"/></svg></div>'
+              ).before('<div id="pager"></div>'
               )
               .cycle({
                 fx: "fade",
                 prev: "#prev",
                 next: "#next",
+                pager: "#pager",
                 pause: 1,
                 timeout: 5000,
                 speed: 1500,
@@ -506,7 +510,7 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
             $("#next").css("cursor", "pointer");
           }
         }
-    
+
         function showPictures() {
           $("#instructions").show();
           $(".tabContentContainer").replaceWith($images);
@@ -514,7 +518,7 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
           addSwatchFeatures();
           smoothlyScollToContent();
         }
-    
+
         function showSpecs() {
           $(".tabContentContainer").replaceWith($productSpecs);
           $productSpecs.addClass("tabContentContainer");
@@ -522,7 +526,7 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
           $(".tabsContainer ul li").css("cursor", "pointer");
           smoothlyScollToContent();
         }
-    
+
         function showPress() {
           $(".tabContentContainer").replaceWith($press);
           $press.addClass("tabContentContainer");
@@ -530,7 +534,7 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
           $(".tabsContainer ul li").css("cursor", "pointer");
           smoothlyScollToContent();
         }
-    
+
         function showMaterials() {
           $(".tabContentContainer").replaceWith($materialExpert);
           $materialExpert.addClass("tabContentContainer");
@@ -538,7 +542,7 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
           $(".tabsContainer ul li").css("cursor", "pointer");
           smoothlyScollToContent();
         }
-    
+
         function showFeaturedProjects() {
           $("#instructions").hide();
           $(".tabContentContainer").replaceWith($featuredProject);
@@ -546,7 +550,7 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
           $(".tabsContainer ul li").css("cursor", "pointer");
           smoothlyScollToContent();
         }
-    
+
         $(document).on("click", ".tabsContainer ul li", function (e) {
           if (e.currentTarget.className === "Pictures" || e.currentTarget.classList.contains("Pictures")) {
             e.preventDefault();
@@ -576,7 +580,7 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
         $(document).on("click", "#shop", showCart);
       });
       // ]]>
-    
+
       function showSpecifications(e) {
         e.preventDefault();
         let url = $(e.currentTarget).data().url;
@@ -592,7 +596,7 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
         })
         $("#swatchModal").parent().css("width", "400px")
       }
-    
+
       function showCart(e) {
         e.preventDefault();
         let url = $(e.currentTarget).data().url;
@@ -621,5 +625,10 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
         $("#swatchModal").parent().css("max-height", "180px")
         $("#swatchModal").parent().css("width", "450px")
       }
+
+      function setPurchaseASIFontSize() {
+        $(".purchaseASI").css("font-size", "13px");
+      }
+
     </script>
 </asp:Content>
