@@ -4,6 +4,7 @@
     <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
     <!-- Bootstrap core CSS -->
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/archsystems-code/form-progress-bar/master/assets/css/style.css">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -462,66 +463,6 @@
             </div>
         </div>
     </div>
-    <style>
-        fieldset fieldset legend { font-size: 1.25em; }
-
-        fieldset fieldset fieldset legend {
-        font-size: 1em;
-        font-weight: bold;
-        border-bottom: none;
-        margin-bottom: 5px;
-        }
-
-        .row legend { margin-left: 15px; }
-
-        .submit { margin-top: 25px; }
-
-        .jumbotron ul { font-size: .75em; }
-
-        #progress-bar-wrap {
-        min-height: 20px;
-        display: none;
-        margin-bottom: 0;
-        }
-
-        #progress-bar-wrap .encouragement { display: none; }
-
-        #progress-bar-wrap .close:before {
-        content: "\f0d7";
-        display: inline-block;
-        font-family: FontAwesome;
-        font-style: normal;
-        font-weight: normal;
-        line-height: 1;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        }
-
-        #progress-bar-wrap span { line-height: 1.75em; }
-
-        #progress-bar-wrap.collapsed h4 {
-        font-size: 14px;
-        color: #999999;
-        }
-
-        #progress-bar-wrap.collapsed .encouragement { display: none; }
-
-        #progress-bar-wrap.collapsed .progress { display: none; }
-
-        #progress-bar-wrap.collapsed .close:before {
-        content: "\f0d8";
-        display: inline-block;
-        font-family: FontAwesome;
-        font-style: normal;
-        font-weight: normal;
-        line-height: .75em;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        }
-        .progress-bar-info {
-            background-color: #e17b3b; 
-        }
-    </style>
     <script src="https://cdn.rawgit.com/archsystems-code/form-progress-bar/master/assets/js/jq.progress-bar.js"></script>
     <script type="text/javascript">
         $(function () {
