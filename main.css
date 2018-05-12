@@ -4814,7 +4814,7 @@ body,
 .btn:hover,
 .modalWrap .close.btn:hover,
 .btn:visited:hover {
-    background: #fff;
+    background: #fff !important;
     color: #61A60D !important;
     border: #61A60D 1px solid;
 }
