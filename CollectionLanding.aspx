@@ -603,7 +603,7 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
         let productPage =
           "<div id='loading' style='display: flex; justify-content: center'><p>Loading Your Cart...</p></div><iframe src=" +
           url +
-          " id='productPage' style='display: none; position: relative; top: -525px; left: -574px;' width='1024' height='1400' scrolling='no' ></iframe>"
+          " id='productPage' style='display: none; position: relative; top: -500px; left: -574px;' width='1024' height='1400' scrolling='no' ></iframe>"
         $("#swatchModal").html(productPage);
         $("#swatchModal").dialog("open");
         $("#productPage").load(function () {
@@ -622,7 +622,7 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
               }, 5000);
             })
         })
-        $("#swatchModal").parent().css("max-height", "180px")
+        $("#swatchModal").parent().css("max-height", "200px")
         $("#swatchModal").parent().css("width", "450px")
       }
 
