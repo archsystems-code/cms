@@ -35,7 +35,7 @@
                 <asp:HyperLink ID="PinIt" CssClass="pin-it-button" runat="server" count-layout="horizontal">
 					<img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" />
                 </asp:HyperLink>
-                <%--            
+                <%--
 				<asp:HyperLink ID="HyperLink1" runat="server" Style="margin-top: 0px; margin-right: 5px"
 					NavigateUrl="" ToolTip="Email to a friend">
 					<img src="http://png-3.findicons.com/files/icons/1042/mazes_mini/19/mail.png" alt="Email to a friend" id="image_52704">
@@ -52,7 +52,7 @@
                 <asp:Panel runat="server" ID="pnlSamples" CssClass="sampleReq" Visible="false">
                     <img src="../../imgs/products/plussign.jpg" />
                     <p>
-                        Request Sample: 
+                        Request Sample:
                         <asp:LinkButton ID="lbIndividual" runat="server" CssClass="openModal">Individual</asp:LinkButton>
                         <asp:Label ID="LabelSeparator1" runat="server"> | </asp:Label>
                         <asp:LinkButton ID="lbChain" runat="server" CssClass="openModal">Chain</asp:LinkButton>
@@ -168,7 +168,6 @@
             var $buttons = $(".sampleReq").children().find("a");
             var $viewCart = $('.request .viewSamples').children().closest("a");
             $viewCart.css("background-image", "none");
-            $viewCart.css("color", "black");
             $viewCart.css("border", "none");
             $viewCart.css("margin", "0 auto");
             $('.request .viewSamples').html("<div class='buttons-container' style='display: flex; justify-content: center'></div>");
