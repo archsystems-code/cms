@@ -404,9 +404,11 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
               productSample.html(
                 "REQUEST SAMPLES<svg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 24 24' style='margin-left: 10px;' xml:space='preserve' width='30' height='100%'><style type='text/css'>.sample-chain{fill:#ffffff;}</style><path class='sample-chain' d='M22,8v12H6V8H22z M24,6H4v16h20V6z M22,4H2v16h1V5h19V4z M20,2H0v16h1V3h19V2z'/></svg>"
               );
-              $(".openModal.btn").hover(function(){
-                console.log($(this).closest(".sample-chain"))
-                $($(this).closest(".sample-chain")[0]).css("fill", "#61A60D");
+              $(".openModal.btn").on("mouseenter", function(){
+                $(this).find(".sample-chain").css("fill", "#61A60D");
+              });
+              $(".openModal.btn").on("mouseleave", function () {
+                $(this).find(".sample-chain").css("fill", "#ffffff");
               });
               $("#" + iconsContainerId).append(productSample);
             }
