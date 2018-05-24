@@ -311,7 +311,7 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
           $video.css("display", "flex")
           $video.css("align-items", "center")
           $video.attr("target", "_blank")
-          $video.html("<svg version='1.1' id='video' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 461.001 461.001' style='width: 40px;margin-left: 5px;' xml:space='preserve'><path style='fill:#F61C0D;' d='M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728 c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137 C461.001,110.259,418.135,67.393,365.257,67.393z M300.506,237.056l-126.06,60.123c-3.359,1.602-7.239-0.847-7.239-4.568V168.607 c0-3.774,3.982-6.22,7.348-4.514l126.06,63.881C304.363,229.873,304.298,235.248,300.506,237.056z'></path></svg><p style='color: #61A60D; font-size: 16px; font-weight: 700; margin-left: 10px; float: right; line-height: 40px;'>Product Preview</p>")
+          $video.html("<svg version='1.1' id='video' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 461.001 461.001' style='width: 40px;margin-left: 5px;' xml:space='preserve'><path style='fill:#F61C0D;' d='M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728 c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137 C461.001,110.259,418.135,67.393,365.257,67.393z M300.506,237.056l-126.06,60.123c-3.359,1.602-7.239-0.847-7.239-4.568V168.607 c0-3.774,3.982-6.22,7.348-4.514l126.06,63.881C304.363,229.873,304.298,235.248,300.506,237.056z'></path></svg><p style='color: #61A60D; font-size: 16px; font-weight: 700; margin-left: 10px; float: right; line-height: 40px; margin-bottom: 0;'>Product Preview</p>")
           $videoLi.append($video);
         }
 
@@ -388,12 +388,12 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
             }
 
             let productBuy = $(
-              "<a id='shop' class='openModal btn' style='display: flex; color: white; margin: 5px; align-items: center; justify-content: center; font-size: 13px;'>ADD TO CART<svg width='30' height='30' class='shopIcon' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 45.6 45.6' style='cursor: pointer;' xml:space='preserve'><path d='M22.8,0C10.2,0,0,10.2,0,22.8s10.2,22.8,22.8,22.8c12.6,0,22.7-10.1,22.8-22.7C45.7,10.3,35.5,0.1,22.9,0	C22.9,0,22.8,0,22.8,0z M39.6,16.5L34.8,31H17.7c0.3,1.1,0.5,1.8,0.5,1.9s0.3,1.1,1.2,1.1h12.8c2,0,3.7,1.7,3.7,3.7c0,0,0,0.1,0,0.1	c0,2.1-1.7,3.8-3.8,3.8c-2.1,0-3.8-1.7-3.8-3.8c0-0.6,0.1-1.2,0.4-1.7h-6.2c0.3,0.5,0.4,1.1,0.4,1.7c0,2.1-1.7,3.8-3.8,3.8	s-3.8-1.7-3.8-3.8c0-1.2,0.5-2.4,1.5-3.1c-0.3-0.4-0.5-0.8-0.6-1.3c-0.1-0.3-3.5-13.3-5.6-22c-0.2-0.7-0.4-0.7-0.6-0.7H7.1V8.6H10	c1.3,0,2.4,1,2.6,2.3c0.3,1.1,0.5,2.3,0.8,3.5h26.2V16.5z'/><path d='M19,39.5c0.9,0,1.7-0.8,1.7-1.7s-0.8-1.7-1.7-1.7c-0.9,0-1.7,0.8-1.7,1.7C17.3,38.7,18.1,39.5,19,39.5z'/><path d='M32,39.5c0.9,0,1.7-0.8,1.7-1.7s-0.8-1.7-1.7-1.7l0,0c-0.9,0-1.7,0.8-1.7,1.7S31.1,39.5,32,39.5z'/><path d='M17.1,28.9h16.1l4.1-12.4H13.9C15.1,21,16.3,25.7,17.1,28.9z'/></svg></a>"
+              "<a id='shop' class='openModal btn' style='display: flex; color: white; margin: 5px; align-items: center; justify-content: center; font-size: 13px;'>ADD TO CART<svg width='30' height='30' class='shopIcon' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 45.6 45.6' style='margin-left: 10px;' xml:space='preserve'><path d='M22.8,0C10.2,0,0,10.2,0,22.8s10.2,22.8,22.8,22.8c12.6,0,22.7-10.1,22.8-22.7C45.7,10.3,35.5,0.1,22.9,0	C22.9,0,22.8,0,22.8,0z M39.6,16.5L34.8,31H17.7c0.3,1.1,0.5,1.8,0.5,1.9s0.3,1.1,1.2,1.1h12.8c2,0,3.7,1.7,3.7,3.7c0,0,0,0.1,0,0.1	c0,2.1-1.7,3.8-3.8,3.8c-2.1,0-3.8-1.7-3.8-3.8c0-0.6,0.1-1.2,0.4-1.7h-6.2c0.3,0.5,0.4,1.1,0.4,1.7c0,2.1-1.7,3.8-3.8,3.8	s-3.8-1.7-3.8-3.8c0-1.2,0.5-2.4,1.5-3.1c-0.3-0.4-0.5-0.8-0.6-1.3c-0.1-0.3-3.5-13.3-5.6-22c-0.2-0.7-0.4-0.7-0.6-0.7H7.1V8.6H10	c1.3,0,2.4,1,2.6,2.3c0.3,1.1,0.5,2.3,0.8,3.5h26.2V16.5z'/><path d='M19,39.5c0.9,0,1.7-0.8,1.7-1.7s-0.8-1.7-1.7-1.7c-0.9,0-1.7,0.8-1.7,1.7C17.3,38.7,18.1,39.5,19,39.5z'/><path d='M32,39.5c0.9,0,1.7-0.8,1.7-1.7s-0.8-1.7-1.7-1.7l0,0c-0.9,0-1.7,0.8-1.7,1.7S31.1,39.5,32,39.5z'/><path d='M17.1,28.9h16.1l4.1-12.4H13.9C15.1,21,16.3,25.7,17.1,28.9z'/></svg></a>"
             )
             productBuy.data("url", ajaxUrl);
             let iconsContainerId = "iconsContainer-" + i;
             $($(el).children()[1]).html("").append(productSku).append(productName).append("<div id=" +
-              iconsContainerId + " style='display: flex; justify-content: center;'></div>")
+              iconsContainerId + " style='display: flex; flex-direction: column;'></div>")
             if (productSample.length) {
               productSample.addClass("btn");
               productSample.css("display", "flex");
@@ -402,10 +402,11 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
               productSample.css("font-size", "13px");
               productSample.css("align-items", "center");
               productSample.html(
-                "<svg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 24 24' style='margin-right: 10px;' xml:space='preserve' width='30' height='100%'><style type='text/css'>.sample-chain{fill:#ffffff;}</style><path class='sample-chain' d='M22,8v12H6V8H22z M24,6H4v16h20V6z M22,4H2v16h1V5h19V4z M20,2H0v16h1V3h19V2z'/></svg>"
+                "REQUEST SAMPLES<svg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 24 24' style='margin-left: 10px;' xml:space='preserve' width='30' height='100%'><style type='text/css'>.sample-chain{fill:#ffffff;}</style><path class='sample-chain' d='M22,8v12H6V8H22z M24,6H4v16h20V6z M22,4H2v16h1V5h19V4z M20,2H0v16h1V3h19V2z'/></svg>"
               );
               $(".openModal.btn").hover(function(){
-                $(this).closest(".sample-chain").css("fill", "#61A60D");
+                console.log($(this).closest(".sample-chain"))
+                $($(this).closest(".sample-chain")[0]).css("fill", "#61A60D");
               });
               $("#" + iconsContainerId).append(productSample);
             }
