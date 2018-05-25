@@ -8406,9 +8406,7 @@ footer p {
 }
 
 .collectionThumbs.full-width ul {
-    width: calc(100% + 20px);
     float: none;
-    margin-left: -10px;
 }
 
 .collectionThumbs.full-width ul:after {
@@ -8479,7 +8477,6 @@ footer p {
     width: 25%;
     margin-left: 0;
     margin-right: 0;
-    padding: 0 10px;
     box-sizing: border-box;
 }
 
