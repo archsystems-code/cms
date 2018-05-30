@@ -381,11 +381,6 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
             let productSku = $($(el).children()[1]).children().closest(".prodSku");
             let productName = $($(el).children()[1]).children().closest(".prodName");
             let productSample = $($(el).children()[1]).children().closest(".openModal");
-            if (localStorage.getItem(productSku.text())) {
-              productSample = $(localStorage.getItem(productSku.text()));
-            } else {
-              localStorage.setItem(productSku.text(), productSample.prop("outerHTML"))
-            }
 
             let productBuy = $(
               "<a id='shop' class='openModal btn' style='display: flex; color: black; margin: 5px; align-items: center; justify-content: center; font-size: 12px; background-color: transparent; border: 2px solid black;'>PURCHASE MATERIAL<svg width='30' height='30' class='shopIcon' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 45.6 45.6' style='margin-left: 10px;' xml:space='preserve'><path d='M22.8,0C10.2,0,0,10.2,0,22.8s10.2,22.8,22.8,22.8c12.6,0,22.7-10.1,22.8-22.7C45.7,10.3,35.5,0.1,22.9,0	C22.9,0,22.8,0,22.8,0z M39.6,16.5L34.8,31H17.7c0.3,1.1,0.5,1.8,0.5,1.9s0.3,1.1,1.2,1.1h12.8c2,0,3.7,1.7,3.7,3.7c0,0,0,0.1,0,0.1	c0,2.1-1.7,3.8-3.8,3.8c-2.1,0-3.8-1.7-3.8-3.8c0-0.6,0.1-1.2,0.4-1.7h-6.2c0.3,0.5,0.4,1.1,0.4,1.7c0,2.1-1.7,3.8-3.8,3.8	s-3.8-1.7-3.8-3.8c0-1.2,0.5-2.4,1.5-3.1c-0.3-0.4-0.5-0.8-0.6-1.3c-0.1-0.3-3.5-13.3-5.6-22c-0.2-0.7-0.4-0.7-0.6-0.7H7.1V8.6H10	c1.3,0,2.4,1,2.6,2.3c0.3,1.1,0.5,2.3,0.8,3.5h26.2V16.5z'/><path d='M19,39.5c0.9,0,1.7-0.8,1.7-1.7s-0.8-1.7-1.7-1.7c-0.9,0-1.7,0.8-1.7,1.7C17.3,38.7,18.1,39.5,19,39.5z'/><path d='M32,39.5c0.9,0,1.7-0.8,1.7-1.7s-0.8-1.7-1.7-1.7l0,0c-0.9,0-1.7,0.8-1.7,1.7S31.1,39.5,32,39.5z'/><path d='M17.1,28.9h16.1l4.1-12.4H13.9C15.1,21,16.3,25.7,17.1,28.9z'/></svg></a>"
