@@ -289,7 +289,7 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
           }
         }
 
-        let $productSpecsLi = $("<li id='specs' style='display: flex; margin-left: 8px;'><svg class='specIcon' width='30' height='100%' data-name='specs' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 125 132.88' style='margin-right: 5px; cursor: pointer;'><defs><style>.specs-cls-1{fill:none;}.specs-cls-2{fill:#825474;}.specs-cls-3{fill:#763e2a;}.specs-cls-4{fill:#7ea0c3;}.specs-cls-5{fill:#ebab21;}.specs-cls-6{fill:#5b7f71;}}</style></defs><path class='specs-cls-1' d='M26.13-21.13A66.44,66.44,0,1,0,92.57,45.31,66.44,66.44,0,0,0,26.13-21.13' transform='translate(40.31 21.13)'/><polygon class='specs-cls-2' points='66.52 43.83 53.41 21.13 40.31 43.83 66.52 43.83 66.52 43.83'/><polygon class='specs-cls-3' points='79.56 66.44 66.45 43.74 53.35 66.44 79.56 66.44 79.56 66.44'/><polygon class='specs-cls-4' points='92.67 89.13 79.56 66.43 66.45 89.13 92.67 89.13 92.67 89.13'/><polygon class='specs-cls-5' points='79.56 111.87 66.45 89.17 53.35 111.87 79.56 111.87 79.56 111.87'/><polygon class='specs-cls-6' points='92.74 43.84 79.63 21.13 66.52 43.84 92.74 43.84 92.74 43.84'/><polygon class='specs-cls-5' points='66.52 43.78 53.41 66.48 40.31 43.78 66.52 43.78 66.52 43.78'/><polygon class='specs-cls-4' points='79.63 21.13 66.52 43.83 53.41 21.13 79.63 21.13 79.63 21.13'/><polygon class='specs-cls-6' points='79.56 66.4 66.45 89.1 53.35 66.4 79.56 66.4 79.56 66.4'/><polygon class='specs-cls-2' points='92.67 89.14 79.56 111.85 66.45 89.14 92.67 89.14 92.67 89.14'/><polygon class='specs-cls-3' points='66.52 89.17 53.41 111.87 40.31 89.17 66.52 89.17 66.52 89.17'/></svg><p style='font-size: 16px; font-weight: 700; color: #61A60D; float: right; line-height: 40px;'>Specifications</p></li>");
+        let $productSpecsLi = $("<li class='Specs' style='display: flex; margin-left: 8px;'><svg class='specIcon' width='30' height='100%' data-name='specs' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 125 132.88' style='margin-right: 5px; cursor: pointer;'><defs><style>.specs-cls-1{fill:none;}.specs-cls-2{fill:#825474;}.specs-cls-3{fill:#763e2a;}.specs-cls-4{fill:#7ea0c3;}.specs-cls-5{fill:#ebab21;}.specs-cls-6{fill:#5b7f71;}}</style></defs><path class='specs-cls-1' d='M26.13-21.13A66.44,66.44,0,1,0,92.57,45.31,66.44,66.44,0,0,0,26.13-21.13' transform='translate(40.31 21.13)'/><polygon class='specs-cls-2' points='66.52 43.83 53.41 21.13 40.31 43.83 66.52 43.83 66.52 43.83'/><polygon class='specs-cls-3' points='79.56 66.44 66.45 43.74 53.35 66.44 79.56 66.44 79.56 66.44'/><polygon class='specs-cls-4' points='92.67 89.13 79.56 66.43 66.45 89.13 92.67 89.13 92.67 89.13'/><polygon class='specs-cls-5' points='79.56 111.87 66.45 89.17 53.35 111.87 79.56 111.87 79.56 111.87'/><polygon class='specs-cls-6' points='92.74 43.84 79.63 21.13 66.52 43.84 92.74 43.84 92.74 43.84'/><polygon class='specs-cls-5' points='66.52 43.78 53.41 66.48 40.31 43.78 66.52 43.78 66.52 43.78'/><polygon class='specs-cls-4' points='79.63 21.13 66.52 43.83 53.41 21.13 79.63 21.13 79.63 21.13'/><polygon class='specs-cls-6' points='79.56 66.4 66.45 89.1 53.35 66.4 79.56 66.4 79.56 66.4'/><polygon class='specs-cls-2' points='92.67 89.14 79.56 111.85 66.45 89.14 92.67 89.14 92.67 89.14'/><polygon class='specs-cls-3' points='66.52 89.17 53.41 111.87 40.31 89.17 66.52 89.17 66.52 89.17'/></svg><p style='font-size: 16px; font-weight: 700; color: #61A60D; float: right; line-height: 40px;'>Specifications</p></li>");
         $productSpecsLi.data("url", $($(".subCollection ul li")[0]).children()[0].href)
 
         let $catalogLi = '';
@@ -579,26 +579,9 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
               $(this).is(':visible') ? "Other Projects ▲" : "Other Projects ▼");
           });
         });
-        $(document).on("click", "#specs", showSpecifications);
         $(document).on("click", "#shop", showCart);
       });
       // ]]>
-
-      function showSpecifications(e) {
-        e.preventDefault();
-        let url = $(e.currentTarget).data().url;
-        let productPage =
-          "<div id='loading' style='display: flex; justify-content: center'><p>Loading Specs...</p></div><iframe src=" +
-          url +
-          " id='productPage' style='display: none; position: relative; top: -675px; left: -665px;' width='1024' height='1400' scrolling='no'></iframe>"
-        $("#swatchModal").html(productPage);
-        $("#swatchModal").dialog("open");
-        $("#productPage").load(function () {
-          $("#loading").hide();
-          $("#swatchModal").html(document.getElementById('productPage').contentWindow.$('.productSpecs'));
-        })
-        $("#swatchModal").parent().css("width", "400px")
-      }
 
       function showCart(e) {
         e.preventDefault();
