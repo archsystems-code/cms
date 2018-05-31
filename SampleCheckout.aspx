@@ -427,8 +427,8 @@
             <EPiServer:Property ID="Property2" runat="server" PropertyName="MainBody" />
             <ajax:UpdatePanelAnimationExtender ID="UpdatePanelAnimationExtender1" runat="server" TargetControlID="ShippingUpdatePanel">
                 <Animations>
-                <OnUpdated> 
-                    <FadeIn Duration=".5" Fps="20" /> 
+                <OnUpdated>
+                    <FadeIn Duration=".5" Fps="20" />
                 </OnUpdated>
                 </Animations>
             </ajax:UpdatePanelAnimationExtender>
@@ -622,7 +622,7 @@
                     </li>
                     <li>
                    <ul> <li>
-                            <asp:CheckBox ID="WebSearch" runat="server"></asp:CheckBox>
+                            <asp:CheckBox ID="WebSearch" runat="server" Checked="true"></asp:CheckBox>
                             <asp:Label ID="WebSearchLbl" AssociatedControlID="WebSearch" CssClass="checkLabel" runat="server">Web Search</asp:Label>
                         </li>
                         <li>
