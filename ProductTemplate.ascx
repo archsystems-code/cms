@@ -170,7 +170,7 @@
             $viewCart.css("background-image", "none");
             $viewCart.css("border", "none");
             $viewCart.css("margin", "0 auto");
-            $('.request .viewSamples').html("<div class='buttons-container' style='display: flex; justify-content: center'></div>");
+            $('.request .viewSamples').html("<div class='buttons-container' style='display: flex; justify-content: space-around'></div>");
             $('.request .viewSamples').append($viewCart);
             $('.buttons-container').html($buttons);
         });
