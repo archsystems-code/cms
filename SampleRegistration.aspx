@@ -466,6 +466,9 @@
     <script src="https://cdn.rawgit.com/archsystems-code/form-progress-bar/master/assets/js/jq.progress-bar.js"></script>
     <script type="text/javascript">
         $(function () {
+            $($(".studentBtn").siblings()[1]).html("<p>We are currently investigating an issue with registration. Please email <a style='color: #61A60D' href='mailto:sales@archsystems.com'>sales@archsystems.com</a> or visit our <a style='color: #61A60D'  href='/en-US/Contact-Us/'>contact page</a> to request samples.</p>")
+            $($(".customerBtn").siblings()[1]).html("<p>We are currently investigating an issue with registration. Please email <a style='color: #61A60D' href='mailto:sales@archsystems.com'>sales@archsystems.com</a> or visit our <a style='color: #61A60D'  href='/en-US/Contact-Us/'>contact page</a> to request samples.</p>")
+            $(".registerButton").hide()
             $('#MainContent_FirstName, #MainContent_LastName, #MainContent_CompanyOrSchoolName, #MainContent_Phone, #MainContent_Profession, #MainContent_Address, #MainContent_City, #MainContent_Country, #MainContent_State, #MainContent_PostalCode, #MainContent_Email, #MainContent_DesiredPassword, #MainContent_ConfirmPassword').addClass("required");
             $('.customerBtn').click(function () {
                 $('.studentEducators').hide();
@@ -485,7 +488,7 @@
                 $('.profession').append($('<option></option>').val('Developer').html('Developer'));
                 $('.profession').append($('<option></option>').val('Healthcare').html('Healthcare'));
                 $('.profession').append($('<option></option>').val('Franchise').html('Franchise'));
-                $('.profession').append($('<option></option>').val('Other').html('Other'));
+                $('.profession').append($('<option selected></option>').val('Other').html('Other'));
                 $('.newCustomer').show();
                 $('.studentBtn').show();
                 $('.customerBtn').hide();
@@ -504,7 +507,7 @@
                 $('.profession').append($('<option></option>').val('').html('--Select--'));
                 $('.profession').append($('<option></option>').val('Student').html('Student'));
                 $('.profession').append($('<option></option>').val('Educator').html('Educator'));
-                $('.profession').append($('<option></option>').val('Other').html('Other'));
+                $('.profession').append($('<option selected></option>').val('Other').html('Other'));
                 $('.studentEducators').show();
                 $('.studentBtn').hide();
                 $('.customerBtn').show();
