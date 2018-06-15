@@ -1,0 +1,85 @@
+﻿
+@mixin ProductTheme ($name, $color, $secondaryColor) {
+
+.#{$name} {
+	
+// General Theme
+    a {color:$color}
+    .roundedHeader, .interior nav h3, .productInfoWrapper h1, .productInfoWrapper h2, .productNav .materialExpert h2.roundedTitleLeftCol, .calloutBucket h2 {background:$color;}
+
+//Product details page	
+	.interior nav.productNav .materialExpert p a { color:$color;
+		&:hover{ color: $secondaryColor;} }
+	
+	.productInfoWrapper h1.roundedTitle { background:$color; }
+	.productInfoWrapper h2.roundedTitleShort { background:$color; }
+	
+	.productInfoWrapper .productWrapper .productImage a.back { color: $color; 
+		&:hover{color:$secondaryColor;} }
+	.productInfoWrapper .productWrapper .productImage a.next { color: $color; 
+		&:hover{color:$secondaryColor;}}
+	
+	.productInfoWrapper .productWrapper .productInfo .request .sampleReq a { color:$color;
+		&:hover{ color: $secondaryColor;} }
+	
+	.productInfoWrapper .productPageContent .featuredProject div p a { color:$color;
+		&:hover{ color: $secondaryColor;} }
+
+	.productInfoWrapper .productPageContent .productSpecs div.list ul li a { color:$color;
+		&:hover{ color: $secondaryColor;} }
+		
+//	div.print {border-top: 1px $color solid;}
+//	div.print div a { color:$color;
+//		&:hover{ color: $secondaryColor;} }
+
+//Collection landing page
+	.productInfoWrapper .rightCollectionInfo h2.roundedTitleSmall { background:$color; }
+	
+	.productInfoWrapper .topCollectionInfo div p a { color:$color;
+		&:hover{ color: $secondaryColor;} }
+	.productInfoWrapper .collectionTypeThumbs div.thumbContainer .thumbImg p a { color:$color;
+		&:hover{ color: $secondaryColor;} }
+	.productInfoWrapper .rightCollectionInfo .collectionFeat div p a { color:$color;
+		&:hover{ color: $secondaryColor;} }
+	.productInfoWrapper .rightCollectionInfo .collectionFeat div a { color:$color;
+		&:hover{ color: $secondaryColor;} }
+	.productInfoWrapper .rightCollectionInfo .collectionPress p a { color:$color;
+		&:hover{ color: $secondaryColor;} }
+	.productInfoWrapper .rightCollectionInfo .collectionPress a.morePressLink { color:$color;
+		&:hover{ color: $secondaryColor;} }
+	.productInfoWrapper .rightCollectionInfo .collectionFeat a.moreProjectsLink { color:$color;
+		&:hover{ color: $secondaryColor;} }
+	.productInfoWrapper .rightCollectionInfo .collectionFeat div.moreProjectsReveal ul li a { color:$color;
+		&:hover{ color: $secondaryColor;} }
+	.productInfoWrapper .rightCollectionInfo .collectionPress div.morePressReveal ul li a { color:$color;
+		&:hover{ color: $secondaryColor;} }
+	.collectionInfo p strong {color:$color;}
+	.print a {background:$color;
+		&:hover{ background: $secondaryColor;}}
+
+//Brand landing page
+	.productInfoWrapper header.brandHeader { background:$color; }
+
+// Project page theming
+	.segments .nav > li > a, .nav li a.header  {background:$color;}
+
+// Press Listing 
+
+
+
+
+//
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+

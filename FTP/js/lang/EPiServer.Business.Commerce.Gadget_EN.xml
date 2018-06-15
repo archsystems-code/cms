@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<languages>
+  <language name="English" id="en-US">
+      <Commerce>
+          <Gadget>
+              <OrderGadget>
+                  <title>Commerce Orders</title>
+                  <description>This gadget shows a summary of important statistics from Commerce Order statistics.</description>
+                  <updateInterval>Refresh Interval in seconds</updateInterval>
+                  <loading>Loading...</loading>
+                  <purchaseorderstitle>Purchase Orders</purchaseorderstitle>
+                  <orderstoday>Orders today</orderstoday>
+                  <ordersmonthly>Orders this month</ordersmonthly>
+                  <ordersweekly>Orders this week</ordersweekly>
+                  <ordersannually>Orders this year</ordersannually>
+                  <errors>
+                      <invalidUpdateInterval>Invalid number</invalidUpdateInterval>
+                  </errors>
+              </OrderGadget>
+              <OverviewGadget>
+                  <Title>Commerce Overview</Title>
+                  <Products>Products</Products>
+                  <Categories>Categories</Categories>
+                  <Orders>Orders</Orders>
+                  <Customers>Customers</Customers>
+                  <Promotions>Promotions</Promotions>
+                  <RefreshInterval>Refresh Interval in seconds</RefreshInterval>
+                  <GreaterThanZero>Refresh Interval must be a positive number.</GreaterThanZero>
+              </OverviewGadget>
+              <CMO>
+                  <title>Commerce Settings for EPiServer CMO</title>
+                  <addmonitor>Add Monitor</addmonitor>
+                  <editmonitor>Edit Monitor</editmonitor>
+                  <deletemonitor>Delete Monitor(s)</deletemonitor>
+                  <confirmdelete>Are you sure you want to delete?</confirmdelete>
+                  <type>Type</type>
+                  <productview>Product View</productview>
+                  <productorder>Product Order</productorder>
+                  <productcategory>Product/Category</productcategory>
+                  <applicationkey>Application Key</applicationkey>
+                  <urlforwebservice>URL for CMO Web Service</urlforwebservice>
+                  <add>Add</add>
+                  <edit>Edit</edit>
+                  <delete>Delete</delete>
+                  <save>Save</save>
+                  <cancel>Cancel</cancel>
+                  <selectelement>Click to select a product/category.</selectelement>
+                  <requiredname>Enter an element name.</requiredname>
+                  <requiredproduct>Select a product.</requiredproduct>
+                  <requiredapplicationkey>Enter an application key.</requiredapplicationkey>
+                  <requiredurl>Enter a URL service.</requiredurl>
+                  <requirednotexisted>The monitor already exists.</requirednotexisted>
+                  <serviceerror>Could not invoke the CMO service.</serviceerror>
+              </CMO>
+          </Gadget>
+      </Commerce>
+  </language>
+</languages>

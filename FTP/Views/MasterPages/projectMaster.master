@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Views/MasterPages/MasterPage.Master" AutoEventWireup="true" CodeBehind="ProjectMaster.Master.cs" Inherits="ASI.Web.Views.MasterPages.ProjectMaster" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+
+
+    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+    </asp:ContentPlaceHolder>
+
+</asp:Content>
+
+
+<asp:Content ID="Content3" ContentPlaceHolderID="scripts" runat="server">
+
+    <div class="mainContent interior">
+
+
+        <nav>
+
+            <ul>
+                <li><a href="#">featured projects</a></li>
+                <li><a href="#">case studies</a></li>
+                <li><a href="#">power of materials</a></li>
+
+                <li><a href="#">byu market segment</a>
+                    <ul>
+                        <li><a href="#">corp</a></li>
+                        <li><a href="#">healthcare</a>
+                            <ul>
+                                <li><a href="#">brand 1</a></li>
+                                <li><a href="#">brand 2a</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </li>
+            </ul>
+
+        </nav>
+
+        <section class="rightCol">
+            <asp:ContentPlaceHolder ID="scripts" runat="server">
+            </asp:ContentPlaceHolder>
+
+
+        </section>
+
+    </div>
+
+</asp:Content>

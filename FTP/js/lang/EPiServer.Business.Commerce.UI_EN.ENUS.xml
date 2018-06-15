@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<languages>
+  <language name="English" id="en-US">
+    <Commerce>
+      <services>
+        <reportabuse>
+          <permissionerror>You do not have permission to report.</permissionerror>
+          <reportowncomment>You cannot report your own comments.</reportowncomment>
+        </reportabuse>
+        <productrating>
+          <permissionerror>You do not have permission to rate.</permissionerror>
+        </productrating>
+      </services>
+      <productlinkmceplugin>
+        <productlinkproperties>
+          <productlink>Product Link</productlink>
+          <informationheading>Information</informationheading>
+          <linktitle>Link title</linktitle>
+          <targetframe>Target frame</targetframe>
+          <linktargetheading>Link target</linktargetheading>
+          <address>Select product</address>
+          <language>Language</language>
+          <automatically>Automatically</automatically>
+          <pagenotfoundmessage>The linked product is not available.</pagenotfoundmessage>
+          <selectnewpagemessage>Select another product before saving.</selectnewpagemessage>
+          <nourlvalidationmessage>Please specify a link target before saving.</nourlvalidationmessage>
+        </productlinkproperties>
+      </productlinkmceplugin>
+      <productpicker>
+        <rootlabel>Catalogs</rootlabel>
+        <noproducttext>A product could not be found in the current node.</noproducttext>
+        <productid>ID</productid>
+        <productname>Name</productname>
+        <description>Property for browsing the product</description>
+        <displayname>ProductBrowserProperty</displayname>
+        <displaytemplate>Template path</displaytemplate>
+        <sortAsc>Sort ascending</sortAsc>
+        <sortDesc>Sort descending</sortDesc>
+        <searchTitle>Search for product by name or ID in current and child nodes</searchTitle>
+        <invalidselection>Please select a node with depth greater than 1</invalidselection>
+      </productpicker>
+      <dynamiccontentplugin>
+        <productpicker>
+          <selectproduct>Select product</selectproduct>
+          <selectproducttooltip>Select a product to display</selectproducttooltip>
+          <selectdisplaypath>Select display path</selectdisplaypath>
+          <selectdisplaypathtooltip>Select display path used to display this product</selectdisplaypathtooltip>
+          <selectproductrequire>Select a product</selectproductrequire>
+        </productpicker>
+      </dynamiccontentplugin>
+      <general>
+        <time>
+          <shortdatepattern>dd/MM/yy</shortdatepattern>
+          <longdatepattern>MMM dd yyyy</longdatepattern>
+          <year>year</year>
+          <month>month</month>
+          <day>day</day>
+          <days>days</days>
+          <hour>h</hour>
+          <hours>h</hours>
+          <minute>m</minute>
+          <minutes>m</minutes>
+        </time>
+        <ago>ago</ago>
+      </general>
+      <visitorgroups>
+        <orderfrequencycriteria>
+          <displayname>Order Frequency</displayname>
+          <description>Match visitors that have placed an order in the store a specified amount of times in a specified date interval.</description>
+          <category>Commerce Criteria</category>
+          <ordertimes>Ordered at least</ordertimes>
+          <withindays>times within the last</withindays>
+          <numberofdays>days.</numberofdays>
+        </orderfrequencycriteria>
+        <customerpropertiescriterion>
+          <displayname>Customer Properties</displayname>
+          <description>Match visitors that match the selected property type and value.</description>
+          <category>Commerce Criteria</category>
+          <propertyname>Property</propertyname>
+          <birthdate>Date of birth</birthdate>
+          <customergroup>Customer group</customergroup>
+          <registrationsource>Registration source</registrationsource>
+          <country>Country</country>
+          <region>Region code</region>
+          <addresspostalcode>Address postal code</addresspostalcode>
+          <state>State</state>
+          <fromdate>From:</fromdate>
+          <todate>To:</todate>
+          <propertynamerequiredtext>Enter a property name</propertynamerequiredtext>
+          <fromdaterequiredtext>Enter a From date</fromdaterequiredtext>
+          <todaterequiredtext>Enter a To date</todaterequiredtext>
+          <customergrouprequiredtext>Enter a customer group</customergrouprequiredtext>
+          <registrationsourcerequiredtext>Enter a registration source</registrationsourcerequiredtext>
+          <countryrequiredtext>Enter a country</countryrequiredtext>
+          <regionrequiedtext>Enter a region code</regionrequiedtext>
+          <addresspostalcoderequiedtext>Enter a postal code</addresspostalcoderequiedtext>
+          <staterequiredtext>Enter a state</staterequiredtext>
+          <requiredfromdateearlierthantodatetext>From date must be earlier than To date</requiredfromdateearlierthantodatetext>
+        </customerpropertiescriterion>
+        <recentorderscriterion>
+          <displayname>Recent Orders</displayname>
+          <description>Match visitors that have placed an order within a specified number of days.</description>
+          <category>Commerce Criteria</category>
+          <withindays>Ordered within the last</withindays>
+          <days>days.</days>
+        </recentorderscriterion>
+        <productincartorwishlist>
+          <displayname>Product in Cart or Wish List</displayname>
+          <description>Match visitors that have a specified product in the cart or wish list.</description>
+          <category>Commerce Criteria</category>
+          <producttext>Specified product code</producttext>
+          <fromcategorytext>Product from a specifed category</fromcategorytext>
+          <haspropertyandvalue>The product has a specified property and value</haspropertyandvalue>
+          <propertylabel>Property</propertylabel>
+          <valuelabel>with value</valuelabel>
+          <comparisonrequiredtext>Enter a comparison type</comparisonrequiredtext>
+          <productcoderequiredtext>Enter a product code</productcoderequiredtext>
+          <categoryrequiredtext>Enter a category</categoryrequiredtext>
+          <propertynamerequiredtext>Enter a property name</propertynamerequiredtext>
+          <propertyvaluerequiredtext>Enter a property value</propertyvaluerequiredtext>
+        </productincartorwishlist>
+        <recentspent>
+          <displayname>Total Spent</displayname>
+          <description>Match visitors who have a specified order total within a specified number of days.</description>
+          <category>Commerce Criteria</category>
+          <totalrequiredtext>Sum of order totals is required and must be a number greater than or equal to 0.</totalrequiredtext>
+          <currencyrequiredtext>Enter a currency.</currencyrequiredtext>
+          <daysrequiredtext>Number of days is required and must be greater than or equal to 0.</daysrequiredtext>
+          <totallabel>Order total at least</totallabel>
+          <currencylabel>currency</currencylabel>
+          <withindays>within the last</withindays>
+          <days>days.</days>
+        </recentspent>
+      </visitorgroups>
+      <Admin>
+        <CommerceManager>
+          <GlobalNavigationTitle>Commerce</GlobalNavigationTitle>
+          <ManagementConsole>Commerce Manager</ManagementConsole>
+          <Setting>Settings</Setting>
+        </CommerceManager>
+        <CommerceManagerMenuItem>Commerce Manager</CommerceManagerMenuItem>
+        <License>
+          <invalidnumber>Invalid license number</invalidnumber>
+          <licensenocontent>The file specified has no content</licensenocontent>
+          <licensesavedinformation>The license with licensenumber {0} was saved and the site was updated.</licensesavedinformation>
+          <licenseSavedWithError>The license was saved and the site was updated, but some validation error occured.</licenseSavedWithError>
+          <loadlicenseerror>Could not load license information</loadlicenseerror>
+          <nolicensefile>{0} does not exist</nolicensefile>
+          <notvalidlicense>The file specified could not be parsed as an EPiServer license file</notvalidlicense>
+          <serviceerror>Communication with license service failed</serviceerror>
+          <servicefailure>The license service is not in valid state. Please take contact with EPiServer for license issues.</servicefailure>
+          <UploadLicenseFrom>Upload license from</UploadLicenseFrom>
+          <validationerror>Following validation error occured</validationerror>
+        </License>
+        <Settings>
+          <CommerceManagerUrl>Commerce Manager URL</CommerceManagerUrl>
+          <description>Settings for Commerce</description>
+          <displayname>Commerce Settings</displayname>
+          <GeneralSetting>Settings</GeneralSetting>
+          <Heading>Commerce Settings</Heading>
+          <LocalNavigationTitle>EPiServer Commerce</LocalNavigationTitle>
+          <ProductDetailPageType>Product detail page type</ProductDetailPageType>
+          <ProductListPageType>Product list page type</ProductListPageType>
+          <SaveSuccessful>Save successful</SaveSuccessful>
+          <SelectAccountPage>Account page</SelectAccountPage>
+          <SelectAddressBookPage>Address book page</SelectAddressBookPage>
+          <SelectBillingPage>Billing page</SelectBillingPage>
+          <SelectChangePasswordPage>Change password page</SelectChangePasswordPage>
+          <SelectCheckoutPage>Check out page</SelectCheckoutPage>
+          <SelectDIBSPaymentPage>DIBS payment page</SelectDIBSPaymentPage>
+          <SelectLogoutPage>Logout page</SelectLogoutPage>
+          <SelectMainMenuPage>Main menu page</SelectMainMenuPage>
+          <SelectOrderHistoryPage>Order history page</SelectOrderHistoryPage>
+          <SelectOrderPage>Shopping cart page</SelectOrderPage>
+          <SelectPaymentPage>Payment page</SelectPaymentPage>
+          <SelectProductPage>Product page</SelectProductPage>
+          <SelectProductViewPage>Product view page</SelectProductViewPage>
+          <SelectRootContentPage>Root content page</SelectRootContentPage>
+          <SelectRootPage>Home page</SelectRootPage>
+          <SelectSearchPage>Search page</SelectSearchPage>
+          <SelectTopMenuRootPage>Top menu root page</SelectTopMenuRootPage>
+          <SelectWishListPage>Wish list page</SelectWishListPage>
+          <UrlError>The URL must be absolute</UrlError>
+        </Settings>
+        <plugins>
+          <removecachejob>
+            <displayname>Clear Commerce Cache</displayname>
+            <description>A scheduled job for clearing EPiServer Commece cache data.</description>
+            <successmessage>Cleared Commerce cache data successfully.</successmessage>
+            <failedmessage>The job could not be completed.</failedmessage>
+          </removecachejob>
+        </plugins>
+      </Admin>
+      <catalog>
+        <product>
+          <error>
+            <invalidProductHomePage>Invalid Product Page</invalidProductHomePage>
+          </error>
+        </product>
+      </catalog>
+      <catalogBrowserProperty>
+        <description>Property for browsing the catalog</description>
+        <displayname>Catalog Browser Property</displayname>
+        <invalidSelection>Please select a node with depth greater than 1</invalidSelection>
+        <noSelection>No selection</noSelection>
+        <updating>Update in progress...</updating>
+      </catalogBrowserProperty>
+      <Edit>
+        <Plugin>
+          <TagCloud>
+            <AscendingOrder>Ascending order</AscendingOrder>
+            <Cancel>Cancel</Cancel>
+            <ConfirmDelete>Are you sure you want to delete this tag?</ConfirmDelete>
+            <Delete>Delete</Delete>
+            <DescendingOrder>Descending order</DescendingOrder>
+            <Description>Manages tag cloud items</Description>
+            <DisplayName>Tag Cloud Management</DisplayName>
+            <Edit>Edit</Edit>
+            <Messages>
+              <EmptyHitCount>Hits cannot be empty.</EmptyHitCount>
+              <EmptyTagName>Tag name must not be empty.</EmptyTagName>
+              <InvalidHitCount>Hits must be a number.</InvalidHitCount>
+              <TagNameIsNotUnique>Tag name must be unique.</TagNameIsNotUnique>
+              <TagNotFoundToUpdate>Tag not found. It might be deleted.</TagNotFoundToUpdate>
+            </Messages>
+            <Save>Save</Save>
+            <SearchAltText>Searching</SearchAltText>
+            <SearchTitle>Search for tag:</SearchTitle>
+            <TagHit>Hits</TagHit>
+            <TagName>Name</TagName>
+            <WarningMessage>Tag not found.</WarningMessage>
+          </TagCloud>
+        </Plugin>
+        <Provider>
+          <SearchProductCatalog>
+            <Area>Commerce</Area>
+            <Category>Products</Category>
+          </SearchProductCatalog>
+        </Provider>
+      </Edit>
+      <Exception>
+        <AccountPageNotFound>Account page has not been properly configured</AccountPageNotFound>
+        <CheckoutPageNotFound>Checkout page has not been properly configured</CheckoutPageNotFound>
+        <ProductPageNotFound>Product page has not been properly configured</ProductPageNotFound>
+        <ProductViewPageNotFound>Cannot find the product page with specified language: </ProductViewPageNotFound>
+        <SearchPageNotFound>Search page has not been properly configured</SearchPageNotFound>
+        <ShoppingPageNotFound>Shopping cart page has not been properly configured</ShoppingPageNotFound>
+        <WishlistPageNotFound>Wishlist page has not been properly configured</WishlistPageNotFound>
+      </Exception>
+    </Commerce>
+    <dynamiccontenttypes>
+      <dynamiccontent name="ProductPicker">
+        <caption>Product picker</caption>
+        <description>Insert the content of a specified product.</description>
+      </dynamiccontent>
+    </dynamiccontenttypes>
+    <admin>
+      <propertysettings>
+        <tinyeditorsettings>
+          <groups>
+            <productlink>Commerce</productlink>
+          </groups>
+        </tinyeditorsettings>
+      </propertysettings>
+    </admin>
+    <tinymce>
+      <productlink>
+        <desc see="#productlink_desc" />
+        <productlink_desc>Insert/edit product link</productlink_desc>
+      </productlink>
+    </tinymce>
+  </language>
+</languages>

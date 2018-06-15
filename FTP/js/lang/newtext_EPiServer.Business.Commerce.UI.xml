@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<languages>
+  <language name="English" id="en-US">
+    <headings>
+      <heading name="Information">
+        <description>Content</description>
+      </heading>
+      <heading name="Advanced">
+        <description>Settings</description>
+      </heading>
+      <heading name="FavouriteProducts">
+        <description>Favourite Products</description>
+      </heading>
+      <heading name="ExternalLinks">
+        <description>External Links</description>
+      </heading>
+      <heading name="SiteConfiguration">
+        <description>Site Configuration</description>
+      </heading>
+    </headings>
+    <episerver>
+        <components>
+            <categories>
+                <commerce>Commerce</commerce>
+            </categories>
+        </components>
+    </episerver>
+    <commerce>
+      <contenttype>
+        <commercerootcontenttypedescription>Used as root/welcome page</commercerootcontenttypedescription>
+        <commercecontenttypedescription>Used as root/welcome page</commercecontenttypedescription>
+        <rootcontentname>Commerce Content Root</rootcontentname>
+      </contenttype>
+      <cart>
+        <itemoutofserviceinfomation>The product {0} is now out of service.</itemoutofserviceinfomation>
+      </cart>
+
+      <components>
+        <catalogs>
+          <title>Catalogs</title>
+          <description>List of Catalogs</description>
+          <nocatalogentry>There are no items available.</nocatalogentry>
+          <catalogentrymenu>Catalog entry menu</catalogentrymenu>
+          <catalognodemenu>Catalog node Menu</catalognodemenu>
+          <rootmenu>Catalog Menu</rootmenu>
+        </catalogs>
+        <market>Market</market>
+        <command>
+           <viewcatalogentry>View</viewcatalogentry>  
+           <label>New Catalog Entry</label>
+        </command>
+      </components>
+
+      <catalogentry>
+        <outline>Outline</outline>
+      </catalogentry>
+
+      <scheduledjobs>
+        <shipmentreleasejob>
+          <jobalreadyrunning>Job was already running.</jobalreadyrunning>
+          <startjob>Processing Shipments for {0} application.</startjob>
+          <displayname>Shipment Release Job</displayname>
+          <description>This job releases shipments.</description>
+          <successmessage>Shipment release updated {0} orders for application {1}.  </successmessage>
+          <failedmessage>The job could not be completed.  Shipment Release Job failed.</failedmessage>
+        </shipmentreleasejob>
+        <incrementalsearchindexjob>
+          <jobalreadyrunning>Job was already running.</jobalreadyrunning>
+          <createsearchmanager>Creating Search Manager for {0} Application.</createsearchmanager>
+          <createdsearchmanager>Created Search Manager.</createdsearchmanager>
+          <searchmessage>Percent Complete: {0}%, {1}</searchmessage>
+          <displayname>Incremental Search Index Job</displayname>
+          <description>This job indexes incrementally.</description>
+          <successmessage>Incremental indexing successfully completed for application {0}.  </successmessage>
+          <failedmessage>The job could not be completed.  Search Manager Failed.</failedmessage>
+        </incrementalsearchindexjob>
+        <paymentplanjob>
+          <jobalreadyrunning>Job was already running.</jobalreadyrunning>
+          <startjob>Processing Payment Plans for {0} application.</startjob>
+          <createpurchaseorder>Processed Payment Plan and created Purchase Order {0}</createpurchaseorder>
+          <displayname>Subscription Payment Plans Job</displayname>
+          <description>This job processes subscriptions.</description>
+          <successmessage>Processed {0} payment plans for application {1}.  </successmessage>
+          <failedmessage>The job could not be completed.  Processing Payment Plans failed.</failedmessage>
+        </paymentplanjob>
+        <removedexpiredcartsjob>
+          <jobalreadyrunning>Job was already running.</jobalreadyrunning>
+          <startjob>Starting to delete expired carts job for {0} application.</startjob>
+          <displayname>Remove Expired Carts</displayname>
+          <description>This job removes old carts.  Make sure to have an appsetting of ExpiredCartJobDays to tell the service how old of carts you want to delete.</description>
+          <successmessage>Processed {0} expired carts for application {1}.  </successmessage>
+          <failedmessage>The job could not be completed.  Failed to delete expired carts.</failedmessage>
+        </removedexpiredcartsjob>
+        <rotateencryptionjob>
+          <jobalreadyrunning>Job was already running.</jobalreadyrunning>
+          <displayname>Rotate Encryption Keys</displayname>
+          <description>This job rotates encryption keys.</description>
+          <successmessage>Rotating encryption keys successfully completed.</successmessage>
+          <failedmessage>The job could not be completed.  Rotating encryption keys failed.</failedmessage>
+          <startjob>Starting to rotate encryption keys job for {0} application.</startjob>
+        </rotateencryptionjob>
+        <serializedataindexjob>
+          <jobalreadyrunning>Job was already running.</jobalreadyrunning>
+          <startcatalog>Indexing {0} catalog ...</startcatalog>
+          <indexrecord>Indexing {0}/{1} record                  </indexrecord>
+          <saverecord>"Saving {0}-{1}/{2} records            </saverecord>
+          <donecatalog>Successfully indexed {0} language records in {1} catalog</donecatalog>
+          <displayname>Serialize Catalog Meta Data Job</displayname>
+          <description>This job serializes data for fast meta data retrieval</description>
+          <successmessage>Serialized indexing successfully completed for application {0}.  </successmessage>
+          <failedmessage>The job could not be completed.  Serialized indexing failed.</failedmessage>
+        </serializedataindexjob>
+        <fullsearchindexjob>
+          <jobalreadyrunning>Job was already running.</jobalreadyrunning>
+          <createsearchmanager>Creating Search Manager for {0} Application.</createsearchmanager>
+          <createdsearchmanager>Created Search Manager.</createdsearchmanager>
+          <searchmessage>Percent Complete: {0}%, {1}</searchmessage>
+          <displayname>Full Search Index Job</displayname>
+          <description>This job indexes full.</description>
+          <successmessage>Full indexing successfully completed for application {0}.  </successmessage>
+          <failedmessage>The job could not be completed.  Search Manager Failed.  </failedmessage>
+        </fullsearchindexjob>
+      </scheduledjobs>
+    </commerce>
+  </language>
+</languages>

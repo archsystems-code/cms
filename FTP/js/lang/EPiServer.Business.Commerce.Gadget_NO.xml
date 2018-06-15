@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<languages>
+  <language name="norsk" id="no">
+      <Commerce>
+          <Gadget>
+              <OrderGadget>
+                  <title>Commerce-bestillinger</title>
+                  <description>Dette verktøyet viser en oppsummering av viktig statistikk fra Commerce-bestillingsstatistikk.</description>
+                  <updateInterval>Oppdateringsintervall i sekunder</updateInterval>
+                  <loading>Laster...</loading>
+                  <purchaseorderstitle>Kjøpsbestillinger</purchaseorderstitle>
+                  <orderstoday>Bestillinger i dag</orderstoday>
+                  <ordersmonthly>Bestillinger denne måneden</ordersmonthly>
+                  <ordersweekly>Bestillinger denne uken</ordersweekly>
+                  <ordersannually>Bestillinger dette året</ordersannually>
+                  <errors>
+                      <invalidUpdateInterval>Ugyldig tall</invalidUpdateInterval>
+                  </errors>
+              </OrderGadget>
+              <OverviewGadget>
+                  <Title>Oversikt over Commerce</Title>
+                  <Products>Produkter</Products>
+                  <Categories>Kategorier</Categories>
+                  <Orders>Bestillinger</Orders>
+                  <Customers>Kunder</Customers>
+                  <Promotions>Tilbud</Promotions>
+                  <RefreshInterval>Oppdateringsintervall i sekunder</RefreshInterval>
+                  <GreaterThanZero>Oppdateringsintervallet må være et positivt tall.</GreaterThanZero>
+              </OverviewGadget>
+              <CMO>
+                  <title>Commerce-innstillinger for EPiServer CMO</title>
+                  <addmonitor>Legge til skjerm</addmonitor>
+                  <editmonitor>Rediger skjerm</editmonitor>
+                  <deletemonitor>Slett skjerm(er)</deletemonitor>
+                  <confirmdelete>Er du sikker på du vil slette?</confirmdelete>
+                  <type>Type</type>
+                  <productview>Produktvisning</productview>
+                  <productorder>Produktbestilling</productorder>
+                  <productcategory>Produkt/kategori</productcategory>
+                  <applicationkey>Programnøkkel</applicationkey>
+                  <urlforwebservice>URL-adresse for CMO-webtjeneste</urlforwebservice>
+                  <add>Legg til</add>
+                  <edit>Rediger</edit>
+                  <delete>Slett</delete>
+                  <save>Lagre</save>
+                  <cancel>Avbryt</cancel>
+                  <selectelement>Klikk for å velge et produkt/kategori.</selectelement>
+                  <requiredname>Angi et elementnavn.</requiredname>
+                  <requiredproduct>Velg et produkt.</requiredproduct>
+                  <requiredapplicationkey>Angi en programnøkkel.</requiredapplicationkey>
+                  <requiredurl>Angi en URL-tjeneste.</requiredurl>
+                  <requirednotexisted>Skjermen eksisterer allerede.</requirednotexisted>
+                  <serviceerror>Kunne ikke aktivere CMO-tjenesten.</serviceerror>
+              </CMO>
+          </Gadget>
+      </Commerce>
+  </language>
+</languages>

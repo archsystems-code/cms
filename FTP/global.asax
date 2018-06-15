@@ -1,0 +1,1 @@
+<%@ Application Language="C#" Inherits="EPiServer.Global" CodeBehind="global.asax.cs" %>

@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CommerceSite.master.cs" Inherits="EPiServer.Business.Commerce.UI.MasterPages.CommerceSite" %>
+<%@ Import Namespace="EPiServer.Shell" %>
+<%@ Import Namespace="EPiServer.Shell.Web.Resources" %>
+<%@ Import Namespace="EPiServer.Shell.Web.Mvc.Html"%>
+<%@ Import Namespace="System.Threading"%>
+<%@ Import Namespace="EPiServer.Shell.Navigation" %>
+<%@ Import Namespace="EPiServer.Framework.Web.Mvc.Html"%>
+<%@ Import Namespace="EPiServer.Framework.Web.Resources"%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <%--    
+        Need a container control around everything that uses Response.Write in the head, 
+        since WebForm pages modifies the control collection in the head control
+    --%>    
+    <title runat="server" />
+    <asp:PlaceHolder runat="server" id="cssLinkRegion" />
+    <asp:PlaceHolder ID="clientScripts" runat="server" />
+    <asp:PlaceHolder ID="shellScripts" runat="server">
+            <%=Page.ClientResources("Dojo", new[] { ClientResourceType.Style })%>
+            <%=Page.ClientResources("ShellCore")%>
+            <%=Page.ClientResources("ShellWidgets")%>
+            <%=Page.ClientResources("ShellCoreLightTheme")%>
+            <%=Page.ClientResources("ShellWidgetsLightTheme")%>
+            <%=Page.ClientResources("Navigation")%>
+
+            <!--[if gte IE 7]>
+                <link type="text/css" href="<%= Paths.ToShellClientResource("ClientResources/Epi/Widgets/GlobalNavigation/GlobalNavigation_ie.css") %>" rel="Stylesheet" />
+            <![endif]-->
+            <!--[if lte IE 6]>
+            <link type="text/css" href="<%= Paths.ToShellClientResource("ClientResources/Epi/Widgets/GlobalNavigation/GlobalNavigation_ie6.css") %>" rel="Stylesheet" />
+            <![endif]-->
+
+    </asp:PlaceHolder>
+    <asp:ContentPlaceHolder ID="HeaderContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+<!-- Wrapper - Application base layout -->
+<div id="epi-globalDocument">
+	<!-- Header -->
+	<asp:ContentPlaceHolder ID="NavigationContent" runat="server">
+	    <%= Html.GlobalMenu()%>
+    </asp:ContentPlaceHolder>
+	<!-- Active/selected Application -->
+	<div id="epi-application">
+        <!-- Application Main Area -->
+        <div id="epi-applicationBody">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+	</div>
+</div>
+</body>
+</html>

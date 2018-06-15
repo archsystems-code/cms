@@ -1,0 +1,25 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Views/MasterPages/MasterPage.Master" AutoEventWireup="true" CodeBehind="InteriorLeftNav.Master.cs" Inherits="ASI.Web.Views.MasterPages.InteriorLeftNav" %>
+
+<%@ Register Src="~/Views/Controls/ProjectLeftNav.ascx" TagPrefix="uc1" TagName="ProjectLeftNav" %>
+<%@ Register Src="~/Views/Controls/LeftNav.ascx" TagPrefix="uc1" TagName="LeftNav" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="mainContent interior" runat="server" ID="divMainContent">
+        <asp:ContentPlaceHolder ID="LeftNav" runat="server">
+            <uc1:LeftNav runat="server" ID="leftNavControl" />
+        </asp:ContentPlaceHolder>
+        
+        <section class="rightCol">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </section>
+    </div>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="scripts" runat="server">
+    <asp:ContentPlaceHolder ID="scripts" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

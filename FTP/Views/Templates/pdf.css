@@ -1,0 +1,24 @@
+sup { font-size: 9px }
+input { padding: 0; margin-top: 0; font-size: 14px; }
+body { font-family: Arial, Helvetica, Verdana; font-size: 13px; background: #fff; }
+td { vertical-align: top; font-family: verdana, arial; font-size: 14px; }
+table { padding: 0px; border-collapse: collapse; border-spacing: 0; }
+table.forms tr td { /* border: 1px solid; */ padding: 5px 5px 5px 5px; border-collapse: collapse; border-spacing: 0; text-align: left;  }
+table.forms2 tr th { padding: 5px 5px 10px 5px; border-collapse: collapse; border-spacing: 0; text-align: left; line-height: 20px; font-weight: normal; }
+table.forms2 tr td { padding: 5px 5px 5px 5px; border-collapse: collapse; border-spacing: 0; border-top: 1px solid #ccc; text-align: left; line-height: 20px; }
+table#industrylinks tr td { padding: auto; border-collapse: collapse; border-spacing: 0; text-align: center; vertical-align: middle; height: 60px; }
+table tr td { padding: 0px }
+p { padding: 0px; margin: 1px 0px 10px 0px; }
+img { border: 0px }
+ul { padding-left: 15px; margin-left: 4px; }
+li { padding: 0px 0px 8px 0px; text-align: left; }
+hr { border: 0; color: #ccc; background-color: #ccc; height: 1px; }
+.floatLeft { float: left }
+.floatRight { float: right }
+.clear { clear: both }
+td { padding: 5px 15px !important; text-align: center; }
+h2 { font-size: 12pt !important; font-weight: bold; }
+h1 { font-size: 16pt; font-weight: bold; }
+.newicon { width: 25px; height: 17px; vertical-align: middle; background: url(/images/icon_new.gif) top right no-repeat; display: inline-block; }
+.updatedicon { color: #9a0011 !important; font-size: 13px; font-style: italic; font-weight: bold; }
+.tearsheetlink { display: none }

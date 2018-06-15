@@ -1,0 +1,2 @@
+﻿/* Display the information node when hovering the overlay. */
+.Sleek .epi-overlay-item-container:hover .epi-overlay-item-info { color: #333; background-color: #B4C600; border: 3px solid #B4C600; border-radius: 2px 2px 0 0; display: block; font-size: 1.2em; top: -30px; right: -3px; }

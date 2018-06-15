@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<languages>
+  <language name="suomi" id="fi">
+    <Commerce>
+      <services>
+        <reportabuse>
+          <permissionerror>Sinulla ei ole lupaa raportoida.</permissionerror>
+          <reportowncomment>Et voi raportoida omia kommenttejasi.</reportowncomment>
+        </reportabuse>
+        <productrating>
+          <permissionerror>Sinulla ei ole lupaa antaa arvosanaa.</permissionerror>
+        </productrating>
+      </services>
+      <productlinkmceplugin>
+        <productlinkproperties>
+          <productlink>Tuotelinkki</productlink>
+          <informationheading>Tiedot</informationheading>
+          <linktitle>Linkin otsikko</linktitle>
+          <targetframe>Kohdekehys</targetframe>
+          <linktargetheading>Linkin kohde</linktargetheading>
+          <address>Valitse tuote</address>
+          <language>Kieli</language>
+          <automatically>Automaattisesti</automatically>
+          <pagenotfoundmessage>Linkitettyä tuotetta ei ole saatavana.</pagenotfoundmessage>
+          <selectnewpagemessage>Valitse toinen tuote, ennen kuin tallennat.</selectnewpagemessage>
+          <nourlvalidationmessage>Määritä linkin kohde, ennen kuin tallennat.</nourlvalidationmessage>
+        </productlinkproperties>
+      </productlinkmceplugin>
+      <productpicker>
+        <rootlabel>Katalogit</rootlabel>
+        <noproducttext>Tuotetta ei löytynyt valittuna olevassa tuotekatalogissa.</noproducttext>
+        <productid>Tunnus</productid>
+        <productname>Nimi</productname>
+        <description>Ominaisuus tuotteen selausta varten</description>
+        <displayname>TuoteSelaimenOminaisuus</displayname>
+        <displaytemplate>Mallin polku</displaytemplate>
+        <sortAsc>Lajittelujärjestys nouseva</sortAsc>
+        <sortDesc>Lajittelujärjestys laskeva</sortDesc>
+        <searchTitle>Etsi tuotetta nimen tai tunnuksen perusteella valittuna olevassa tuotekatalogissa ja alatuotekatalogeissa</searchTitle>
+        <invalidselection>Valitse tuotekatalogi, jonka syvyys on yli 1</invalidselection>
+      </productpicker>
+      <dynamiccontentplugin>
+        <productpicker>
+          <selectproduct>Valitse tuote</selectproduct>
+          <selectproducttooltip>Valitse näytettävä tuote</selectproducttooltip>
+          <selectdisplaypath>Valitse näyttöpolku</selectdisplaypath>
+          <selectdisplaypathtooltip>Valitse näyttöpolku, jota käytetään tämän tuotteen näyttämiseen</selectdisplaypathtooltip>
+          <selectproductrequire>Valitse tuote</selectproductrequire>
+        </productpicker>
+      </dynamiccontentplugin>
+      <general>
+        <time>
+          <shortdatepattern>pp/KK/vv</shortdatepattern>
+          <longdatepattern>KKK pp vvvv</longdatepattern>
+          <year>vuosi</year>
+          <month>kuukausi</month>
+          <day>päivä</day>
+          <days>päivää</days>
+          <hour>t</hour>
+          <hours>t</hours>
+          <minute>m</minute>
+          <minutes>m</minutes>
+        </time>
+        <ago>sitten</ago>
+      </general>
+      <visitorgroups>
+        <orderfrequencycriteria>
+          <displayname>Tilaustiheys</displayname>
+          <description>Poimi vierailijat, jotka ovat tehneet kaupassa tilauksen määritetyn määrän kertoja määritettyjen päivämäärien välillä.</description>
+          <category>Commerce-ehdot</category>
+          <ordertimes>Tilannut vähintään</ordertimes>
+          <withindays>kertaa viimeisen</withindays>
+          <numberofdays>päivän aikana.</numberofdays>
+        </orderfrequencycriteria>
+        <customerpropertiescriterion>
+          <displayname>Asiakkaan ominaisuudet</displayname>
+          <description>Poimi vierailijat, jotka vastaavat valittua ominaisuuden tyyppiä ja arvoa.</description>
+          <category>Commerce-ehdot</category>
+          <propertyname>Ominaisuus</propertyname>
+          <birthdate>Syntymäpäivä</birthdate>
+          <customergroup>Asiakasryhmä</customergroup>
+          <registrationsource>Rekisteröintilähde</registrationsource>
+          <country>Maa</country>
+          <region>Seudun koodi</region>
+          <addresspostalcode>Osoitteen postinumero</addresspostalcode>
+          <state>Osavaltio</state>
+          <fromdate>Alkaen:</fromdate>
+          <todate>Asti:</todate>
+          <propertynamerequiredtext>Kirjoita ominaisuuden nimi</propertynamerequiredtext>
+          <fromdaterequiredtext>Näppäile alkaen-päivämäärä</fromdaterequiredtext>
+          <todaterequiredtext>Näppäile asti-päivämäärä</todaterequiredtext>
+          <customergrouprequiredtext>Anna asiakasryhmä</customergrouprequiredtext>
+          <registrationsourcerequiredtext>Anna rekisteröintilähde</registrationsourcerequiredtext>
+          <countryrequiredtext>Anna maa</countryrequiredtext>
+          <regionrequiedtext>Anna seudun koodi</regionrequiedtext>
+          <addresspostalcoderequiedtext>Anna postinumero</addresspostalcoderequiedtext>
+          <staterequiredtext>Anna osavaltio</staterequiredtext>
+          <requiredfromdateearlierthantodatetext>Alkaen-päivämäärän täytyy olla asti-päivämäärää ennen</requiredfromdateearlierthantodatetext>
+        </customerpropertiescriterion>
+        <recentorderscriterion>
+          <displayname>Viimeisimmät tilaukset</displayname>
+          <description>Poimi vierailijat, joiden edellisestä tilauksesta on kulunut korkeintaan määritetty määrä päiviä.</description>
+          <category>Commerce-ehdot</category>
+          <withindays>Tilannut viimeisen</withindays>
+          <days>päivän aikana.</days>
+        </recentorderscriterion>
+        <productincartorwishlist>
+          <displayname>Tuote korissa tai toivomuslistassa</displayname>
+          <description>Poimi vierailijat, joilla on määritetty tuote korissa tai toivomuslistassa.</description>
+          <category>Commerce-ehdot</category>
+          <producttext>Määritetty tuotekoodi</producttext>
+          <fromcategorytext>Tuote määritetystä tuotekatalogista</fromcategorytext>
+          <haspropertyandvalue>Tuotteella on määritetty ominaisuus ja arvo</haspropertyandvalue>
+          <propertylabel>Ominaisuus</propertylabel>
+          <valuelabel>ja arvo</valuelabel>
+          <comparisonrequiredtext>Anna vertailutyyppi</comparisonrequiredtext>
+          <productcoderequiredtext>Anna tuotekoodi</productcoderequiredtext>
+          <categoryrequiredtext>Anna tuotekatalogi</categoryrequiredtext>
+          <propertynamerequiredtext>Kirjoita ominaisuuden nimi</propertynamerequiredtext>
+          <propertyvaluerequiredtext>Kirjoita ominaisuuden arvo</propertyvaluerequiredtext>
+        </productincartorwishlist>
+        <recentspent>
+          <displayname>Ostot yhteensä</displayname>
+          <description>Poimi vierailijat, joilla on määritetty tilauksen kokonaissumma määritetyn määrän päiviä sisällä.</description>
+          <category>Commerce-ehdot</category>
+          <totalrequiredtext>Tilausten kokonaissummien summa on pakollinen, ja sen on oltava lukuarvo, joka on suurempi tai yhtä suuri kuin 0.</totalrequiredtext>
+          <currencyrequiredtext>Anna valuutta.</currencyrequiredtext>
+          <daysrequiredtext>Päivien lukumäärä on pakollinen, ja sen on oltava suurempi tai yhtä suuri kuin 0.</daysrequiredtext>
+          <totallabel>Tilauksen kokonaissumma vähintään</totallabel>
+          <currencylabel>valuutta</currencylabel>
+          <withindays>viimeisen</withindays>
+          <days>päivän aikana.</days>
+        </recentspent>
+      </visitorgroups>
+      <Admin>
+        <plugins>
+          <removecachejob>
+            <displayname>Tyhjennä Commerce-välimuisti</displayname>
+            <description>Aikaohjattu tehtävä EPiServer Commerce -välimuistitietojen tyhjentämiseksi.</description>
+            <successmessage>Commerce-välimuistitiedot tyhjennettiin onnistuneesti.</successmessage>
+            <failedmessage>Tehtävää ei voitu suorittaa loppuun.</failedmessage>
+          </removecachejob>
+        </plugins>
+        <CommerceManager>
+          <GlobalNavigationTitle>Commerce</GlobalNavigationTitle>
+          <ManagementConsole>Commerce Manager</ManagementConsole>
+          <Setting>Asetukset</Setting>
+        </CommerceManager>
+        <CommerceManagerMenuItem>Commerce Manager</CommerceManagerMenuItem>
+        <License>
+          <invalidnumber>Virheellinen lisenssin numero</invalidnumber>
+          <licensenocontent>Määritetyssä tiedostossa ei ole sisältöä</licensenocontent>
+          <licensesavedinformation>Lisenssi, jonka numeron on {0}, tallennettiin, ja sivusto päivitettiin.</licensesavedinformation>
+          <licenseSavedWithError>Lisenssi tallennettiin ja sivusto päivitettiin, mutta tapahtui jokin vahvistusvirhe.</licenseSavedWithError>
+          <loadlicenseerror>Lisenssitietoja ei voitu ladata</loadlicenseerror>
+          <nolicensefile>Kohdetta {0} ei ole olemassa</nolicensefile>
+          <notvalidlicense>Määritettyä tiedostoa ei voitu jäsentää EPiServer-lisenssitiedostona</notvalidlicense>
+          <serviceerror>Yhteys lisenssipalveluun epäonnistui</serviceerror>
+          <servicefailure>Lisenssipalvelu ei ole hyväksyttävässä tilassa. Ota yhteys EPiServeriin lisenssiin liittyvissä ongelmatilanteissa.</servicefailure>
+          <UploadLicenseFrom>Lataa lisenssi kohteesta</UploadLicenseFrom>
+          <validationerror>Tapahtui seuraava vahvistusvirhe</validationerror>
+        </License>
+        <Settings>
+          <CommerceManagerUrl>Commerce Manager URL</CommerceManagerUrl>
+          <description>Commercen asetukset</description>
+          <displayname>Commerce-asetukset</displayname>
+          <GeneralSetting>Asetukset</GeneralSetting>
+          <Heading>Commerce-asetukset</Heading>
+          <LocalNavigationTitle>EPiServer Commerce</LocalNavigationTitle>
+          <ProductDetailPageType>Tuotetietosivun tyyppi</ProductDetailPageType>
+          <ProductListPageType>Tuoteluettelosivun tyyppi</ProductListPageType>
+          <SaveSuccessful>Tallennus onnistui</SaveSuccessful>
+          <SelectAccountPage>Tilisivu</SelectAccountPage>
+          <SelectAddressBookPage>Osoitekirjasivu</SelectAddressBookPage>
+          <SelectBillingPage>Laskutussivu</SelectBillingPage>
+          <SelectChangePasswordPage>Salasananvaihtosivu</SelectChangePasswordPage>
+          <SelectCheckoutPage>Kassasivu</SelectCheckoutPage>
+          <SelectDIBSPaymentPage>DIBS-maksusivu</SelectDIBSPaymentPage>
+          <SelectLogoutPage>Uloskirjautumissivu</SelectLogoutPage>
+          <SelectMainMenuPage>Päävalikkosivu</SelectMainMenuPage>
+          <SelectOrderHistoryPage>Tilaushistoriasivu</SelectOrderHistoryPage>
+          <SelectOrderPage>Ostoskorisivu</SelectOrderPage>
+          <SelectPaymentPage>Maksusivu</SelectPaymentPage>
+          <SelectProductPage>Tuotesivu</SelectProductPage>
+          <SelectProductViewPage>Tuotenäkymäsivu</SelectProductViewPage>
+          <SelectRootContentPage>Pääsisältösivu</SelectRootContentPage>
+          <SelectRootPage>Etusivu</SelectRootPage>
+          <SelectSearchPage>Hakusivu</SelectSearchPage>
+          <SelectTopMenuRootPage>Ylävalikon pääsivu</SelectTopMenuRootPage>
+          <SelectWishListPage>Toivomuslistasivu</SelectWishListPage>
+          <UrlError>URL:n täytyy olla absoluuttinen</UrlError>
+        </Settings>
+      </Admin>
+      <catalog>
+        <product>
+          <error>
+            <invalidProductHomePage>Virheellinen tuotesivu</invalidProductHomePage>
+          </error>
+        </product>
+      </catalog>
+      <catalogBrowserProperty>
+        <description>Ominaisuus katalogin selausta varten</description>
+        <displayname>Katalogiselaimen ominaisuus</displayname>
+        <invalidSelection>Valitse tuotekatalogi, jonka syvyys on yli 1</invalidSelection>
+        <noSelection>Ei valintaa</noSelection>
+        <updating>Päivitys käynnissä...</updating>
+      </catalogBrowserProperty>
+      <Edit>
+        <Plugin>
+          <TagCloud>
+            <AscendingOrder>Nouseva järjestys</AscendingOrder>
+            <Cancel>Peruuta</Cancel>
+            <ConfirmDelete>Haluatko varmasti poistaa tämän tagin?</ConfirmDelete>
+            <Delete>Poista</Delete>
+            <DescendingOrder>Laskeva järjestys</DescendingOrder>
+            <Description>Käsittelee tagipilvikohteita</Description>
+            <DisplayName>Tagipilvihallinta</DisplayName>
+            <Edit>Muokkaa</Edit>
+            <Messages>
+              <EmptyHitCount>Osumien arvo ei voi olla tyhjä.</EmptyHitCount>
+              <EmptyTagName>Tagin nimi ei saa olla tyhjä.</EmptyTagName>
+              <InvalidHitCount>Osumat on ilmaistava numerona.</InvalidHitCount>
+              <TagNameIsNotUnique>Tagin nimen on oltava ainutlaatuinen.</TagNameIsNotUnique>
+              <TagNotFoundToUpdate>Tagia ei löytynyt. Se on saatettu poistaa.</TagNotFoundToUpdate>
+            </Messages>
+            <Save>Tallenna</Save>
+            <SearchAltText>Etsitään</SearchAltText>
+            <SearchTitle>Etsi tagia:</SearchTitle>
+            <TagHit>Osumat</TagHit>
+            <TagName>Nimi</TagName>
+            <WarningMessage>Tagia ei löytynyt.</WarningMessage>
+          </TagCloud>
+        </Plugin>
+        <Provider>
+          <SearchProductCatalog>
+            <Area>Commerce</Area>
+            <Category>Tuotteet</Category>
+          </SearchProductCatalog>
+        </Provider>
+      </Edit>
+      <Exception>
+        <AccountPageNotFound>Tilisivua ei ole määritetty oikein</AccountPageNotFound>
+        <CheckoutPageNotFound>Kassasivua ei ole määritetty oikein</CheckoutPageNotFound>
+        <ProductPageNotFound>Tuotesivua ei ole määritetty oikein</ProductPageNotFound>
+        <ProductViewPageNotFound>Tuotesivua ei löydy määritetyllä kielellä: </ProductViewPageNotFound>
+        <SearchPageNotFound>Hakusivua ei ole määritetty oikein</SearchPageNotFound>
+        <ShoppingPageNotFound>Ostoskorisivua ei ole määritetty oikein</ShoppingPageNotFound>
+        <WishlistPageNotFound>Toivelistasivua ei ole määritetty oikein</WishlistPageNotFound>
+      </Exception>
+    </Commerce>
+    <dynamiccontenttypes>
+      <dynamiccontent name="ProductPicker">
+        <caption>Tuotteen valitsija</caption>
+        <description>Lisää määritetyn tuotteen sisältö.</description>
+      </dynamiccontent>
+    </dynamiccontenttypes>
+    <admin>
+      <propertysettings>
+        <tinyeditorsettings>
+          <groups>
+            <productlink>Commerce</productlink>
+          </groups>
+        </tinyeditorsettings>
+      </propertysettings>
+    </admin>
+    <tinymce>
+      <productlink>
+        <desc see="#productlink_desc"/>
+        <productlink_desc>Lisää tuotelinkki tai muokkaa tuotelinkkiä</productlink_desc>
+      </productlink>
+    </tinymce>
+  </language>
+</languages>

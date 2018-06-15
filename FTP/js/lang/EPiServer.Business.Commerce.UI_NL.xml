@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<languages>
+  <language name="Nederlands" id="nl">
+    <Commerce>
+      <services>
+        <reportabuse>
+          <permissionerror>U heeft geen toestemming om te rapporteren.</permissionerror>
+          <reportowncomment>U kunt uw eigen opmerkingen niet verwijderen.</reportowncomment>
+        </reportabuse>
+        <productrating>
+          <permissionerror>U heeft geen toestemming om te beoordelen.</permissionerror>
+        </productrating>
+      </services>
+      <productlinkmceplugin>
+        <productlinkproperties>
+          <productlink>Productlink</productlink>
+          <informationheading>Informatie</informationheading>
+          <linktitle>Linktitel</linktitle>
+          <targetframe>Doelframe</targetframe>
+          <linktargetheading>Linktarget</linktargetheading>
+          <address>Producten selecteren</address>
+          <language>Taal</language>
+          <automatically>Automatisch</automatically>
+          <pagenotfoundmessage>Het gelinkte product is niet beschikbaar.</pagenotfoundmessage>
+          <selectnewpagemessage>Selecteer een ander product voordat u opslaat.</selectnewpagemessage>
+          <nourlvalidationmessage>Specificeer een linktarget voordat u opslaat.</nourlvalidationmessage>
+        </productlinkproperties>
+      </productlinkmceplugin>
+      <productpicker>
+        <rootlabel>Catalogi</rootlabel>
+        <noproducttext>Er kon geen product worden gevonden in de huidige node.</noproducttext>
+        <productid>ID</productid>
+        <productname>Naam</productname>
+        <description>Eigenschap om door het product te bladeren</description>
+        <displayname>ProductBladerEigenschap</displayname>
+        <displaytemplate>Sjabloonpad</displaytemplate>
+        <sortAsc>Oplopend sorteren</sortAsc>
+        <sortDesc>Aflopend sorteren</sortDesc>
+        <searchTitle>Zoeken naar product of naam of Id in huidige en childnodes</searchTitle>
+        <invalidselection>Gelieve een knooppunt te selecteren met een diepte groter dan 1</invalidselection>
+      </productpicker>
+      <dynamiccontentplugin>
+        <productpicker>
+          <selectproduct>Producten selecteren</selectproduct>
+          <selectproducttooltip>Selecteer een product voor weergave</selectproducttooltip>
+          <selectdisplaypath>Selecteer het weergavepad</selectdisplaypath>
+          <selectdisplaypathtooltip>Selecteer het weergavepad gebruikt om dit product weer te geven</selectdisplaypathtooltip>
+          <selectproductrequire>Selecteer een product</selectproductrequire>
+        </productpicker>
+      </dynamiccontentplugin>
+      <general>
+        <time>
+          <shortdatepattern>dd/mm/jj</shortdatepattern>
+          <longdatepattern>mmm dd jjjj</longdatepattern>
+          <year>jaar</year>
+          <month>maand</month>
+          <day>dag</day>
+          <days>dagen</days>
+          <hour>u</hour>
+          <hours>u</hours>
+          <minute>m</minute>
+          <minutes>m</minutes>
+        </time>
+        <ago>geleden</ago>
+      </general>
+      <visitorgroups>
+        <orderfrequencycriteria>
+          <displayname>Bestelfrequentie</displayname>
+          <description>Bezoekers linken die een aantal keren een bestelling in de winkel plaatsten in een gespecificeerd datuminterval.</description>
+          <category>Handelscriteria</category>
+          <ordertimes>Bestelde minstens</ordertimes>
+          <withindays>keren binnen de laatste</withindays>
+          <numberofdays>dagen.</numberofdays>
+        </orderfrequencycriteria>
+        <customerpropertiescriterion>
+          <displayname>Eigenschappen van klanten</displayname>
+          <description>Bezoekers linken die voldeden aan de geselecteerde type en waarde eigenschap.</description>
+          <category>Handelscriteria</category>
+          <propertyname>Eigenschap</propertyname>
+          <birthdate>Geboortedatum</birthdate>
+          <customergroup>Klantengroep</customergroup>
+          <registrationsource>Registratiebron</registrationsource>
+          <country>Land</country>
+          <region>Gebiedscode</region>
+          <addresspostalcode>Postcode adres</addresspostalcode>
+          <state>Opgeven</state>
+          <fromdate>Van:</fromdate>
+          <todate>Aan:</todate>
+          <propertynamerequiredtext>Voer een naam in voor de eigenschap</propertynamerequiredtext>
+          <fromdaterequiredtext>Voer een datum Van in</fromdaterequiredtext>
+          <todaterequiredtext>Voer een datum Aan in</todaterequiredtext>
+          <customergrouprequiredtext>Voer een klantgroep in</customergrouprequiredtext>
+          <registrationsourcerequiredtext>Voer een registratiebron in</registrationsourcerequiredtext>
+          <countryrequiredtext>Voer een land in</countryrequiredtext>
+          <regionrequiedtext>Voer een regiocode in</regionrequiedtext>
+          <addresspostalcoderequiedtext>Voer een postcode in</addresspostalcoderequiedtext>
+          <staterequiredtext>Voer een status in</staterequiredtext>
+          <requiredfromdateearlierthantodatetext>De begindatum moet voor de einddatum liggen</requiredfromdateearlierthantodatetext>
+        </customerpropertiescriterion>
+        <recentorderscriterion>
+          <displayname>Recente bestellingen</displayname>
+          <description>Link bezoekers die een bestelling hebben geplaatst binnen een aangegeven aantal dagen.</description>
+          <category>Handelscriteria</category>
+          <withindays>Besteld binnen de laatste</withindays>
+          <days>dagen.</days>
+        </recentorderscriterion>
+        <productincartorwishlist>
+          <displayname>Product in winkelwagentje of op verlanglijst</displayname>
+          <description>Link bezoekers die een bepaald product in hun winkelwagentje of op hun verlanglijst hebben.</description>
+          <category>Handelscriteria</category>
+          <producttext>Gespecificeerde productcode</producttext>
+          <fromcategorytext>Product van een bepaalde categorie</fromcategorytext>
+          <haspropertyandvalue>Het product heeft een aangegeven eigenschap en waarde</haspropertyandvalue>
+          <propertylabel>Eigenschap</propertylabel>
+          <valuelabel>met waarde</valuelabel>
+          <comparisonrequiredtext>Voer een vergelijkingstype in</comparisonrequiredtext>
+          <productcoderequiredtext>Voer een productcode in</productcoderequiredtext>
+          <categoryrequiredtext>Voer een categorie in</categoryrequiredtext>
+          <propertynamerequiredtext>Voer een naam in voor de eigenschap</propertynamerequiredtext>
+          <propertyvaluerequiredtext>Voer een naam in voor de eigenschap</propertyvaluerequiredtext>
+        </productincartorwishlist>
+        <recentspent>
+          <displayname>Totaal uitgegeven</displayname>
+          <description>Link bezoekers die een aangegeven bestelbedrag hebben binnen een aangegeven aantal dagen.</description>
+          <category>Handelscriteria</category>
+          <totalrequiredtext>Som van bestelbedragen is verplicht en moet groter dan of gelijk aan 0 zijn.</totalrequiredtext>
+          <currencyrequiredtext>Voer een munteenheid in.</currencyrequiredtext>
+          <daysrequiredtext>Aantal dagen is verplicht en moet groter dan of gelijk aan 0 zijn.</daysrequiredtext>
+          <totallabel>Bestelbedrag ten minste</totallabel>
+          <currencylabel>munteenheid</currencylabel>
+          <withindays>binnen de laatste</withindays>
+          <days>dagen.</days>
+        </recentspent>
+      </visitorgroups>
+      <Admin>
+        <plugins>
+          <removecachejob>
+            <displayname>Cachegeheugen van Commerce wissen</displayname>
+            <description>Een geplande taak voor het wissen van het cachegeheugen van EPiServer Commerce.</description>
+            <successmessage>Cachegeheugen van Commerce gewist!</successmessage>
+            <failedmessage>De taak kon niet worden voltooid.</failedmessage>
+          </removecachejob>
+        </plugins>
+        <CommerceManager>
+          <GlobalNavigationTitle>Handel</GlobalNavigationTitle>
+          <ManagementConsole>Commerce Manager</ManagementConsole>
+          <Setting>Instellingen</Setting>
+        </CommerceManager>
+        <CommerceManagerMenuItem>Commerce Manager</CommerceManagerMenuItem>
+        <License>
+          <invalidnumber>Ongeldig licentienummer</invalidnumber>
+          <licensenocontent>Het gespecificeerde bestand heeft geen inhoud</licensenocontent>
+          <licensesavedinformation>De licentie met licentienummer {0} werd opgeslagen en de site werd bijgewerkt.</licensesavedinformation>
+          <licenseSavedWithError>De licentie is opgeslagen en de site is bijgewerkt, maar er is een validatiefout opgetreden.</licenseSavedWithError>
+          <loadlicenseerror>Kon licentie-informatie niet laden</loadlicenseerror>
+          <nolicensefile>{0} bestaat niet</nolicensefile>
+          <notvalidlicense>Het gespecificeerde bestand kon niet geanalyseerd worden als een EPiServer-licentiebestand.</notvalidlicense>
+          <serviceerror>Communicatie met licentieservice mislukt</serviceerror>
+          <servicefailure>De licentieservice heeft geen geldige status. Neem contact op met EPiServer bij problemen met de licentie.</servicefailure>
+          <UploadLicenseFrom>Licentie uploaden van</UploadLicenseFrom>
+          <validationerror>De volgende validatiefout is opgetreden</validationerror>
+        </License>
+        <Settings>
+          <CommerceManagerUrl>URL van Commerce Manager</CommerceManagerUrl>
+          <description>Instellingen voor handel</description>
+          <displayname>Commerciële instellingen</displayname>
+          <GeneralSetting>Instellingen</GeneralSetting>
+          <Heading>Commerciële instellingen</Heading>
+          <LocalNavigationTitle>EPiServer Commerce</LocalNavigationTitle>
+          <ProductDetailPageType>Paginatype productdetail</ProductDetailPageType>
+          <ProductListPageType>Paginatype productlijst</ProductListPageType>
+          <SaveSuccessful>Succesvol opslaan</SaveSuccessful>
+          <SelectAccountPage>Accountpagina</SelectAccountPage>
+          <SelectAddressBookPage>Adresboekpagina</SelectAddressBookPage>
+          <SelectBillingPage>Facturatiepagina</SelectBillingPage>
+          <SelectChangePasswordPage>Pagina voor het wijzigen van uw wachtwoord</SelectChangePasswordPage>
+          <SelectCheckoutPage>Uitcheckpagina</SelectCheckoutPage>
+          <SelectDIBSPaymentPage>DIBS-betalingspagina</SelectDIBSPaymentPage>
+          <SelectLogoutPage>Afmeldpagina</SelectLogoutPage>
+          <SelectMainMenuPage>Hoofdmenupagina</SelectMainMenuPage>
+          <SelectOrderHistoryPage>Pagina van de bestelhistoriek</SelectOrderHistoryPage>
+          <SelectOrderPage>Pagina van het winkelwagentje</SelectOrderPage>
+          <SelectPaymentPage>Betalingspagina</SelectPaymentPage>
+          <SelectProductPage>Productpagina</SelectProductPage>
+          <SelectProductViewPage>Pagina voor het bekijken van de producten</SelectProductViewPage>
+          <SelectRootContentPage>Hoofdinhoudpagina</SelectRootContentPage>
+          <SelectRootPage>Startpagina</SelectRootPage>
+          <SelectSearchPage>Zoekpagina</SelectSearchPage>
+          <SelectTopMenuRootPage>Hoofdpagina van het bovenste menu</SelectTopMenuRootPage>
+          <SelectWishListPage>Pagina van het verlanglijstje</SelectWishListPage>
+          <UrlError>De URL moet absoluut zijn</UrlError>
+        </Settings>
+      </Admin>
+      <catalog>
+        <product>
+          <error>
+            <invalidProductHomePage>Ongeldige productpagina</invalidProductHomePage>
+          </error>
+        </product>
+      </catalog>
+      <catalogBrowserProperty>
+        <description>Eigenschap om door de catalogus te bladeren</description>
+        <displayname>Bladereigenschap van de catalogus</displayname>
+        <invalidSelection>Gelieve een knooppunt te selecteren met een diepte groter dan 1</invalidSelection>
+        <noSelection>Geen selectie</noSelection>
+        <updating>Bezig met bijwerken...</updating>
+      </catalogBrowserProperty>
+      <Edit>
+        <Plugin>
+          <TagCloud>
+            <AscendingOrder>Oplopende volgorde</AscendingOrder>
+            <Cancel>Annuleren</Cancel>
+            <ConfirmDelete>Weet u zeker dat u deze tag wilt verwijderen?</ConfirmDelete>
+            <Delete>Verwijderen</Delete>
+            <DescendingOrder>Aflopende volgorde</DescendingOrder>
+            <Description>Beheert tagwolkitems</Description>
+            <DisplayName>Tagwolkbeheer</DisplayName>
+            <Edit>Bewerken</Edit>
+            <Messages>
+              <EmptyHitCount>Resultaten mogen niet leeg zijn.</EmptyHitCount>
+              <EmptyTagName>Tagnaam mag niet leeg zijn.</EmptyTagName>
+              <InvalidHitCount>Resultaten moeten een nummer zijn.</InvalidHitCount>
+              <TagNameIsNotUnique>Tagnaam moet uniek zijn.</TagNameIsNotUnique>
+              <TagNotFoundToUpdate>Tag niet gevonden. Het kan verwijderd zijn.</TagNotFoundToUpdate>
+            </Messages>
+            <Save>Opslaan</Save>
+            <SearchAltText>Bezig met zoeken</SearchAltText>
+            <SearchTitle>Zoeken naar tag:</SearchTitle>
+            <TagHit>Resultaten</TagHit>
+            <TagName>Naam</TagName>
+            <WarningMessage>Tag niet gevonden.</WarningMessage>
+          </TagCloud>
+        </Plugin>
+        <Provider>
+          <SearchProductCatalog>
+            <Area>Commerce</Area>
+            <Category>Producten</Category>
+          </SearchProductCatalog>
+        </Provider>
+      </Edit>
+      <Exception>
+        <AccountPageNotFound>Accountpagina is niet goed geconfigureerd</AccountPageNotFound>
+        <CheckoutPageNotFound>Uitcheckpagina is niet goed geconfigureerd</CheckoutPageNotFound>
+        <ProductPageNotFound>Productpagina is niet goed geconfigureerd</ProductPageNotFound>
+        <ProductViewPageNotFound>Kan de productpagina met de gespecificeerde taal niet vinden: </ProductViewPageNotFound>
+        <SearchPageNotFound>Zoekpagina is niet goed geconfigureerd</SearchPageNotFound>
+        <ShoppingPageNotFound>Pagina van winkelwagentje is niet goed geconfigureerd</ShoppingPageNotFound>
+        <WishlistPageNotFound>Pagina van verlanglijstje is niet goed geconfigureerd</WishlistPageNotFound>
+      </Exception>
+    </Commerce>
+    <dynamiccontenttypes>
+      <dynamiccontent name="ProductPicker">
+        <caption>Productkiezer</caption>
+        <description>Voer de inhoud in van een gespecificeerd product.</description>
+      </dynamiccontent>
+    </dynamiccontenttypes>
+    <admin>
+      <propertysettings>
+        <tinyeditorsettings>
+          <groups>
+            <productlink>Commerce</productlink>
+          </groups>
+        </tinyeditorsettings>
+      </propertysettings>
+    </admin>
+    <tinymce>
+      <productlink>
+        <desc see="#productlink_desc"/>
+        <productlink_desc>Productlink invoegen/bewerken</productlink_desc>
+      </productlink>
+    </tinymce>
+  </language>
+</languages>

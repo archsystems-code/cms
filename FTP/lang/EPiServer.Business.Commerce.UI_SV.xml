@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<languages>
+  <language name="svenska" id="sv">
+    <Commerce>
+      <services>
+        <reportabuse>
+          <permissionerror>Du saknar rättigheter för att rapportera.</permissionerror>
+          <reportowncomment>Du kan inte rapportera dina egna kommentarer.</reportowncomment>
+        </reportabuse>
+        <productrating>
+          <permissionerror>Du saknar rättigheter för att klassificera.</permissionerror>
+        </productrating>
+      </services>
+      <productlinkmceplugin>
+        <productlinkproperties>
+          <productlink>Produktlänk</productlink>
+          <informationheading>Information</informationheading>
+          <linktitle>Länktitel</linktitle>
+          <targetframe>Målram</targetframe>
+          <linktargetheading>Länkmål</linktargetheading>
+          <address>Välj produkt</address>
+          <language>Språk</language>
+          <automatically>Automatiskt</automatically>
+          <pagenotfoundmessage>Den länkade produkten är inte tillgänglig.</pagenotfoundmessage>
+          <selectnewpagemessage>Välj någon annan produkt innan du sparar.</selectnewpagemessage>
+          <nourlvalidationmessage>Var god ange länkmål innan du sparar.</nourlvalidationmessage>
+        </productlinkproperties>
+      </productlinkmceplugin>
+      <productpicker>
+        <rootlabel>Kataloger</rootlabel>
+        <noproducttext>Det gick inte att hitta någon produkt i den aktuella noden.</noproducttext>
+        <productid>Id</productid>
+        <productname>Namn</productname>
+        <description>Egenskap för att undersöka produkten</description>
+        <displayname>ProductBrowserProperty</displayname>
+        <displaytemplate>Sökväg för mall</displaytemplate>
+        <sortAsc>Sortera stigande</sortAsc>
+        <sortDesc>Sortera fallande</sortDesc>
+        <searchTitle>Sök produkt efter namn eller ID i den aktuella noden och dess underordnade noder</searchTitle>
+        <invalidselection>Välj en nod med ett djup större än 1</invalidselection>
+      </productpicker>
+      <dynamiccontentplugin>
+        <productpicker>
+          <selectproduct>Välj produkt</selectproduct>
+          <selectproducttooltip>Välj en produkt som ska visas</selectproducttooltip>
+          <selectdisplaypath>Välj visningssökväg</selectdisplaypath>
+          <selectdisplaypathtooltip>Välj visningssökvägen som används för att visa den här produkten</selectdisplaypathtooltip>
+          <selectproductrequire>Välj en produkt</selectproductrequire>
+        </productpicker>
+      </dynamiccontentplugin>
+      <general>
+        <time>
+          <shortdatepattern>dd/MM/yy</shortdatepattern>
+          <longdatepattern>dd MMM yyyy</longdatepattern>
+          <year>år</year>
+          <month>månad</month>
+          <day>dag</day>
+          <days>dagar</days>
+          <hour>t</hour>
+          <hours>t</hours>
+          <minute>m</minute>
+          <minutes>m</minutes>
+        </time>
+        <ago>sedan</ago>
+      </general>
+      <visitorgroups>
+        <orderfrequencycriteria>
+          <displayname>Orderfrekvens</displayname>
+          <description>Matcha besökare som har lagt en order i butiken ett angivet antal gånger inom ett angivet datumintervall.</description>
+          <category>Commerce-kriterium</category>
+          <ordertimes>Beställd minst</ordertimes>
+          <withindays>gånger under de</withindays>
+          <numberofdays>senaste dagarna.</numberofdays>
+        </orderfrequencycriteria>
+        <customerpropertiescriterion>
+          <displayname>Kundegenskaper</displayname>
+          <description>Matcha besökare som matchar den valda egenskapstypen och egenskapsvärdet.</description>
+          <category>Commerce-kriterium</category>
+          <propertyname>Egenskap</propertyname>
+          <birthdate>Födelsedatum</birthdate>
+          <customergroup>Kundgrupp</customergroup>
+          <registrationsource>Registreringskälla</registrationsource>
+          <country>Land</country>
+          <region>Regionkod</region>
+          <addresspostalcode>Postnummer</addresspostalcode>
+          <state>Region/område</state>
+          <fromdate>Från:</fromdate>
+          <todate>Till:</todate>
+          <propertynamerequiredtext>Ange ett egenskapsnamn</propertynamerequiredtext>
+          <fromdaterequiredtext>Ange ett Från-datum</fromdaterequiredtext>
+          <todaterequiredtext>Ange ett Till-datum</todaterequiredtext>
+          <customergrouprequiredtext>Ange en kundgrupp</customergrouprequiredtext>
+          <registrationsourcerequiredtext>Ange en registreringskälla</registrationsourcerequiredtext>
+          <countryrequiredtext>Ange ett land</countryrequiredtext>
+          <regionrequiedtext>Ange en regionkod</regionrequiedtext>
+          <addresspostalcoderequiedtext>Ange ett postnummer</addresspostalcoderequiedtext>
+          <staterequiredtext>Ange en stat</staterequiredtext>
+          <requiredfromdateearlierthantodatetext>Från-datum måste infalla före Till-datum</requiredfromdateearlierthantodatetext>
+        </customerpropertiescriterion>
+        <recentorderscriterion>
+          <displayname>Nyligen beställda ordrar</displayname>
+          <description>Matcha besökare som har placerat en order inom ett angivet antal dagar.</description>
+          <category>Commerce-kriterium</category>
+          <withindays>Beställd under de</withindays>
+          <days>senaste dagarna.</days>
+        </recentorderscriterion>
+        <productincartorwishlist>
+          <displayname>Produkt i kundvagn eller önskelista</displayname>
+          <description>Matcha besökare som har en angiven produkt i kundvagnen eller på sin önskelista.</description>
+          <category>Commerce-kriterium</category>
+          <producttext>Angiven produktkod</producttext>
+          <fromcategorytext>Produkt från en angiven kategori</fromcategorytext>
+          <haspropertyandvalue>Produkten har en angiven egenskap och ett angivet värde</haspropertyandvalue>
+          <propertylabel>Egenskap</propertylabel>
+          <valuelabel>med värde</valuelabel>
+          <comparisonrequiredtext>Ange en jämförelsetyp</comparisonrequiredtext>
+          <productcoderequiredtext>Ange en produktkod</productcoderequiredtext>
+          <categoryrequiredtext>Ange en kategori</categoryrequiredtext>
+          <propertynamerequiredtext>Ange ett egenskapsnamn</propertynamerequiredtext>
+          <propertyvaluerequiredtext>Ange ett egenskapsvärde</propertyvaluerequiredtext>
+        </productincartorwishlist>
+        <recentspent>
+          <displayname>Totalt spenderat</displayname>
+          <description>Matcha besökare som har en angiven totalsumma för order inom ett angivet antal dagar.</description>
+          <category>Commerce-kriterium</category>
+          <totalrequiredtext>Totalsumma för ordrar krävs och måste vara ett tal som är större än eller lika med noll.</totalrequiredtext>
+          <currencyrequiredtext>Ange en valuta.</currencyrequiredtext>
+          <daysrequiredtext>Antal dagar krävs och måste vara ett tal som är större än eller lika med noll.</daysrequiredtext>
+          <totallabel>Minsta totalsumma för order</totallabel>
+          <currencylabel>valuta</currencylabel>
+          <withindays>under de</withindays>
+          <days>senaste dagarna.</days>
+        </recentspent>
+      </visitorgroups>
+      <Admin>
+        <plugins>
+          <removecachejob>
+            <displayname>Rensa Commerce-cache</displayname>
+            <description>Ett schemalagt jobb för rensning av data i EPiServer Commerce-cache.</description>
+            <successmessage>Data i Commerce-cache rensades.</successmessage>
+            <failedmessage>Det gick inte att slutföra jobbet.</failedmessage>
+          </removecachejob>
+        </plugins>
+        <CommerceManager>
+          <GlobalNavigationTitle>Commerce</GlobalNavigationTitle>
+          <ManagementConsole>Commerce Manager</ManagementConsole>
+          <Setting>Inställningar</Setting>
+        </CommerceManager>
+        <CommerceManagerMenuItem>Commerce Manager</CommerceManagerMenuItem>
+        <License>
+          <invalidnumber>Ogiltigt licensnummer</invalidnumber>
+          <licensenocontent>Den angivna filen saknar innehåll</licensenocontent>
+          <licensesavedinformation>Licensen med licensnumret {0} sparades och webbplatsen uppdaterades.</licensesavedinformation>
+          <licenseSavedWithError>Licensen sparades och och webbplatsen uppdaterades, men ett valideringsfel uppstod.</licenseSavedWithError>
+          <loadlicenseerror>Det gick inte att ladda licensinformationen</loadlicenseerror>
+          <nolicensefile>{0} finns inte</nolicensefile>
+          <notvalidlicense>Det gick inte att tolka den angivna filen som en EPiServer-licensfil</notvalidlicense>
+          <serviceerror>Kommunikationsfel med licensservern</serviceerror>
+          <servicefailure>Licenshanteringen fungerar inte korrekt. Kontakta EPiServer angående licensproblem.</servicefailure>
+          <UploadLicenseFrom>Ladda upp licens från</UploadLicenseFrom>
+          <validationerror>Följande valideringsfel uppstod</validationerror>
+        </License>
+        <Settings>
+          <CommerceManagerUrl>Commerce Manager-URL</CommerceManagerUrl>
+          <description>Inställningar för Commerce</description>
+          <displayname>Commerce-inställningar</displayname>
+          <GeneralSetting>Inställningar</GeneralSetting>
+          <Heading>Commerce-inställningar</Heading>
+          <LocalNavigationTitle>EPiServer Commerce</LocalNavigationTitle>
+          <ProductDetailPageType>Sidtypen Produktinformation</ProductDetailPageType>
+          <ProductListPageType>Sidtypen Produktlista</ProductListPageType>
+          <SaveSuccessful>Sparat</SaveSuccessful>
+          <SelectAccountPage>Kontosida</SelectAccountPage>
+          <SelectAddressBookPage>Adressbokssida</SelectAddressBookPage>
+          <SelectBillingPage>Faktureringssida</SelectBillingPage>
+          <SelectChangePasswordPage>Ändringssida för lösenord</SelectChangePasswordPage>
+          <SelectCheckoutPage>Utcheckningssida</SelectCheckoutPage>
+          <SelectDIBSPaymentPage>DIBS-betalningssida</SelectDIBSPaymentPage>
+          <SelectLogoutPage>Utloggningssida</SelectLogoutPage>
+          <SelectMainMenuPage>Huvudmenysida</SelectMainMenuPage>
+          <SelectOrderHistoryPage>Orderhistoriksida</SelectOrderHistoryPage>
+          <SelectOrderPage>Kundvagnssida</SelectOrderPage>
+          <SelectPaymentPage>Betalningssida</SelectPaymentPage>
+          <SelectProductPage>Produktsida</SelectProductPage>
+          <SelectProductViewPage>Produktvisningssida</SelectProductViewPage>
+          <SelectRootContentPage>Rotinnehållssida</SelectRootContentPage>
+          <SelectRootPage>Hemsida</SelectRootPage>
+          <SelectSearchPage>Söksida</SelectSearchPage>
+          <SelectTopMenuRootPage>Rotsida för övermeny</SelectTopMenuRootPage>
+          <SelectWishListPage>Önskelistesida</SelectWishListPage>
+          <UrlError>Måste vara en absolut URL</UrlError>
+        </Settings>
+      </Admin>
+      <catalog>
+        <product>
+          <error>
+            <invalidProductHomePage>Sida för ogiltig produkt</invalidProductHomePage>
+          </error>
+        </product>
+      </catalog>
+      <catalogBrowserProperty>
+        <description>Egenskap för att bläddra i katalogen</description>
+        <displayname>Egenskap för att bläddra i kataloger</displayname>
+        <invalidSelection>Välj en nod med ett djup större än 1</invalidSelection>
+        <noSelection>Inget val</noSelection>
+        <updating>Uppdatering pågår...</updating>
+      </catalogBrowserProperty>
+      <Edit>
+        <Plugin>
+          <TagCloud>
+            <AscendingOrder>Stigande ordning</AscendingOrder>
+            <Cancel>Avbryt</Cancel>
+            <ConfirmDelete>Är du säker på att du vill ta bort märket?</ConfirmDelete>
+            <Delete>Ta bort</Delete>
+            <DescendingOrder>Fallande ordning</DescendingOrder>
+            <Description>Hanterar poster i märkningsmoln</Description>
+            <DisplayName>Hantering av märkningsmoln</DisplayName>
+            <Edit>Redigera</Edit>
+            <Messages>
+              <EmptyHitCount>Träffar kan inte vara tomt.</EmptyHitCount>
+              <EmptyTagName>Märkesnamnet kan inte vara tomt.</EmptyTagName>
+              <InvalidHitCount>Träffar måste vara ett nummer.</InvalidHitCount>
+              <TagNameIsNotUnique>Märkesnamnet måste vara unikt.</TagNameIsNotUnique>
+              <TagNotFoundToUpdate>Det gick inte att hitta märket. Det kan ha tagits bort.</TagNotFoundToUpdate>
+            </Messages>
+            <Save>Spara</Save>
+            <SearchAltText>Söker</SearchAltText>
+            <SearchTitle>Sök efter märke:</SearchTitle>
+            <TagHit>Träffar</TagHit>
+            <TagName>Namn</TagName>
+            <WarningMessage>Det gick inte att hitta märket.</WarningMessage>
+          </TagCloud>
+        </Plugin>
+        <Provider>
+          <SearchProductCatalog>
+            <Area>Commerce</Area>
+            <Category>Produkter</Category>
+          </SearchProductCatalog>
+        </Provider>
+      </Edit>
+      <Exception>
+        <AccountPageNotFound>Kontosidan är inte korrekt konfigurerad</AccountPageNotFound>
+        <CheckoutPageNotFound>Utcheckningssidan är inte korrekt konfigurerad</CheckoutPageNotFound>
+        <ProductPageNotFound>Produktsidan är inte korrekt konfigurerad</ProductPageNotFound>
+        <ProductViewPageNotFound>Det går inte att hitta produktsidan med det angivna språket: </ProductViewPageNotFound>
+        <SearchPageNotFound>Söksidan är inte korrekt konfigurerad</SearchPageNotFound>
+        <ShoppingPageNotFound>Kundvagnssidan är inte korrekt konfigurerad</ShoppingPageNotFound>
+        <WishlistPageNotFound>Önskelistesidan är inte korrekt konfigurerad</WishlistPageNotFound>
+      </Exception>
+    </Commerce>
+    <dynamiccontenttypes>
+      <dynamiccontent name="ProductPicker">
+        <caption>Produktväljare</caption>
+        <description>Infoga innehållet för en angiven produkt.</description>
+      </dynamiccontent>
+    </dynamiccontenttypes>
+    <admin>
+      <propertysettings>
+        <tinyeditorsettings>
+          <groups>
+            <productlink>Commerce</productlink>
+          </groups>
+        </tinyeditorsettings>
+      </propertysettings>
+    </admin>
+    <tinymce>
+      <productlink>
+        <desc see="#productlink_desc"/>
+        <productlink_desc>Infoga/redigera produktlänk</productlink_desc>
+      </productlink>
+    </tinymce>
+  </language>
+</languages>

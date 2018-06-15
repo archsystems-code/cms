@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<languages>
+  <language name="dansk" id="da">
+    <Commerce>
+      <services>
+        <reportabuse>
+          <permissionerror>Du har ikke tilladelse til at indrapportere.</permissionerror>
+          <reportowncomment>Du kan ikke indrapportere dine egne kommentarer.</reportowncomment>
+        </reportabuse>
+        <productrating>
+          <permissionerror>Du har ikke tilladelse til at lave vurderinger.</permissionerror>
+        </productrating>
+      </services>
+      <productlinkmceplugin>
+        <productlinkproperties>
+          <productlink>Produktlink</productlink>
+          <informationheading>Oplysninger</informationheading>
+          <linktitle>Hyperlinktitel</linktitle>
+          <targetframe>Målramme</targetframe>
+          <linktargetheading>Mål for link</linktargetheading>
+          <address>Vælg produkt</address>
+          <language>Sprog</language>
+          <automatically>Automatisk</automatically>
+          <pagenotfoundmessage>Produktet, der linkes til, er ikke tilgængeligt.</pagenotfoundmessage>
+          <selectnewpagemessage>Vælg et andet produkt, inden du gemmer.</selectnewpagemessage>
+          <nourlvalidationmessage>Angiv venligst et mål for linket, inden du gemmer.</nourlvalidationmessage>
+        </productlinkproperties>
+      </productlinkmceplugin>
+      <productpicker>
+        <rootlabel>Kataloger</rootlabel>
+        <noproducttext>Et produkt blev ikke fundet i den aktuelle node.</noproducttext>
+        <productid>ID</productid>
+        <productname>Navn</productname>
+        <description>Egenskab til gennemsyn af produktet</description>
+        <displayname>ProduktBrowserEgenskab</displayname>
+        <displaytemplate>Skabelonsti</displaytemplate>
+        <sortAsc>Sorter stigende</sortAsc>
+        <sortDesc>Sorter faldende</sortDesc>
+        <searchTitle>Søg på produktnavn eller -ID i aktuelle og underordnede noder</searchTitle>
+        <invalidselection>Vælg en node med en dybde på over 1</invalidselection>
+      </productpicker>
+      <dynamiccontentplugin>
+        <productpicker>
+          <selectproduct>Vælg produkt</selectproduct>
+          <selectproducttooltip>Vælg produkt til visning</selectproducttooltip>
+          <selectdisplaypath>Vælg visningssti.</selectdisplaypath>
+          <selectdisplaypathtooltip>Vælg visningssti til brug ved visning af dette produkt</selectdisplaypathtooltip>
+          <selectproductrequire>Vælg et produkt</selectproductrequire>
+        </productpicker>
+      </dynamiccontentplugin>
+      <general>
+        <time>
+          <shortdatepattern>dd/MM/åå</shortdatepattern>
+          <longdatepattern>MMM dd åååå</longdatepattern>
+          <year>år</year>
+          <month>måned</month>
+          <day>dag</day>
+          <days>dage</days>
+          <hour>t</hour>
+          <hours>t</hours>
+          <minute>m</minute>
+          <minutes>m</minutes>
+        </time>
+        <ago>siden</ago>
+      </general>
+      <visitorgroups>
+        <orderfrequencycriteria>
+          <displayname>Ordrefrekvens</displayname>
+          <description>Match besøgende, der har placeret en ordre i butikken et bestemt antal gange inden for et bestemt datointerval.</description>
+          <category>Commerce-kriterier</category>
+          <ordertimes>Har bestilt mindst</ordertimes>
+          <withindays>gange inden for de sidste</withindays>
+          <numberofdays>dage.</numberofdays>
+        </orderfrequencycriteria>
+        <customerpropertiescriterion>
+          <displayname>Kundeegenskaber</displayname>
+          <description>Match besøgende, der passer med den valgte egenskabstype og -værdi.</description>
+          <category>Commerce-kriterier</category>
+          <propertyname>Egenskab</propertyname>
+          <birthdate>Fødselsdato</birthdate>
+          <customergroup>Kundegruppe</customergroup>
+          <registrationsource>Registreringskilde</registrationsource>
+          <country>Land</country>
+          <region>Regionskode</region>
+          <addresspostalcode>Adresse postnr.</addresspostalcode>
+          <state>Tilstand</state>
+          <fromdate>Fra:</fromdate>
+          <todate>Til:</todate>
+          <propertynamerequiredtext>Angiv et egenskabsnavn</propertynamerequiredtext>
+          <fromdaterequiredtext>Angiv en "Fra"-dato</fromdaterequiredtext>
+          <todaterequiredtext>Angiv en "Til"-dato</todaterequiredtext>
+          <customergrouprequiredtext>Angiv en kundegruppe</customergrouprequiredtext>
+          <registrationsourcerequiredtext>Angiv en registreringskilde</registrationsourcerequiredtext>
+          <countryrequiredtext>Angiv et land</countryrequiredtext>
+          <regionrequiedtext>Angiv en regionskode</regionrequiedtext>
+          <addresspostalcoderequiedtext>Angiv et postnr.</addresspostalcoderequiedtext>
+          <staterequiredtext>Angiv en stat</staterequiredtext>
+          <requiredfromdateearlierthantodatetext>"Fra"-datoen skal være tidligere end "Til"-datoen</requiredfromdateearlierthantodatetext>
+        </customerpropertiescriterion>
+        <recentorderscriterion>
+          <displayname>Seneste ordrer</displayname>
+          <description>Match besøgende, der har placeret en ordre inden for et bestemt antal dage.</description>
+          <category>Commerce-kriterier</category>
+          <withindays>Har bestilt inden for de sidste par</withindays>
+          <days>dage.</days>
+        </recentorderscriterion>
+        <productincartorwishlist>
+          <displayname>Produkt i indkøbsvogn eller på ønskeliste</displayname>
+          <description>Match besøgende, der har et bestemt produkt i indkøbsvognen eller på ønskelisten.</description>
+          <category>Commerce-kriterier</category>
+          <producttext>Angivet produktkode</producttext>
+          <fromcategorytext>Produkt fra en angivet kategori</fromcategorytext>
+          <haspropertyandvalue>Produktet har en angivet egenskab og værdi</haspropertyandvalue>
+          <propertylabel>Egenskab</propertylabel>
+          <valuelabel>med værdi</valuelabel>
+          <comparisonrequiredtext>Angiv en sammenligningstype</comparisonrequiredtext>
+          <productcoderequiredtext>Angiv en produktkode</productcoderequiredtext>
+          <categoryrequiredtext>Angiv en kategori</categoryrequiredtext>
+          <propertynamerequiredtext>Angiv et egenskabsnavn</propertynamerequiredtext>
+          <propertyvaluerequiredtext>Angiv en egenskabsværdi</propertyvaluerequiredtext>
+        </productincartorwishlist>
+        <recentspent>
+          <displayname>Samlet udgift</displayname>
+          <description>Match besøgende, der har haft en bestemt ordretotal inden for et bestemt antal dage.</description>
+          <category>Commerce-kriterier</category>
+          <totalrequiredtext>Summen af ordretotaler er obligatorisk og skal være et tal, der er større end eller lig med 0.</totalrequiredtext>
+          <currencyrequiredtext>Angiv en valuta.</currencyrequiredtext>
+          <daysrequiredtext>Antallet af dage er obligatorisk og skal være større end eller lig med 0.</daysrequiredtext>
+          <totallabel>Ordretotal minimum</totallabel>
+          <currencylabel>valuta</currencylabel>
+          <withindays>inden for de sidste</withindays>
+          <days>dage.</days>
+        </recentspent>
+      </visitorgroups>
+      <Admin>
+        <plugins>
+          <removecachejob>
+            <displayname>Ryd Commerce-cache</displayname>
+            <description>En planlagt opgave for sletning af EPiServer Commece-cachedata.</description>
+            <successmessage>Commerce-cachedata blev slettet.</successmessage>
+            <failedmessage>Opgaven kunne ikke gennemføres.</failedmessage>
+          </removecachejob>
+        </plugins>
+        <CommerceManager>
+          <GlobalNavigationTitle>Commerce</GlobalNavigationTitle>
+          <ManagementConsole>Commerce Manager</ManagementConsole>
+          <Setting>Indstillinger</Setting>
+        </CommerceManager>
+        <CommerceManagerMenuItem>Commerce Manager</CommerceManagerMenuItem>
+        <License>
+          <invalidnumber>Ugyldigt licensnummer</invalidnumber>
+          <licensenocontent>Den angivne fil har intet indhold</licensenocontent>
+          <licensesavedinformation>Licensen med licensnummeret {0} blev gemt, og webstedet blev opdateret.</licensesavedinformation>
+          <licenseSavedWithError>Licensen blev gemt, og webstedet blev opdateret, men der opstod nogle valideringsfejl.</licenseSavedWithError>
+          <loadlicenseerror>Licensoplysningerne kunne ikke indlæses</loadlicenseerror>
+          <nolicensefile>{0} eksisterer ikke</nolicensefile>
+          <notvalidlicense>Den angivne fil kunne ikke parses som en EPiServer-licensfil</notvalidlicense>
+          <serviceerror>Kommunikation med licenstjenesten mislykkedes</serviceerror>
+          <servicefailure>Licenstjenesten er ikke i en gyldig tilstand. Kontakt EPiServer vedrørende licensproblemer.</servicefailure>
+          <UploadLicenseFrom>Overfør licens fra</UploadLicenseFrom>
+          <validationerror>Der opstod følgende valideringsfejl</validationerror>
+        </License>
+        <Settings>
+          <CommerceManagerUrl>Commerce Manager URL</CommerceManagerUrl>
+          <description>Indstillinger for Commerce</description>
+          <displayname>Indstillinger for Commerce</displayname>
+          <GeneralSetting>Indstillinger</GeneralSetting>
+          <Heading>Indstillinger for Commerce</Heading>
+          <LocalNavigationTitle>EPiServer Commerce</LocalNavigationTitle>
+          <ProductDetailPageType>Sidetypen Produktoplysninger</ProductDetailPageType>
+          <ProductListPageType>Sidetypen Produktliste</ProductListPageType>
+          <SaveSuccessful>Det lykkedes at gemme</SaveSuccessful>
+          <SelectAccountPage>Siden Konto</SelectAccountPage>
+          <SelectAddressBookPage>Siden Adressebog</SelectAddressBookPage>
+          <SelectBillingPage>Siden Fakturering</SelectBillingPage>
+          <SelectChangePasswordPage>Siden Skift adgangskode</SelectChangePasswordPage>
+          <SelectCheckoutPage>Siden Udtjekning</SelectCheckoutPage>
+          <SelectDIBSPaymentPage>Siden DIBS Payment</SelectDIBSPaymentPage>
+          <SelectLogoutPage>Siden Log ud</SelectLogoutPage>
+          <SelectMainMenuPage>Siden Hovedmenu</SelectMainMenuPage>
+          <SelectOrderHistoryPage>Siden Ordrehistorik</SelectOrderHistoryPage>
+          <SelectOrderPage>Siden Indkøbsvogn</SelectOrderPage>
+          <SelectPaymentPage>Siden Betaling</SelectPaymentPage>
+          <SelectProductPage>Siden Produkter</SelectProductPage>
+          <SelectProductViewPage>Siden Produktvisning</SelectProductViewPage>
+          <SelectRootContentPage>Siden rodindhold</SelectRootContentPage>
+          <SelectRootPage>Hjemmeside</SelectRootPage>
+          <SelectSearchPage>Siden Søg</SelectSearchPage>
+          <SelectTopMenuRootPage>Siden Topmenurod</SelectTopMenuRootPage>
+          <SelectWishListPage>Siden Ønskeliste</SelectWishListPage>
+          <UrlError>URL'en skal være absolut</UrlError>
+        </Settings>
+      </Admin>
+      <catalog>
+        <product>
+          <error>
+            <invalidProductHomePage>Ugyldig produktside</invalidProductHomePage>
+          </error>
+        </product>
+      </catalog>
+      <catalogBrowserProperty>
+        <description>Egenskab til gennemsyn af kataloget</description>
+        <displayname>Egenskaben Katalogbrowser</displayname>
+        <invalidSelection>Vælg en node med en dybde på over 1</invalidSelection>
+        <noSelection>Intet valgt</noSelection>
+        <updating>Opdatering i gang...</updating>
+      </catalogBrowserProperty>
+      <Edit>
+        <Plugin>
+          <TagCloud>
+            <AscendingOrder>Stigende rækkefølge</AscendingOrder>
+            <Cancel>Annuller</Cancel>
+            <ConfirmDelete>Vil du slette denne kode?</ConfirmDelete>
+            <Delete>Slet</Delete>
+            <DescendingOrder>Faldende rækkefølge</DescendingOrder>
+            <Description>Håndterer elementer i emneskyen</Description>
+            <DisplayName>Styring af emneskyen</DisplayName>
+            <Edit>Rediger</Edit>
+            <Messages>
+              <EmptyHitCount>Søgeresultater må ikke være tomt.</EmptyHitCount>
+              <EmptyTagName>Kodenavnet må ikke være tomt.</EmptyTagName>
+              <InvalidHitCount>Søgeresultater skal være et tal.</InvalidHitCount>
+              <TagNameIsNotUnique>Kodenavnet skal være entydigt.</TagNameIsNotUnique>
+              <TagNotFoundToUpdate>Koden blev ikke fundet. Den kan være slettet.</TagNotFoundToUpdate>
+            </Messages>
+            <Save>Gem</Save>
+            <SearchAltText>Søger</SearchAltText>
+            <SearchTitle>Søg efter kode:</SearchTitle>
+            <TagHit>Søgeresultater</TagHit>
+            <TagName>Navn</TagName>
+            <WarningMessage>Koden blev ikke fundet.</WarningMessage>
+          </TagCloud>
+        </Plugin>
+        <Provider>
+          <SearchProductCatalog>
+            <Area>Commerce</Area>
+            <Category>Produkter</Category>
+          </SearchProductCatalog>
+        </Provider>
+      </Edit>
+      <Exception>
+        <AccountPageNotFound>Siden Konto er ikke blevet korrekt konfigureret</AccountPageNotFound>
+        <CheckoutPageNotFound>Siden Udtjekning er ikke blevet korrekt konfigureret</CheckoutPageNotFound>
+        <ProductPageNotFound>Siden Produkter er ikke blevet korrekt konfigureret</ProductPageNotFound>
+        <ProductViewPageNotFound>Siden Produkter med det angivne sprog kunne ikke findes: </ProductViewPageNotFound>
+        <SearchPageNotFound>Siden Søg er ikke blevet korrekt konfigureret</SearchPageNotFound>
+        <ShoppingPageNotFound>Siden Indkøbsvogn er ikke blevet korrekt konfigureret</ShoppingPageNotFound>
+        <WishlistPageNotFound>Siden Ønskeliste er ikke blevet korrekt konfigureret</WishlistPageNotFound>
+      </Exception>
+    </Commerce>
+    <dynamiccontenttypes>
+      <dynamiccontent name="ProductPicker">
+        <caption>Produktvælger</caption>
+        <description>Indsæt indholdet af et angivet produkt</description>
+      </dynamiccontent>
+    </dynamiccontenttypes>
+    <admin>
+      <propertysettings>
+        <tinyeditorsettings>
+          <groups>
+            <productlink>Commerce</productlink>
+          </groups>
+        </tinyeditorsettings>
+      </propertysettings>
+    </admin>
+    <tinymce>
+      <productlink>
+        <desc see="#productlink_desc"/>
+        <productlink_desc>Indsæt/rediger produktlink</productlink_desc>
+      </productlink>
+    </tinymce>
+  </language>
+</languages>

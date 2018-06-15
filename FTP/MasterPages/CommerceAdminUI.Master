@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CommerceAdminUI.Master.cs" Inherits="EPiServer.Business.Commerce.UI.MasterPages.CommerceAdminUI" %>
+<%@ Register Assembly="Episerver.UI" Namespace="EPiServer.UI.WebControls" TagPrefix="EPiServerUI" %>
+<%@ Register Assembly="System.Web.Extensions" Namespace="System.Web.UI" TagPrefix="asp" %>
+<%@ Register Assembly="System.Web.Extensions" Namespace="System.Web.UI.WebControls" TagPrefix="asp" %>
+<%@ Import Namespace="System.Threading"%>
+<%@ Import Namespace="EPiServer.Shell" %>
+<%@ Import Namespace="EPiServer.Shell.Web.UI"%>
+<%@ Import Namespace="EPiServer.Shell.Web.Mvc.Html"%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="<%= Thread.CurrentThread.CurrentUICulture.Name %>" xml:lang="<%= Thread.CurrentThread.CurrentUICulture.Name %>">
+    <head id="Head1" runat="server">
+        <title id="Title1" runat="server" />
+        <!-- Mimic Internet Explorer 7 -->
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+        
+        <asp:PlaceHolder runat="server">
+            <%=Page.ClientResources("Shell")%>
+            <%=Page.ClientResources("ShellLightTheme")%>
+            <%=Page.ClientResources("Navigation")%>
+            <link type="text/css" rel="stylesheet" href="<%= Paths.ToResource("CMS", "ClientResources/Epi/Base/CMS.css") %>" />
+        </asp:PlaceHolder>
+       
+        <asp:PlaceHolder runat="server" id="cssLinkRegion" />
+        <asp:ContentPlaceHolder runat="server" id="HeaderContentRegion" /> 
+        
+        <%-- 
+            The script below handles a bug/feature in IE6  
+            with background images in elements being fetched from the server.
+            This happens when hovering, loading other frames and such if other style properties like 
+            background-position, background-repeat, background-color... of the element is set to other than default.
+            The script sets BackGroundImageCache to true which for some reason is set to false by default.
+            Other browsers (IE7, Firefox) does not implement BackgroundImageCache hence the try/catch.
+        --%>
+        <script type="text/javascript">
+            try {
+                document.execCommand("BackgroundImageCache", false, true);
+            } catch (err) { }
+        
+        </script>
+    </head>
+    <body id="body" runat="server">
+        <form id="aspnetForm" runat="server">
+            <asp:ContentPlaceHolder ID="FullRegion" runat="server">
+                <div class="epi-contentContainer epi-padding">
+                <div class="epi-contentArea">
+                    <EPiServerUI:SystemPrefix id="SystemPrefixControl" runat="server" />
+                    <asp:ValidationSummary ID="ValidationSummary" runat="server" CssClass="EP-validationSummary" ForeColor="Black" />
+                </div>
+               
+                <asp:ContentPlaceHolder ID="MainRegion" runat="server"/>
+                </div>
+            </asp:ContentPlaceHolder>
+        </form>
+    </body>
+</html>

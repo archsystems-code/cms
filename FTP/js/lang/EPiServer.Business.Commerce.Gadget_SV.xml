@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<languages>
+  <language name="svenska" id="sv">
+      <Commerce>
+          <Gadget>
+              <OrderGadget>
+                  <title>Commerce-order</title>
+                  <description>Den här gadgeten visar en sammanfattning av viktig information från Commerce-orderstatistiken.</description>
+                  <updateInterval>Uppdateringsintervall i sekunder</updateInterval>
+                  <loading>Laddar...</loading>
+                  <purchaseorderstitle>Inköpsorder</purchaseorderstitle>
+                  <orderstoday>Dagens order</orderstoday>
+                  <ordersmonthly>Månadens order</ordersmonthly>
+                  <ordersweekly>Veckans order</ordersweekly>
+                  <ordersannually>Årets order</ordersannually>
+                  <errors>
+                      <invalidUpdateInterval>Ogiltigt tal</invalidUpdateInterval>
+                  </errors>
+              </OrderGadget>
+              <OverviewGadget>
+                  <Title>Översikt över Commerce</Title>
+                  <Products>Produkter</Products>
+                  <Categories>Kategorier</Categories>
+                  <Orders>Order</Orders>
+                  <Customers>Kunder</Customers>
+                  <Promotions>Marknadsföring</Promotions>
+                  <RefreshInterval>Uppdateringsintervall i sekunder</RefreshInterval>
+                  <GreaterThanZero>Uppdateringsintervallet måste vara ett positivt tal.</GreaterThanZero>
+              </OverviewGadget>
+              <CMO>
+                  <title>Commerce-inställningar för EPiServer CMO</title>
+                  <addmonitor>Lägg till övervakare</addmonitor>
+                  <editmonitor>Redigera övervakare</editmonitor>
+                  <deletemonitor>Ta bort övervakare</deletemonitor>
+                  <confirmdelete>Vill du ta bort?</confirmdelete>
+                  <type>Typ</type>
+                  <productview>Produktvy</productview>
+                  <productorder>Produktordning</productorder>
+                  <productcategory>Produkt/kategori</productcategory>
+                  <applicationkey>Programnyckel</applicationkey>
+                  <urlforwebservice>URL till CMO-webbtjänsten</urlforwebservice>
+                  <add>Add</add>
+                  <edit>Redigera</edit>
+                  <delete>Ta bort</delete>
+                  <save>Spara</save>
+                  <cancel>Avbryt</cancel>
+                  <selectelement>Klicka för att välja en produkt/kategori.</selectelement>
+                  <requiredname>Ange ett elementnamn.</requiredname>
+                  <requiredproduct>Välj en produkt</requiredproduct>
+                  <requiredapplicationkey>Ange en programnyckel.</requiredapplicationkey>
+                  <requiredurl>Ange en URL-tjänst.</requiredurl>
+                  <requirednotexisted>Övervakaren finns redan.</requirednotexisted>
+                  <serviceerror>Det gick inte att anropa CMO-tjänsten.</serviceerror>
+              </CMO>
+          </Gadget>
+      </Commerce>
+  </language>
+</languages>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<languages>
+  <language name="Nederlands" id="nl">
+      <Commerce>
+          <Gadget>
+              <OrderGadget>
+                  <title>Handelsbestellingen</title>
+                  <description>Dit gadget toont een samenvatting van belangrijke statistieken met betrekking tot de handelsbestellingen.</description>
+                  <updateInterval>Vernieuwingsfrequentie in seconden</updateInterval>
+                  <loading>Bezig met laden...</loading>
+                  <purchaseorderstitle>Bestelbonnen</purchaseorderstitle>
+                  <orderstoday>Bestellingen van vandaag</orderstoday>
+                  <ordersmonthly>Bestellingen van deze maand</ordersmonthly>
+                  <ordersweekly>Bestellingen van deze week</ordersweekly>
+                  <ordersannually>Bestellingen van dit jaar</ordersannually>
+                  <errors>
+                      <invalidUpdateInterval>Ongeldig aantal</invalidUpdateInterval>
+                  </errors>
+              </OrderGadget>
+              <OverviewGadget>
+                  <Title>Handelsoverzicht</Title>
+                  <Products>Producten</Products>
+                  <Categories>Categorieën</Categories>
+                  <Orders>Bestellingen</Orders>
+                  <Customers>Klanten</Customers>
+                  <Promotions>Promoties</Promotions>
+                  <RefreshInterval>Vernieuwingsfrequentie in seconden</RefreshInterval>
+                  <GreaterThanZero>De vernieuwingsfrequentie moet positief zijn.</GreaterThanZero>
+              </OverviewGadget>
+              <CMO>
+                  <title>Commerce-instellingen voor EPiServer CMO</title>
+                  <addmonitor>Monitor toevoegen</addmonitor>
+                  <editmonitor>Monitor bewerken</editmonitor>
+                  <deletemonitor>Monitor(en) verwijderen</deletemonitor>
+                  <confirmdelete>Weet u zeker dat u wilt verwijderen?</confirmdelete>
+                  <type>Type</type>
+                  <productview>Productweergave</productview>
+                  <productorder>Productbestelling</productorder>
+                  <productcategory>Product/categorie</productcategory>
+                  <applicationkey>Applicatiesleutel</applicationkey>
+                  <urlforwebservice>URL voor CMO Webservice</urlforwebservice>
+                  <add>Toevoegen</add>
+                  <edit>Bewerken</edit>
+                  <delete>Verwijderen</delete>
+                  <save>Opslaan</save>
+                  <cancel>Annuleren</cancel>
+                  <selectelement>Klik om een product/categorie te selecteren.</selectelement>
+                  <requiredname>Voer een elementnaam in.</requiredname>
+                  <requiredproduct>Selecteer een product.</requiredproduct>
+                  <requiredapplicationkey>Voer een applicatiesleutel in.</requiredapplicationkey>
+                  <requiredurl>Voer een URL-service in.</requiredurl>
+                  <requirednotexisted>De monitor bestaat reeds.</requirednotexisted>
+                  <serviceerror>Kon de CMO-service niet activeren.</serviceerror>
+              </CMO>
+          </Gadget>
+      </Commerce>
+  </language>
+</languages>

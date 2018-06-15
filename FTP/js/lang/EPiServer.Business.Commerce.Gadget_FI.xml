@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<languages>
+  <language name="suomi" id="fi">
+      <Commerce>
+          <Gadget>
+              <OrderGadget>
+                  <title>Commerce-tilaukset</title>
+                  <description>Tämä toiminto näyttää yhteenvedon tärkeistä Commerce-tilauksen tilastotiedoista.</description>
+                  <updateInterval>Päivitysväli sekunteina</updateInterval>
+                  <loading>Latautuu...</loading>
+                  <purchaseorderstitle>Ostomääräykset</purchaseorderstitle>
+                  <orderstoday>Tilauksia tänään</orderstoday>
+                  <ordersmonthly>Tilauksia tässä kuussa</ordersmonthly>
+                  <ordersweekly>Tilauksia tällä viikolla</ordersweekly>
+                  <ordersannually>Tilauksia tänä vuonna</ordersannually>
+                  <errors>
+                      <invalidUpdateInterval>Virheellinen numero</invalidUpdateInterval>
+                  </errors>
+              </OrderGadget>
+              <OverviewGadget>
+                  <Title>Commerce-yleiskuvaus</Title>
+                  <Products>Tuotteet</Products>
+                  <Categories>Luokat</Categories>
+                  <Orders>Tilaukset</Orders>
+                  <Customers>Asiakkaat</Customers>
+                  <Promotions>Kampanjat</Promotions>
+                  <RefreshInterval>Päivitysväli sekunteina</RefreshInterval>
+                  <GreaterThanZero>Päivitysvälin täytyy olla positiivinen luku.</GreaterThanZero>
+              </OverviewGadget>
+              <CMO>
+                  <title>Commerce-asetukset EPiServer CMO:lle</title>
+                  <addmonitor>Lisää monitori</addmonitor>
+                  <editmonitor>Muokkaa monitoria</editmonitor>
+                  <deletemonitor>Poista monitori(t)</deletemonitor>
+                  <confirmdelete>Haluatko varmasti poistaa?</confirmdelete>
+                  <type>Tyyppi</type>
+                  <productview>Tuotenäkymä</productview>
+                  <productorder>Tuotetilaus</productorder>
+                  <productcategory>Tuote/tuotekatalogi</productcategory>
+                  <applicationkey>Sovellusavain</applicationkey>
+                  <urlforwebservice>CMO Web Servicen URL</urlforwebservice>
+                  <add>Lisää</add>
+                  <edit>Muokkaa</edit>
+                  <delete>Poista</delete>
+                  <save>Tallenna</save>
+                  <cancel>Peruuta</cancel>
+                  <selectelement>Valitse tuote/tuotekatalogi napsauttamalla.</selectelement>
+                  <requiredname>Kirjoita elementin nimi.</requiredname>
+                  <requiredproduct>Valitse tuote.</requiredproduct>
+                  <requiredapplicationkey>Anna sovellusavain.</requiredapplicationkey>
+                  <requiredurl>Anna URL-palvelu.</requiredurl>
+                  <requirednotexisted>Monitori on jo olemassa.</requirednotexisted>
+                  <serviceerror>CMO-palvelun herättäminen ei onnistunut.</serviceerror>
+              </CMO>
+          </Gadget>
+      </Commerce>
+  </language>
+</languages>

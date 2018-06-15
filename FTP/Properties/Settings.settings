@@ -1,0 +1,114 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ASI.Web.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="BrandWoodPanels" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ASI Wood Panels</Value>
+    </Setting>
+    <Setting Name="BrandFlooring" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ASI Flooring</Value>
+    </Setting>
+    <Setting Name="BrandDecorativeSurfaces" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ASI Decorative Surfaces</Value>
+    </Setting>
+    <Setting Name="BrandSpecialtyProducts" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ASI Specialty Products</Value>
+    </Setting>
+    <Setting Name="BrandDisplayAndFurniture" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ASI Display &amp; Furniture</Value>
+    </Setting>
+    <Setting Name="ProjectRootID" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">123</Value>
+    </Setting>
+    <Setting Name="ProjectLandingPageTypeID" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">37</Value>
+    </Setting>
+    <Setting Name="ProjectDetailPageTypeID" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">19</Value>
+    </Setting>
+    <Setting Name="ProjectCategoryPageTypeID" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">39</Value>
+    </Setting>
+    <Setting Name="CurrentBrandSessionValueName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CurrentBrand</Value>
+    </Setting>
+    <Setting Name="HomePageID" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">9</Value>
+    </Setting>
+    <Setting Name="PageContainerPageTypeID" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">38</Value>
+    </Setting>
+    <Setting Name="ENewsItemPageTypeID" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">68</Value>
+    </Setting>
+    <Setting Name="ENewsPageRootID" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">158</Value>
+    </Setting>
+    <Setting Name="NewsPageRootID" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">159</Value>
+    </Setting>
+    <Setting Name="NewsItemPageTypeID" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">85</Value>
+    </Setting>
+    <Setting Name="HospitalityRootPageID" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">94</Value>
+    </Setting>
+    <Setting Name="PressItemRootID" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">150</Value>
+    </Setting>
+    <Setting Name="CollectionLandingPageTypeID" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">117</Value>
+    </Setting>
+    <Setting Name="PressItemPageTypeID" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">61</Value>
+    </Setting>
+    <Setting Name="WoodPanelsBrandPageID" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">236</Value>
+    </Setting>
+    <Setting Name="FlooringBrandPageID" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">237</Value>
+    </Setting>
+    <Setting Name="DecorativeSurfacesBrandPageID" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">238</Value>
+    </Setting>
+    <Setting Name="SpecialtyProductsBrandPageID" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">239</Value>
+    </Setting>
+    <Setting Name="DisplayAndFurnitureBrandPageID" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">240</Value>
+    </Setting>
+    <Setting Name="PressItemRootPageID" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">176</Value>
+    </Setting>
+    <Setting Name="OrnamentalCollectionEPiPageID" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">248</Value>
+    </Setting>
+    <Setting Name="PayPalBusiness" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">greddick@archsystems.com</Value>
+    </Setting>
+    <Setting Name="PayPalURL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://www.paypal.com/cgi-bin/webscr</Value>
+    </Setting>
+    <Setting Name="emailRow" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;tr&gt;&lt;td&gt;&lt;b&gt;{0}&lt;/b&gt;&lt;/td&gt;&lt;td&gt;{1}&lt;/td&gt;&lt;/tr&gt;</Value>
+    </Setting>
+    <Setting Name="SamplesRequestEmailTo" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">glalas@adagetechnologies.com; nbaiel@adagetechnologies.com</Value>
+    </Setting>
+    <Setting Name="RequestedSampleCountMessage" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">You have requested {0} samples.</Value>
+    </Setting>
+    <Setting Name="ProductBinderPageID" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">287</Value>
+    </Setting>
+    <Setting Name="CommerceCartPageID" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">296</Value>
+    </Setting>
+    <Setting Name="ASIEPiCommerceCustomerGUID" Type="System.Guid" Scope="Application">
+      <Value Profile="(Default)">3964a204-09e0-4472-9dad-77f823c103ed</Value>
+    </Setting>
+    <Setting Name="SamplesLandingPageID" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">278</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

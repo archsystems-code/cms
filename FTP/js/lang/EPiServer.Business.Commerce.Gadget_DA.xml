@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<languages>
+  <language name="dansk" id="da">
+      <Commerce>
+          <Gadget>
+              <OrderGadget>
+                  <title>Commerce Orders</title>
+                  <description>Denne gadget viser en opsummering af vigtige statistikker fra Commerce-ordrer.</description>
+                  <updateInterval>Genopfrisk interval i sekunder</updateInterval>
+                  <loading>Indlæser...</loading>
+                  <purchaseorderstitle>Indkøbsordrer</purchaseorderstitle>
+                  <orderstoday>Ordrer i dag</orderstoday>
+                  <ordersmonthly>Ordrer denne måned</ordersmonthly>
+                  <ordersweekly>Ordrer denne uge</ordersweekly>
+                  <ordersannually>Ordrer i år</ordersannually>
+                  <errors>
+                      <invalidUpdateInterval>Ugyldigt antal</invalidUpdateInterval>
+                  </errors>
+              </OrderGadget>
+              <OverviewGadget>
+                  <Title>Commerce Oversigt</Title>
+                  <Products>Produkter</Products>
+                  <Categories>Kategorier</Categories>
+                  <Orders>Ordrer</Orders>
+                  <Customers>Kunder</Customers>
+                  <Promotions>Reklamekampagner</Promotions>
+                  <RefreshInterval>Genopfrisk interval i sekunder</RefreshInterval>
+                  <GreaterThanZero>Genopfriskningsintervallet skal være et positivt tal.</GreaterThanZero>
+              </OverviewGadget>
+              <CMO>
+                  <title>Commerce-indstillinger for EPiServer CMO</title>
+                  <addmonitor>Tilføj skærm</addmonitor>
+                  <editmonitor>Rediger skærm</editmonitor>
+                  <deletemonitor>Slet skærm(e)</deletemonitor>
+                  <confirmdelete>Er du sikker på, at du vil slette?</confirmdelete>
+                  <type>Type</type>
+                  <productview>Produktvisning</productview>
+                  <productorder>Produktordre</productorder>
+                  <productcategory>Produkt/kategori</productcategory>
+                  <applicationkey>Programnøgle</applicationkey>
+                  <urlforwebservice>URL til CMO Web Service</urlforwebservice>
+                  <add>Tilføj</add>
+                  <edit>Rediger</edit>
+                  <delete>Slet</delete>
+                  <save>Gem</save>
+                  <cancel>Annuller</cancel>
+                  <selectelement>Klik for at vælge produkt/kategori.</selectelement>
+                  <requiredname>Angiv et elementnavn.</requiredname>
+                  <requiredproduct>Vælg et produkt.</requiredproduct>
+                  <requiredapplicationkey>Angiv en programnøgle.</requiredapplicationkey>
+                  <requiredurl>Angiv en URL-service.</requiredurl>
+                  <requirednotexisted>Skærmen findes allerede.</requirednotexisted>
+                  <serviceerror>Kunne ikke aktivere CMO-servicen.</serviceerror>
+              </CMO>
+          </Gadget>
+      </Commerce>
+  </language>
+</languages>
