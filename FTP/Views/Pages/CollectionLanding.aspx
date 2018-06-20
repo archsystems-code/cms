@@ -348,8 +348,16 @@ position: relative;">ASI Sustainable Product</span></asp:Label>
           $(".subCollection ul").css("display", "flex");
           $(".subCollection ul").css("flex-wrap", "wrap");
           $(".subCollection ul").css("width", "690px");
-          $(".subCollection ul").css("justify-content", "space-between");
-          $(".subCollection ul li").css("width", "200px");
+          $(".subCollection ul").each(function(i, el){
+            $(el).children().each(function(i, el) {
+              if (i % 3 === 0) {
+                $(el).css("margin-left", "0")
+              } else {
+                $(el).css("margin-left", "15px")
+              }
+            })
+          });
+          $(".subCollection ul li").css("width", "220px");
           $(".tabsContainer ul li").css("cursor", "pointer");
           $(".interior nav ul li a").css("width", "200px");
           $(".interior nav ul li a span img").css("width", "15px");
