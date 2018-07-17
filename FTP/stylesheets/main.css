@@ -4797,7 +4797,7 @@ body,
 .modalWrap .close.btn,
 .btn:visited,
 .modalWrap .close.btn:visited {
-    color: #fff;
+    color: #fff !important;
     background: #61A60D;
     font-size: 12px;
     font-weight: bold;
@@ -4817,6 +4817,10 @@ body,
     background: #fff !important;
     color: #61A60D !important;
     border: #61A60D 1px solid;
+}
+
+.sample-option svg path.sample-chain:hover {
+    fill: #white !important;
 }
 
 .btn a,
