@@ -4798,7 +4798,7 @@ body,
 .btn:visited,
 .modalWrap .close.btn:visited {
     color: #fff !important;
-    background: #61A60D;
+    background: #61A60D !important;
     font-size: 12px;
     font-weight: bold;
     line-height: 18px;
