@@ -1753,6 +1753,64 @@ ul.icons-ul>li .icon-li {
     content: "\f14d";
 }
 
+/* BDNY 2018 CSS */
+
+#bdny-2018-slideshow-front,
+#bdny-2018-slideshow-shelves,
+#bdny-2018-slideshow-back {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 3px 0px;
+    border: 1px solid rgb(224, 223, 223);
+    margin-bottom: 20px;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+#bdny-2018-slideshow-front img,
+#bdny-2018-slideshow-shelves img,
+#bdny-2018-slideshow-back img {
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 80% !important;
+    height: auto !important;
+}
+
+#bdny-2018-slideshow-front .skuName-front,
+#bdny-2018-slideshow-shelves .skuName-shelves,
+#bdny-2018-slideshow-back .skuName-back {
+    display: block !important;
+    opacity: 1 !important;
+    bottom: 0px !important;
+    top: initial !important;
+    left: initial !important;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    z-index: 40 !important;
+    background-color: white;
+    padding: 15px;
+    margin: 0;
+}
+
+#bdny-2018-nav-front,
+#bdny-2018-nav-shelves,
+#bdny-2018-nav-back {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    width: 100%;
+}
+
+#bdny-2018-nav-front li,
+#bdny-2018-nav-shelves li,
+#bdny-2018-nav-back li {
+    padding: 10px;
+    border: 1px solid rgb(224, 223, 223);
+    margin: 2px;
+}
 
 /* Css Presentation */
 
