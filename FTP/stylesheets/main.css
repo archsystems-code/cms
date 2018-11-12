@@ -1763,6 +1763,8 @@ ul.icons-ul>li .icon-li {
     margin-bottom: 20px;
     max-height: 500px;
     overflow: hidden;
+    min-height: 500px;
+    min-width: 100%;
 }
 
 #bdny-2018-slideshow-front img,
