@@ -37,6 +37,7 @@
     <img data-sku="WPVEP230" src="/Global/Tradeshows/BDNY18/WPVEP230.jpg" alt="" />
     <img data-sku="WPFSN202" src="/Global/Tradeshows/BDNY18/WPFSN202.jpg" alt="" />
     <p class="skuName-front"></p>
+    <a class="btn skuLink-front">VIEW PRODUCT DETAILS</a>
   </div>
   <h2 style="color: black; font-weight: bold; padding-top: 70px;">SHELVES</h2>
   <img style="width: 100%;" src="/Global/Tradeshows/BDNY18/shelf-1-min.jpg" alt="" /> <img style="width: 100%;" src="/Global/Tradeshows/BDNY18/shelf-2-min.jpg"
@@ -60,6 +61,7 @@
     <img data-sku="WPJWL002" src="/Global/Tradeshows/BDNY18/WPJWL002.jpg" alt="" />
     <img data-sku="Wpjwl013" src="/Global/Tradeshows/BDNY18/Wpjwl013.jpg" alt="" />
     <p class="skuName-back"></p>
+    <a class="btn skuLink-back">VIEW PRODUCT DETAILS</a>
   </div>
 </div>
 <script>
@@ -80,15 +82,17 @@
     timeout: 0,
     pager: '#bdny-2018-nav-front',
     pagerAnchorBuilder: function (idx, slide) {
-      if (!slide.classList.contains("skuName-front")) {
+      if (!slide.classList.contains("skuName-front") && !slide.classList.contains("skuLink-front")) {
         return '<li><a href="#"><div><img src="' + slide.src.substring(0, slide.src.length - 4) + '_thumb.jpg' + '" width="50" height="50" /></a></li>';
       }
     },
     after: function(currSlideElement, nextSlideElement, options, forwardFlag) {
       $(".skuName-front").text(currSlideElement.dataset.sku);
+      $(".skuLink-front").attr("href", "https://www.archsystems.com/" + currSlideElement.dataset.sku + ".aspx");
     },
     onPagerEvent: function (zeroBasedSlideIndex, slideElement) {
       $(".skuName-front").text($("#bdny-2018-slideshow-front").children()[zeroBasedSlideIndex].dataset.sku);
+      $(".skuLink-front").attr("href", "https://www.archsystems.com/" + $("#bdny-2018-slideshow-front").children()[zeroBasedSlideIndex].dataset.sku + ".aspx");
     }
   });
 
@@ -98,18 +102,19 @@
     timeout: 0,
     pager: '#bdny-2018-nav-back',
     pagerAnchorBuilder: function (idx, slide) {
-      if (slide.src.includes(".gif")) {
+      if (!slide.classList.contains("skuName-back") && !slide.classList.contains("skuLink-back") && slide.src.includes(".gif")) {
         return '<li><a href="#"><div><img src="' + slide.src.substring(0, slide.src.length - 8) + '_thumb.jpg' + '" width="50" height="50" /></a></li>';
-      } else {
-        return '<li><a href="#"><div><img src="' + slide.src.substring(0, slide.src.length - 4) + '_thumb.jpg' + '" width="50" height="50" /></a></li>';
-
+      } else if (!slide.classList.contains("skuName-back") && !slide.classList.contains("skuLink-back")) {
+          return '<li><a href="#"><div><img src="' + slide.src.substring(0, slide.src.length - 4) + '_thumb.jpg' + '" width="50" height="50" /></a></li>';
       }
     },
     after: function(currSlideElement, nextSlideElement, options, forwardFlag) {
       $(".skuName-back").text(currSlideElement.dataset.sku);
+      $(".skuLink-back").attr("href", "https://www.archsystems.com/" + currSlideElement.dataset.sku + ".aspx");
     },
     onPagerEvent: function (zeroBasedSlideIndex, slideElement) {
       $(".skuName-back").text($("#bdny-2018-slideshow-back").children()[zeroBasedSlideIndex].dataset.sku);
+      $(".skuLink-back").attr("href", "https://www.archsystems.com/" + $("#bdny-2018-slideshow-back").children()[zeroBasedSlideIndex].dataset.sku + ".aspx");
     }
   });
 </script>

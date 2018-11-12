@@ -1778,11 +1778,12 @@ ul.icons-ul>li .icon-li {
 }
 
 #bdny-2018-slideshow-front .skuName-front,
+#bdny-2018-slideshow-front .skuLink-front,
 #bdny-2018-slideshow-shelves .skuName-shelves,
-#bdny-2018-slideshow-back .skuName-back {
+#bdny-2018-slideshow-back .skuName-back,
+#bdny-2018-slideshow-back .skuLink-back {
     display: block !important;
     opacity: 1 !important;
-    bottom: 0px !important;
     top: initial !important;
     left: initial !important;
     text-align: center;
@@ -1793,6 +1794,21 @@ ul.icons-ul>li .icon-li {
     background-color: white;
     padding: 15px;
     margin: 0;
+}
+
+#bdny-2018-slideshow-front .skuName-front,
+#bdny-2018-slideshow-shelves .skuName-shelves,
+#bdny-2018-slideshow-back .skuName-back {
+    bottom: 0px !important;
+    padding-bottom: 75px;
+}
+
+#bdny-2018-slideshow-front .skuLink-front,
+#bdny-2018-slideshow-shelves .skuLink-shelves,
+#bdny-2018-slideshow-back .skuLink-back {
+    bottom: 15px !important;
+    width: 200px;
+    left: 40% !important;
 }
 
 #bdny-2018-nav-front,
