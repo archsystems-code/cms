@@ -1775,8 +1775,8 @@ ul.icons-ul>li .icon-li {
     left: 0;
     right: 0;
     bottom: 0;
-    width: 80% !important;
-    height: auto !important;
+    max-height: 400px !important;
+    width: auto !important;
 }
 
 #bdny-2018-slideshow-front .skuName-front,
@@ -1810,8 +1810,8 @@ ul.icons-ul>li .icon-li {
 #bdny-2018-slideshow-shelves .skuLink-shelves,
 #bdny-2018-slideshow-back .skuLink-back {
     bottom: 15px !important;
-    width: 200px;
-    left: 40% !important;
+    width: 215px;
+    left: 39% !important;
 }
 
 #bdny-2018-nav-front,
@@ -1821,6 +1821,7 @@ ul.icons-ul>li .icon-li {
     flex-wrap: wrap;
     list-style-type: none;
     width: 100%;
+    justify-content: center;
 }
 
 #bdny-2018-nav-front li,
