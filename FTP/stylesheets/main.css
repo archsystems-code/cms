@@ -1782,6 +1782,7 @@ ul.icons-ul>li .icon-li {
 #bdny-2018-slideshow-front .skuName-front,
 #bdny-2018-slideshow-front .skuLink-front,
 #bdny-2018-slideshow-shelves .skuName-shelves,
+#bdny-2018-slideshow-shelves .skuLink-shelves,
 #bdny-2018-slideshow-back .skuName-back,
 #bdny-2018-slideshow-back .skuLink-back {
     display: block !important;
@@ -1792,7 +1793,7 @@ ul.icons-ul>li .icon-li {
     width: 100%;
     font-size: 16px;
     font-weight: bold;
-    z-index: 40 !important;
+    z-index: 50 !important;
     background-color: white;
     padding: 15px;
     margin: 0;
