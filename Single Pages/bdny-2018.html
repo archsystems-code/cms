@@ -94,7 +94,7 @@
     <img data-sku="WPAEW760" src="/Global/Tradeshows/BDNY18/WPAEW760.jpg" alt="" />
     <img data-sku="WPAEW660" src="/Global/Tradeshows/BDNY18/WPAEW660.jpg" alt="" />
     <p class="skuName-shelves"></p>
-    <a class="btn skuLink-shelves">VIEW PRODUCT DETAILS</a>
+    <a class="btn skuLink-shelves">VIEW DETAILS</a>
   </div>
   <h2 style="color: black; font-weight: bold; padding-top: 70px;">BOOTH BACK</h2>
   <img style="width: 100%;" src="/Global/Tradeshows/BDNY18/back-min.jpg" alt="" />
@@ -172,7 +172,7 @@
     onPagerEvent: function (zeroBasedSlideIndex, slideElement) {
       if ($("#bdny-2018-slideshow-shelves").children()[zeroBasedSlideIndex].dataset.sku.indexOf("/") > -1) {
         $(".skuLink-shelves").attr("href", "https://www.archsystems.com/en-US/Brands--Collections" + $("#bdny-2018-slideshow-shelves").children()[zeroBasedSlideIndex].dataset.sku);
-        $(".skuName-shelves").text("DISCOVER COLLECTION");
+        $(".skuName-shelves").text("");
       } else {
         $(".skuLink-shelves").attr("href", "https://www.archsystems.com/" + $("#bdny-2018-slideshow-shelves").children()[zeroBasedSlideIndex].dataset.sku + ".aspx");
         $(".skuName-shelves").text($("#bdny-2018-slideshow-shelves").children()[zeroBasedSlideIndex].dataset.sku);
